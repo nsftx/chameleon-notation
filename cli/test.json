@@ -1,0 +1,33 @@
+{
+  "name": "firstName",
+  "type": "text",
+  "label": "First Name",
+  "prependIcon": "person",
+  "appendIcon": null,
+  "prefix": null,
+  "suffix": null,
+  "placeholder": "Please enter your first name",
+  "hint": null,
+  "persistentHint": false,
+  "tooltip": null,
+  "multiLine": false,
+  "clearable": true,
+  "searchable": true,
+  "private": false,
+  "validateOn": "blur",
+  "mask": {
+    "predefined": false,
+    "value": null
+  },
+  "validation": {
+    "required": true,
+    "minlength": 2,
+    "maxlength": 20,
+    "pattern": {
+      "predefined": false,
+      "value": null
+    },
+    "custom": null
+  },
+  "value": "Existing Value"
+}

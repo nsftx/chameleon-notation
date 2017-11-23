@@ -1,0 +1,106 @@
+{
+  "$schema": "",
+  "title": "Text field",
+  "description": "Schema defines text field",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string",
+      "enum": ["text"]
+    },
+    "label": {
+      "type": "string"
+    },
+    "prependIcon": {
+      "type": ["string", "null"]
+    },
+    "appendIcon": {
+      "type": ["string", "null"]
+    },
+    "prefix": {
+      "type": ["string", "null"]
+    },
+    "suffix": {
+      "type": ["string", "null"]
+    },
+    "placeholder": {
+      "type": ["string", "null"]
+    },
+    "hint": {
+      "type": ["string", "null"]
+    },
+    "persistentHint": {
+      "type": "boolean"
+    },
+    "tooltip": {
+      "type": ["string", "null"]
+    },
+    "multiLine": {
+      "type": "boolean"
+    },
+    "clearable": {
+      "type": "boolean"
+    },
+    "searchable": {
+      "type": "boolean"
+    },
+    "private": {
+      "type": "boolean"
+    },
+    "validateOn": {
+      "type": "string",
+      "enum": ["blur", "focus", "submit"]
+    },
+    "mask": {
+      "type": "object",
+      "properties": {
+        "predefined": {
+          "type": "boolean"
+        },
+        "value": {
+          "type": ["string", "null"]
+        }
+      }
+    },
+    "validation": {
+      "type": "object",
+      "properties": {
+        "required": {
+          "type": "boolean"
+        },
+        "minLength": {
+          "type": "number",
+          "multipleOf": 1,
+          "maximum": {
+            "$data": "1/maxLength"
+          }
+        },
+        "maxLength": {
+          "type": "number",
+          "multipleOf": 1
+        },
+        "pattern": {
+          "type": "object",
+          "properties": {
+            "predefined": {
+              "type": "boolean"
+            },
+            "value": {
+              "type": ["string", "null"]
+            }
+          }
+        },
+        "custom": {
+          "type": ["string", "null"]
+        }
+      }
+    },
+    "value": {
+      "type": ["string", "null"]
+    }
+  },
+  "required": ["name", "type", "label"]
+}

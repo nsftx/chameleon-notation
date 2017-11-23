@@ -5,14 +5,41 @@
   "author": "Lana Dzidic <dzidic.lana@nsoft.com>",
   "private": true,
   "scripts": {
-    "start": "cross-env NODE_ENV=development webpack-dev-server --config build/webpack.dev.config.js",
+    "start": "cross-env NODE_ENV=development webpack --config build/webpack.base.config.js",
     "dev": "cross-env NODE_ENV=development webpack-dev-server --config build/webpack.dev.config.js --open --hot",
     "unit": "cross-env BABEL_ENV=test karma start test/unit/karma.conf.js --single-run",
     "test": "npm run unit",
-    "lint": "eslint --ext .js,.vue src test/unit/specs",
+    "lint": "eslint --ext .js src test/unit/specs",
     "build": "rimraf dist && cross-env NODE_ENV=production webpack --config build/config.js --progress --hide-modules"
   },
   "dependencies": {
     "ajv": "^5.4.0"
+  },
+  "bin": {
+    "clint": "cli/index.js"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^7.2.3",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "babel-register": "^6.26.0",
+    "copy-webpack-plugin": "^4.2.1",
+    "cross-env": "^5.1.1",
+    "eslint": "^4.11.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-friendly-formatter": "^3.0.0",
+    "eslint-import-resolver-webpack": "^0.8.3",
+    "eslint-loader": "^1.9.0",
+    "eslint-plugin-import": "^2.8.0",
+    "optimize-js-plugin": "0.0.4",
+    "rimraf": "^2.6.2",
+    "webpack": "^3.8.1",
+    "webpack-bundle-analyzer": "^2.9.1",
+    "webpack-dev-server": "^2.9.4",
+    "webpack-merge": "^4.1.1"
   }
 }
