@@ -1,5 +1,6 @@
 const utils = require('./utils');
-const linter = require('../src');
+const linter = require('../dist/chameleon-notation');
+const message = require('../src/utils/message');
 
 const lintField = (file, data) => {
   let src = null;
@@ -15,32 +16,18 @@ const lintField = (file, data) => {
   }
 
   if (!src.type) {
-    return {
-      valid: false,
-      message: 'Invalid data source provided - missing "type" property.',
-    };
+    return message(
+      { valid: false },
+      'Invalid data source provided - missing "type" property.');
   }
 
   const validation = linter.validateField(src);
-  return {
-    valid: validation.valid,
-    message: validation.errors || 'Provided source is valid.',
-  };
+  return message(validation);
 };
 
-const lintForm = () => {
-  return {
-    valid: false,
-    message: 'This command is not implemented yet.',
-  }
-};
+const lintForm = () => message({ valid: false });
 
-const lintAll = () => {
-  return {
-    valid: false,
-    message: 'This command is not implemented yet.',
-  }
-};
+const lintAll = () => message({ valid: false });
 
 module.exports = {
   validate: lintAll,

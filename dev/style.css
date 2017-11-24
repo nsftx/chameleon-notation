@@ -1,0 +1,63 @@
+* {
+  box-sizing: border-box;
+}
+
+#jsoneditor {
+  float: left;
+  width: 800px;
+  height: 600px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.validation-types {
+  float: left;
+  width: 400px;
+  height: 600px;
+  border: 1px solid #3883fa;
+  font-family: arial,sans-serif;
+}
+
+.validation-title {
+  margin: 0;
+  margin-bottom: 20px;
+  color: #fff;
+  opacity: .8;
+  font-size: 14px;
+}
+
+.validation-header {
+  background-color: #3883fa;
+  height: 35px;
+  padding: 9px;
+}
+
+.validation-content {
+  padding: 5px;
+}
+
+.validation-select {
+  width: 50%;
+  margin-bottom: 20px;
+}
+
+.validation-button {
+  float: right;
+}
+
+.validation-result {
+  padding: 10px 2px;
+  font-size: 14px;
+}
+
+.validation-result.success {
+  background: #E6EFC2;
+  color: #529214;
+  border: 1px solid #C6D880;
+}
+
+.validation-result.error {
+  background: #FBE3E4;
+  color: #D12F19;
+  border: 1px solid #FBC2C4;
+}

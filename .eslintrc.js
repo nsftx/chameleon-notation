@@ -10,12 +10,14 @@ module.exports = {
         browser: true,
     },
     extends: 'airbnb-base',
-    globals: {},
+    globals: {
+      JSONEditor: true,
+    },
     // check if imports actually resolve
     'settings': {
         'import/resolver': {
             'webpack': {
-                'config': 'build/webpack.base.conf.js'
+                'config': 'build/webpack.base.config.js'
             }
         }
     },
