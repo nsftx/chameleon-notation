@@ -15,8 +15,9 @@ const lint = (item) => {
   const ajv = new Ajv({
     allErrors: true,
     $data: true,
+    schemas: [schema, fields.base],
   });
-  const validate = ajv.compile(schema);
+  const validate = ajv.getSchema('http://chameleon-notation/field-text.json#');
   const validation = validate(item);
 
   return message({

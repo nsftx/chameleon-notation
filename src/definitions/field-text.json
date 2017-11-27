@@ -1,106 +1,90 @@
 {
-  "$schema": "",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "http://chameleon-notation/field-text.json#",
   "title": "Text field",
   "description": "Schema defines text field",
   "type": "object",
   "properties": {
-    "name": {
-      "type": "string"
-    },
     "type": {
       "type": "string",
       "enum": ["text"]
     },
-    "label": {
-      "type": "string"
-    },
-    "prependIcon": {
-      "type": ["string", "null"]
-    },
     "appendIcon": {
-      "type": ["string", "null"]
-    },
-    "prefix": {
-      "type": ["string", "null"]
-    },
-    "suffix": {
-      "type": ["string", "null"]
-    },
-    "placeholder": {
-      "type": ["string", "null"]
-    },
-    "hint": {
-      "type": ["string", "null"]
-    },
-    "persistentHint": {
-      "type": "boolean"
-    },
-    "tooltip": {
-      "type": ["string", "null"]
-    },
-    "multiLine": {
-      "type": "boolean"
+      "$ref": "field-base.json#appendIcon"
     },
     "clearable": {
-      "type": "boolean"
+      "$ref": "field-base.json#clearable"
     },
-    "searchable": {
-      "type": "boolean"
+    "hint": {
+      "$ref": "field-base.json#hint"
     },
-    "private": {
-      "type": "boolean"
-    },
-    "validateOn": {
-      "type": "string",
-      "enum": ["blur", "focus", "submit"]
+    "label": {
+      "$ref": "field-base.json#label"
     },
     "mask": {
-      "type": "object",
-      "properties": {
-        "predefined": {
-          "type": "boolean"
-        },
-        "value": {
-          "type": ["string", "null"]
-        }
-      }
+      "$ref": "field-base.json#mask"
+    },
+    "multiLine": {
+      "$ref": "field-base.json#multiLine"
+    },
+    "name": {
+      "$ref": "field-base.json#name"
+    },
+    "persistentHint": {
+      "$ref": "field-base.json#persistentHint"
+    },
+    "placeholder": {
+      "$ref": "field-base.json#placeholder"
+    },
+    "prefix": {
+      "$ref": "field-base.json#prefix"
+    },
+    "prependIcon": {
+      "$ref": "field-base.json#prependIcon"
+    },
+    "private": {
+      "$ref": "field-base.json#private"
+    },
+    "searchable": {
+      "$ref": "field-base.json#searchable"
+    },
+    "suffix": {
+      "$ref": "field-base.json#suffix"
+    },
+    "tooltip": {
+      "$ref": "field-base.json#tooltip"
+    },
+    "validateOn": {
+      "$ref": "field-base.json#validateOn"
     },
     "validation": {
-      "type": "object",
+      "$ref": "field-base.json#validation"
+    },
+    "value": {
+      "$ref": "field-base.json#value"
+    }
+  },
+  "anyOf": [
+    {
       "properties": {
-        "required": {
-          "type": "boolean"
+        "validateOn": {
+          "enum": ["blur", "input", "submit"]
         },
-        "minLength": {
-          "type": "number",
-          "multipleOf": 1,
-          "maximum": {
-            "$data": "1/maxLength"
-          }
-        },
-        "maxLength": {
-          "type": "number",
-          "multipleOf": 1
-        },
-        "pattern": {
-          "type": "object",
-          "properties": {
-            "predefined": {
-              "type": "boolean"
-            },
-            "value": {
-              "type": ["string", "null"]
-            }
-          }
-        },
-        "custom": {
-          "type": ["string", "null"]
+        "validation": {
+          "type": "object"
         }
       }
     },
-    "value": {
-      "type": ["string", "null"]
+    {
+      "properties": {
+        "validateOn": {
+          "enum": [null]
+        },
+        "validation": {
+          "type": "null"
+        }
+      }
     }
-  },
+  ],
   "required": ["name", "type", "label"]
 }
