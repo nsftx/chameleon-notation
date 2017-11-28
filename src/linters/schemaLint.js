@@ -6,7 +6,7 @@ let validate = null;
 
 const addKeywords = () => {
   ajv.addKeyword('v-withDecimals', {
-    validate: (sch, data) => (!sch ? data === parseInt(data, 10) : true),
+    validate: (schema, data) => (!schema ? data === parseInt(data, 10) : true),
   });
 };
 
@@ -14,7 +14,7 @@ const initialize = (type) => {
   ajv = new Ajv({
     allErrors: true,
     $data: true,
-    schemas: Object.values(definitions.fields),
+    schemas: Object.values(definitions.items),
   });
 
   addKeywords();

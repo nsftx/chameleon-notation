@@ -1,0 +1,48 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "http://chameleon-notation/widget-form.json#",
+  "title": "Form widget",
+  "description": "Schema defines form widget",
+  "type": "object",
+  "properties": {
+    "type": {
+      "type": "string",
+      "enum": ["form"]
+    },
+    "actions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "minLength": 1
+          },
+          "type": {
+            "type": "string",
+            "minLength": 1
+          },
+          "label": {
+            "type": "string",
+            "minLength": 1
+          },
+          "actions": {
+            "type": "object"
+          }
+        }
+      }
+    },
+    "fields": {
+      "type": "array",
+      "items": {
+        "oneOf": [
+          { "$ref": "field-text.json#" },
+          { "$ref": "field-number.json#" },
+          { "$ref": "field-money.json#" },
+          { "$ref": "field-richText.json#" },
+          { "$ref": "field-date.json#" }
+        ]
+      }
+    }
+  }
+}

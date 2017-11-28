@@ -23,7 +23,7 @@
     },
     "toolbar": {
       "id": "#toolbar",
-      "type": "array",
+      "type": ["array", "string"],
       "uniqueItems": true,
       "items": {
         "type": "string"

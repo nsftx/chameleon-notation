@@ -2,7 +2,7 @@ import schemaLint from './schemaLint';
 import definitions from '../definitions';
 import utils from '../utils';
 
-const { fields } = definitions;
+const { items } = definitions;
 const { message } = utils;
 
 const lint = (item) => {
@@ -15,7 +15,7 @@ const lint = (item) => {
     );
   }
 
-  const schema = fields[fieldType];
+  const schema = items[fieldType];
 
   if (!schema) {
     return message(

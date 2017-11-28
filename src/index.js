@@ -17,6 +17,7 @@ const ChameleonNotation = {
   message,
   validate: lint,
   validateField: linters.lintField,
+  validateForm: linters.validateForm,
 };
 
 export default ChameleonNotation;
