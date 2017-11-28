@@ -22,6 +22,7 @@
       "$ref": "field-base.json#searchable"
     },
     "toolbar": {
+      "id": "#toolbar",
       "type": "array",
       "uniqueItems": true,
       "items": {

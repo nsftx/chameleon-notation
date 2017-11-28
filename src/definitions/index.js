@@ -3,6 +3,7 @@ const text = require('./field-text.json');
 const number = require('./field-number.json');
 const money = require('./field-money.json');
 const richText = require('./field-richText.json');
+const date = require('./field-date.json');
 
 module.exports = {
   fields: {
@@ -11,5 +12,6 @@ module.exports = {
     number,
     money,
     richText,
+    date,
   },
 };

@@ -30,7 +30,7 @@ const lint = (item) => {
     validate: (sch, data) => (!sch ? data === parseInt(data, 10) : true),
   });
 
-  const validate = ajv.getSchema('http://chameleon-notation/field-richText.json#');
+  const validate = ajv.getSchema('http://chameleon-notation/field-date.json#');
   const validation = validate(item);
 
   return message({
