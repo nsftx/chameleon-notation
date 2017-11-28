@@ -22,7 +22,7 @@ const lint = (item) => {
     validate: (sch, data) => (!sch ? data === parseInt(data, 10) : true),
   });
 
-  const validate = ajv.getSchema('http://chameleon-notation/field-number.json#');
+  const validate = ajv.getSchema('http://chameleon-notation/field-money.json#');
   const validation = validate(item);
 
   return message({
