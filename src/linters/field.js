@@ -12,6 +12,14 @@ const lint = (item) => {
 
   const fieldType = item.type;
   const schema = fields[fieldType];
+
+  if (!schema) {
+    return message(
+      { valid: false },
+      `Invalid data source provided - validation for field type "${fieldType}" is not supported.`,
+    );
+  }
+
   const ajv = new Ajv({
     allErrors: true,
     $data: true,
@@ -22,7 +30,7 @@ const lint = (item) => {
     validate: (sch, data) => (!sch ? data === parseInt(data, 10) : true),
   });
 
-  const validate = ajv.getSchema('http://chameleon-notation/field-money.json#');
+  const validate = ajv.getSchema('http://chameleon-notation/field-richText.json#');
   const validation = validate(item);
 
   return message({
