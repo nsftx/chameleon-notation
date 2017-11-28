@@ -6,6 +6,13 @@ import richText from './field-richText.json';
 import date from './field-date.json';
 
 export default {
+  mapper: {
+    text: 'http://chameleon-notation/field-text.json#',
+    number: 'http://chameleon-notation/field-number.json#',
+    money: 'http://chameleon-notation/field-money.json#',
+    richText: 'http://chameleon-notation/field-richText.json#',
+    date: 'http://chameleon-notation/field-date.json#',
+  },
   fields: {
     base,
     text,
