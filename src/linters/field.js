@@ -17,7 +17,12 @@ const lint = (item) => {
     $data: true,
     schemas: [schema, fields.base],
   });
-  const validate = ajv.getSchema('http://chameleon-notation/field-text.json#');
+
+  ajv.addKeyword('v-withDecimals', {
+    validate: (sch, data) => (!sch ? data === parseInt(data, 10) : true),
+  });
+
+  const validate = ajv.getSchema('http://chameleon-notation/field-number.json#');
   const validation = validate(item);
 
   return message({

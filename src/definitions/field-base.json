@@ -100,7 +100,7 @@
           "type": "object",
           "properties": {
             "predefined": {
-              "type": "boolean"
+              "type": ["boolean", "string"]
             },
             "value": {
               "type": ["string", "null"]
