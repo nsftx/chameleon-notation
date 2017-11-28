@@ -1,6 +1,8 @@
-const { version } = require('../package.json');
-const linters = require('./linters');
-const { message } = require('./utils');
+import { version } from '../package.json';
+import linters from './linters';
+import utils from './utils';
+
+const { message } = utils;
 
 const lint = (type, data) => {
   if (linters[`lint${type}`]) {
@@ -12,8 +14,9 @@ const lint = (type, data) => {
 
 const ChameleonNotation = {
   version,
+  message,
   validate: lint,
   validateField: linters.lintField,
 };
 
-module.exports = ChameleonNotation;
+export default ChameleonNotation;

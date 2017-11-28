@@ -1,6 +1,9 @@
-const Ajv = require('ajv');
-const { fields } = require('../definitions');
-const { message } = require('../utils');
+import Ajv from 'ajv';
+import definitions from '../definitions';
+import utils from '../utils';
+
+const { fields } = definitions;
+const { message } = utils;
 
 const lint = (item) => {
   if (!item.type) {
@@ -30,7 +33,7 @@ const lint = (item) => {
     validate: (sch, data) => (!sch ? data === parseInt(data, 10) : true),
   });
 
-  const validate = ajv.getSchema('http://chameleon-notation/field-date.json#');
+  const validate = ajv.getSchema('http://chameleon-notation/field-text.json#');
   const validation = validate(item);
 
   return message({
@@ -39,4 +42,4 @@ const lint = (item) => {
   });
 };
 
-module.exports = lint;
+export default lint;

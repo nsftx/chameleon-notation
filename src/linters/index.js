@@ -1,5 +1,5 @@
-const field = require('./field');
+import field from './field';
 
-module.exports = {
+export default {
   lintField: field,
 };

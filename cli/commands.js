@@ -1,6 +1,7 @@
 const utils = require('./utils');
-const linter = require('../dist/chameleon-notation');
-const message = require('../src/utils/message');
+const linter = require('../dist/chameleon-notation').default;
+
+const { message } = linter;
 
 const lintField = (file, data) => {
   let src = null;

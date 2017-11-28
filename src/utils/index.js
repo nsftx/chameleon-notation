@@ -1,5 +1,5 @@
-const message = require('./message');
+import message from './message';
 
-module.exports = {
+export default {
   message,
 };

@@ -33,4 +33,4 @@ const create = (validation, message) => {
   };
 };
 
-module.exports = create;
+export default create;

@@ -1,11 +1,11 @@
-const base = require('./field-base.json');
-const text = require('./field-text.json');
-const number = require('./field-number.json');
-const money = require('./field-money.json');
-const richText = require('./field-richText.json');
-const date = require('./field-date.json');
+import base from './field-base.json';
+import text from './field-text.json';
+import number from './field-number.json';
+import money from './field-money.json';
+import richText from './field-richText.json';
+import date from './field-date.json';
 
-module.exports = {
+export default {
   fields: {
     base,
     text,
