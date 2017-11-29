@@ -1,0 +1,254 @@
+{
+  "name": "test",
+  "template": "default",
+  "layout": "blank",
+  "meta": {
+    "title": "Test",
+    "description": "Test Chameleon Page",
+    "keywords": "chameleon, test, page"
+  },
+  "validators": {
+    "creditCard": {
+      "message": "The ${field} field is invalid credit card."
+    },
+    "minLength": {
+      "message": "The ${field} field must be at least ${limit} characters."
+    },
+    "maxLength": {
+      "message": "The ${field} field may not be greater than ${limit} characters."
+    },
+    "integer": {
+      "message": "The ${field} field must be an integer."
+    },
+    "pattern": {
+      "message": "The ${field} field does not conform to pattern."
+    },
+    "required": {
+      "message": "The ${field} field is required."
+    }
+  },
+  "containers": [
+    {
+      "widgets": [
+        {
+          "type": "form",
+          "name": "person",
+          "fields": [
+            {
+              "name": "firstName",
+              "type": "text",
+              "label": "First Name",
+              "prependIcon": "person",
+              "appendIcon": null,
+              "prefix": null,
+              "suffix": null,
+              "placeholder": "Please enter your first name",
+              "hint": null,
+              "persistentHint": false,
+              "tooltip": null,
+              "multiLine": false,
+              "clearable": true,
+              "searchable": true,
+              "private": false,
+              "validateOn": "blur",
+              "mask": {
+                "predefined": false,
+                "value": null
+              },
+              "validation": {
+                "required": true,
+                "minLength": 2,
+                "maxLength": 20,
+                "pattern": {
+                  "predefined": false,
+                  "value": null
+                },
+                "custom": null
+              },
+              "value": "Existing Value"
+            },
+            {
+              "name": "creditCard",
+              "type": "text",
+              "label": "Credit Card Number",
+              "prependIcon": "credit_card",
+              "appendIcon": null,
+              "prefix": null,
+              "suffix": null,
+              "placeholder": "Please enter your credit card number",
+              "hint": "Credit card must have valid expiration date",
+              "persistentHint": true,
+              "tooltip": "Some tooltip",
+              "multiLine": false,
+              "clearable": true,
+              "searchable": false,
+              "private": true,
+              "validateOn": "blur",
+              "mask": {
+                "predefined": "creditCard",
+                "value": null
+              },
+              "validation": {
+                "required": true,
+                "pattern": {
+                  "predefined": "creditCard",
+                  "value": null
+                },
+                "custom": null
+              },
+              "value": "375556917985515"
+            },
+            {
+              "name": "quantity",
+              "type": "number",
+              "label": "Quantity",
+              "prependIcon": "money",
+              "appendIcon": null,
+              "prefix": null,
+              "suffix": "EUR",
+              "placeholder": null,
+              "hint": null,
+              "persistentHint": false,
+              "tooltip": null,
+              "clearable": true,
+              "searchable": false,
+              "private": true,
+              "step": 10,
+              "validateOn": "blur",
+              "mask": {
+                "predefined": false,
+                "value": null
+              },
+              "validation": {
+                "required": true,
+                "pattern": {
+                  "predefined": "integer",
+                  "value": null
+                },
+                "custom": null
+              },
+              "value": "100"
+            },
+            {
+              "name": "amount",
+              "type": "number",
+              "label": "Amount",
+              "prependIcon": "money",
+              "appendIcon": null,
+              "prefix": null,
+              "suffix": "EUR",
+              "placeholder": null,
+              "hint": null,
+              "persistentHint": false,
+              "tooltip": null,
+              "clearable": true,
+              "searchable": false,
+              "private": true,
+              "validateOn": "blur",
+              "mask": {
+                "predefined": false,
+                "value": null
+              },
+              "validation": {
+                "required": true,
+                "pattern": {
+                  "predefined": false,
+                  "value": "^-?\\d*(\\,\\d+)?$"
+                },
+                "custom": null
+              },
+              "value": "100,20"
+            },
+            {
+              "name": "about",
+              "type": "richText",
+              "label": "About",
+              "searchable": false,
+              "private": true,
+              "validation": {
+                "required": true
+              },
+              "toolbar": [
+                "bold",
+                "italic",
+                "link"
+              ],
+              "value": "Test rich <b>content</b>."
+            },
+            {
+              "name": "description",
+              "type": "richText",
+              "label": "Description",
+              "placeholder": "Enter description",
+              "searchable": false,
+              "private": true,
+              "validation": {
+                "required": false
+              },
+              "toolbar": "advanced"
+            },
+            {
+              "name": "payin",
+              "type": "money",
+              "label": "Payin",
+              "prependIcon": "money",
+              "appendIcon": null,
+              "suffix": "symbol",
+              "prefix": null,
+              "placeholder": "Enter payin amount",
+              "hint": null,
+              "persistentHint": false,
+              "tooltip": null,
+              "clearable": true,
+              "searchable": false,
+              "private": true,
+              "currency": {
+                "name": "EUR",
+                "symbol": "€"
+              },
+              "validateOn": "blur",
+              "validation": {
+                "required": true,
+                "pattern": {
+                  "value": "^-?\\d*(\\,\\d+)?$"
+                }
+              },
+              "value": "120,35"
+            },
+            {
+              "name": "dateOfBirth",
+              "type": "date",
+              "label": "Date of Birth",
+              "prependIcon": null,
+              "appendIcon": null,
+              "placeholder": "Select your date of birth",
+              "hint": null,
+              "tooltip": null,
+              "clearable": true,
+              "searchable": false,
+              "private": true,
+              "validation": {
+                "required": true
+              },
+              "time": {
+                "enabled": true
+              },
+              "format": "LLL",
+              "value": "2017-11-09T20:35:00.000Z"
+            }
+          ],
+          "actions": [
+            {
+              "name": "save",
+              "type": "button",
+              "label": "Save",
+              "actions": {
+                "click": "save"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

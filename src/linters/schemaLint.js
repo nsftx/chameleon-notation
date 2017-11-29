@@ -1,5 +1,5 @@
 import Ajv from 'ajv';
-import definitions from '../definitions';
+import definitions from '@definitions';
 
 let ajv;
 let validate = null;

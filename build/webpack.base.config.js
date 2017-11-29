@@ -1,44 +1,22 @@
-const path = require('path');
-const webpack = require('webpack');
-const OptimizeJsPlugin = require('optimize-js-plugin');
+const FriendlyErrorsWebpackPlugin = require('friendly-errors-webpack-plugin');
+
+const resolve = file => require('path').resolve(__dirname, file);
 
 module.exports = {
-  devtool: '#source-map',
-  entry: {
-    app: './src/index.js'
-  },
-  output: {
-    path: path.resolve(__dirname, '../dist'),
-    publicPath: '/dist/',
-    filename: 'chameleon-notation.js',
-    libraryTarget: 'umd',
-    library: 'ChameleonNotation'
-  },
   resolve: {
+    extensions: ['*', '.js', '.json'],
     alias: {
-      chameleonNotation: path.resolve(__dirname, '../src')
+      '@definitions': resolve('../src/definitions'),
+      '@linters': resolve('../src/linters'),
+      '@utils': resolve('../src/utils'),
     }
   },
-  module: {
-    noParse: /es6-promise\.js$/, // avoid webpack shimming process
-    rules: [
-      {
-        test: /\.js$/,
-        loaders: ['babel-loader', 'eslint-loader'],
-        exclude: /node_modules/
-      },
-    ]
-  },
-  performance: {
-    hints: false
+  node: {
+    fs: 'empty'
   },
   plugins: [
-    new webpack.DefinePlugin({
-      'process.env.NODE_ENV': 'production'
-    }),
-    new OptimizeJsPlugin({
-      sourceMap: false
-    }),
-    new webpack.optimize.ModuleConcatenationPlugin()
-  ]
+    new FriendlyErrorsWebpackPlugin({
+      clearConsole: true
+    })
+  ],
 };

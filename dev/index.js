@@ -1,4 +1,4 @@
-import ChameleonNotation from 'chameleonNotation';
+import ChameleonNotation from 'chameleon-notation';
 import _debounce from 'lodash/debounce';
 
 let editor = null;

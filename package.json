@@ -5,13 +5,14 @@
   "author": "Lana Dzidic <dzidic.lana@nsoft.com>",
   "private": true,
   "scripts": {
-    "start": "cross-env NODE_ENV=development webpack --config build/webpack.base.config.js",
+    "start": "cross-env NODE_ENV=development webpack --config build/webpack.dev.config.js",
     "dev": "cross-env NODE_ENV=development webpack-dev-server --config build/webpack.dev.config.js --open --hot",
     "unit": "cross-env BABEL_ENV=test karma start test/unit/karma.conf.js --single-run",
     "test": "npm run unit",
     "lint": "eslint --ext .js src test/unit/specs",
     "build": "rimraf dist && cross-env NODE_ENV=production webpack --config build/config.js --progress --hide-modules"
   },
+  "main": "dist/chameleon-notations.js",
   "dependencies": {
     "ajv": "^5.4.0",
     "lodash": "^4.17.4"

@@ -1,6 +1,6 @@
+import linters from '@linters';
+import utils from '@utils';
 import { version } from '../package.json';
-import linters from './linters';
-import utils from './utils';
 
 const { message } = utils;
 
