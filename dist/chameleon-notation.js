@@ -4,9 +4,9 @@
 	else if(typeof define === 'function' && define.amd)
 		define([], factory);
 	else if(typeof exports === 'object')
-		exports["ChameleonNotation"] = factory();
+		exports["chameleon-notation"] = factory();
 	else
-		root["ChameleonNotation"] = factory();
+		root["chameleon-notation"] = factory();
 })(this, function() {
 return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache

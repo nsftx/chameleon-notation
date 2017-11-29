@@ -8,7 +8,7 @@ const builds = {
   development: {
     config: {
       output: {
-        filename: 'chameleon-notation.js',
+        filename: '[name].js',
         libraryTarget: 'umd'
       }
     }
@@ -16,7 +16,7 @@ const builds = {
   production: {
     config: {
       output: {
-        filename: 'chameleon-notation.min.js',
+        filename: '[name].min.js',
         libraryTarget: 'umd'
       }
     },

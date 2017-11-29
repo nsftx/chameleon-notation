@@ -5,12 +5,12 @@ const baseWebpackConfig = require('./webpack.base.config');
 module.exports = merge(baseWebpackConfig, {
   devtool: '#source-map',
   entry: {
-    app: './src/index.js'
+    'chameleon-notation': './src/index.js'
   },
   output: {
     path: path.resolve(__dirname, '../dist'),
     publicPath: '/dist/',
-    library: 'ChameleonNotation'
+    library: '[name]'
   },
   module: {
     noParse: /es6-promise\.js$/, // avoid webpack shimming process
