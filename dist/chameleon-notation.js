@@ -2139,7 +2139,7 @@ var ChameleonNotation = {
   message: message,
   validate: lint,
   validateField: __WEBPACK_IMPORTED_MODULE_0__linters__["a" /* default */].lintField,
-  validateForm: __WEBPACK_IMPORTED_MODULE_0__linters__["a" /* default */].validateForm
+  validateForm: __WEBPACK_IMPORTED_MODULE_0__linters__["a" /* default */].lintForm
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (ChameleonNotation);
