@@ -12,7 +12,7 @@
     "lint": "eslint --ext .js src test/unit/specs",
     "build": "rimraf dist && cross-env NODE_ENV=production webpack --config build/config.js --progress --hide-modules"
   },
-  "main": "dist/chameleon-notations.js",
+  "main": "dist/chameleon-notation.js",
   "dependencies": {
     "ajv": "^5.4.0",
     "lodash": "^4.17.4"
