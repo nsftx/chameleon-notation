@@ -59,7 +59,7 @@ const lint = (item, type) => {
   const result = validator(item);
 
   return {
-    valid: result,
+    isValid: result,
     errors: validate.errors,
   };
 };

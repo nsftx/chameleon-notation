@@ -4,10 +4,17 @@ import schemaLint from './schemaLint';
 const { message } = utils;
 
 const lint = (item) => {
+  if (!item.type) {
+    return message(
+      { isValid: false },
+      'Invalid data source provided - missing "type" property.',
+    );
+  }
+
   const validation = schemaLint(item, 'page');
 
   return message({
-    valid: validation.valid,
+    isValid: validation.isValid,
     errors: validation.errors,
   });
 };

@@ -6,7 +6,7 @@ const { message } = utils;
 const lint = (item) => {
   if (!item.type) {
     return message(
-      { valid: false },
+      { isValid: false },
       'Invalid data source provided - missing "type" property.',
     );
   }
@@ -14,7 +14,7 @@ const lint = (item) => {
   const validation = schemaLint(item, 'form');
 
   return message({
-    valid: validation.valid,
+    isValid: validation.isValid,
     errors: validation.errors,
   });
 };

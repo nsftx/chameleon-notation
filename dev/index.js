@@ -21,7 +21,7 @@ const validate = () => {
   }
 
   const result = ChameleonNotation.validate(editorContent, selectedValidationType);
-  setMessage(result.message, result.valid ? 'success' : 'error');
+  setMessage(result.message, result.isValid ? 'success' : 'error');
 };
 
 const selectValidationType = (e) => {

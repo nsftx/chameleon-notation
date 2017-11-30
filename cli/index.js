@@ -38,4 +38,4 @@ if (!inputFile && !inputData) {
 
 const validation = command(inputFile, inputData);
 console.log(validation.message);
-process.exit(validation.valid ? 0 : 1);
+process.exit(validation.isValid ? 0 : 1);

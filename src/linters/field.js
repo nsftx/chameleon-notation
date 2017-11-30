@@ -10,7 +10,7 @@ const lint = (item) => {
 
   if (!fieldType) {
     return message(
-      { valid: false },
+      { isValid: false },
       'Invalid data source provided - missing "type" property.',
     );
   }
@@ -19,7 +19,7 @@ const lint = (item) => {
 
   if (!schema) {
     return message(
-      { valid: false },
+      { isValid: false },
       `Invalid data source provided - validation for field type "${fieldType}" is not supported.`,
     );
   }
@@ -27,7 +27,7 @@ const lint = (item) => {
   const validation = schemaLint(item, fieldType);
 
   return message({
-    valid: validation.valid,
+    isValid: validation.isValid,
     errors: validation.errors,
   });
 };

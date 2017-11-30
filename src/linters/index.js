@@ -30,7 +30,7 @@ const lint = (item, type) => {
 
   if (!itemType) {
     return message(
-      { valid: false },
+      { isValid: false },
       'Invalid data source provided - missing "type" property in root.',
     );
   }
@@ -39,7 +39,7 @@ const lint = (item, type) => {
 
   if (!linter) {
     return message(
-      { valid: false },
+      { isValid: false },
       `Invalid data source provided - validation for ${itemType} is not supported.`,
     );
   }

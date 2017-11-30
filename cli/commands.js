@@ -18,7 +18,7 @@ const parseSource = (file, data) => {
 
   if (!src.type) {
     return message(
-      { valid: false },
+      { isValid: false },
       'Invalid data source provided - missing "type" property.');
   }
 

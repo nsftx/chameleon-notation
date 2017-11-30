@@ -21,13 +21,13 @@ const parseErrorMessage = (errors) => {
 };
 
 const create = (validation, message) => {
-  const valid = validation.valid || false;
+  const isValid = validation.isValid || false;
   const errors = validation.errors || null;
-  const defaultMessage = valid ? 'Provided source is valid.' : 'This validation is not implemented yet.';
+  const defaultMessage = isValid ? 'Provided source is valid.' : 'This validation is not implemented yet.';
   const finalMessage = parseErrorMessage(errors) || message || defaultMessage;
 
   return {
-    valid,
+    isValid,
     errors,
     message: finalMessage,
   };
