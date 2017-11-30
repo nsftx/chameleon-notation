@@ -81,6 +81,7 @@
     },
     "validation": {
       "id": "#validation",
+      "type": ["null", "object"],
       "properties": {
         "required": {
           "type": "boolean"
@@ -110,7 +111,14 @@
         "custom": {
           "type": ["string", "null"]
         }
-      }
+      },
+      "anyOf": [
+        { "required": ["required"] },
+        { "required": ["minLength"] },
+        { "required": ["maxLength"] },
+        { "required": ["pattern"] },
+        { "required": ["custom"] }
+      ]
     },
     "value": {
       "id": "#value",

@@ -4,7 +4,7 @@
 
 #jsoneditor {
   float: left;
-  width: 700px;
+  width: 49%;
   height: 600px;
   margin-right: 20px;
   margin-bottom: 20px;
@@ -12,8 +12,8 @@
 
 .validation-types {
   position: relative;
-  float: left;
-  width: 500px;
+  float: right;
+  width: 49%;
   height: 600px;
   border: 1px solid #3883fa;
   font-family: arial,sans-serif;
@@ -39,16 +39,19 @@
 }
 
 .validation-select {
-  width: 50%;
+  width: 30%;
+  margin-right: 20px;
   margin-bottom: 20px;
+  float: left;
 }
 
 .validation-button {
-  float: right;
+  float: left;
 }
 
 .validation-result {
   height: 93%;
+  width: 100%;
   font-size: 14px;
   overflow-y: auto;
 }
