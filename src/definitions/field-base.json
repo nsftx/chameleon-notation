@@ -15,29 +15,35 @@
     },
     "prependIcon": {
       "id": "#prependIcon",
-      "type": ["string", "null"]
+      "type": ["string", "null", "boolean"],
+      "cn-allowedBooleanType": false
     },
     "appendIcon": {
       "id": "#appendIcon",
-      "type": ["string", "null", "boolean"]
+      "type": ["string", "null", "boolean"],
+      "cn-allowedBooleanType": false
     },
     "prefix": {
       "id": "#prefix",
-      "type": ["string", "null"],
+      "type": ["string", "null", "boolean"],
+      "cn-allowedBooleanType": false,
       "maxLength": 3
     },
     "suffix": {
       "id": "#suffix",
-      "type": ["string", "null"],
+      "type": ["string", "null", "boolean"],
+      "cn-allowedBooleanType": false,
       "maxLength": 6
     },
     "placeholder": {
       "id": "#placeholder",
-      "type": ["string", "null"]
+      "type": ["string", "null", "boolean"],
+      "cn-allowedBooleanType": false
     },
     "hint": {
       "id": "#hint",
-      "type": ["string", "null"]
+      "type": ["string", "null", "boolean"],
+      "cn-allowedBooleanType": false
     },
     "persistentHint": {
       "id": "#persistentHint",

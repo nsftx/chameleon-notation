@@ -107,7 +107,7 @@
             }
           },
           "step": {
-            "v-withDecimals": false
+            "cn-withDecimals": false
           }
         }
       },
@@ -127,7 +127,7 @@
               }
             },
             "step": {
-              "v-withDecimals": true
+              "cn-withDecimals": true
             }
           }
         }

@@ -5,8 +5,33 @@ let ajv;
 let validate = null;
 
 const addKeywords = () => {
-  ajv.addKeyword('v-withDecimals', {
+  // Custom keyword for number/integer differentiation
+  ajv.addKeyword('cn-withDecimals', {
     validate: (schema, data) => (!schema ? data === parseInt(data, 10) : true),
+  });
+
+  // Custom keyword for allowing only one of the boolean values
+  ajv.addKeyword('cn-allowedBooleanType', {
+    validate: function myValidation(schema, data) {
+      const dataType = typeof data;
+      if (dataType !== 'boolean') return true;
+
+      const result = schema === data;
+
+      if (!result) {
+        if (myValidation.errors === null) myValidation.errors = [];
+
+        myValidation.errors.push({
+          keyword: 'cn-allowedBooleanType',
+          message: `when type is boolean, allowed value is ${schema}`,
+          params: {
+            keyword: 'cn-allowedBooleanType',
+          },
+        });
+      }
+
+      return (schema === data);
+    },
   });
 };
 
