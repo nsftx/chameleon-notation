@@ -1,8 +1,8 @@
+import definitions from '@definitions';
+import utils from '@utils';
 import schemaLint from './schemaLint';
-import definitions from '../definitions';
-import utils from '../utils';
 
-const { items } = definitions;
+const { fields } = definitions;
 const { message } = utils;
 
 const lint = (item) => {
@@ -15,7 +15,7 @@ const lint = (item) => {
     );
   }
 
-  const schema = items[fieldType];
+  const schema = fields[fieldType];
 
   if (!schema) {
     return message(
@@ -32,4 +32,6 @@ const lint = (item) => {
   });
 };
 
-export default lint;
+const belongs = type => !!fields[type];
+
+export { lint as field, belongs as isField };

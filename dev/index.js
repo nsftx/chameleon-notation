@@ -4,10 +4,10 @@ import _debounce from 'lodash/debounce';
 let editor = null;
 let messageContainer = null;
 let messagePlaceholder = null;
-let selectedValidationType = 'Field';
+let selectedValidationType = '';
 
 const setMessage = (message, type) => {
-  messageContainer.className = `validation-result ${type}`;
+  messageContainer.className = `validation-result-content ${type}`;
   messagePlaceholder.innerText = message;
 };
 
@@ -20,7 +20,7 @@ const validate = () => {
     return;
   }
 
-  const result = ChameleonNotation.validate(selectedValidationType, editorContent);
+  const result = ChameleonNotation.validate(editorContent, selectedValidationType);
   setMessage(result.message, result.valid ? 'success' : 'error');
 };
 
@@ -45,7 +45,7 @@ const initEditor = () => {
 
 const initialize = () => {
   initEditor();
-  [messageContainer] = document.getElementsByClassName('validation-result');
+  [messageContainer] = document.getElementsByClassName('validation-result-content');
   [messagePlaceholder] = document.getElementsByClassName('validation-message');
   const selectEl = document.getElementsByClassName('validation-select')[0];
   const validationButton = document.getElementsByClassName('validation-button')[0];

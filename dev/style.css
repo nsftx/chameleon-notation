@@ -4,15 +4,16 @@
 
 #jsoneditor {
   float: left;
-  width: 800px;
+  width: 700px;
   height: 600px;
   margin-right: 20px;
   margin-bottom: 20px;
 }
 
 .validation-types {
+  position: relative;
   float: left;
-  width: 400px;
+  width: 500px;
   height: 600px;
   border: 1px solid #3883fa;
   font-family: arial,sans-serif;
@@ -34,6 +35,7 @@
 
 .validation-content {
   padding: 5px;
+  height: 565px;
 }
 
 .validation-select {
@@ -46,17 +48,22 @@
 }
 
 .validation-result {
-  padding: 10px 2px;
+  height: 93%;
   font-size: 14px;
+  overflow-y: auto;
 }
 
-.validation-result.success {
+.validation-result-content {
+  padding: 10px 2px;
+}
+
+.validation-result-content.success {
   background: #E6EFC2;
   color: #529214;
   border: 1px solid #C6D880;
 }
 
-.validation-result.error {
+.validation-result-content.error {
   background: #FBE3E4;
   color: #D12F19;
   border: 1px solid #FBC2C4;

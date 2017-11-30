@@ -3,7 +3,7 @@ const linter = require('../dist/chameleon-notation').default;
 
 const { message } = linter;
 
-const lintField = (file, data) => {
+const parseSource = (file, data) => {
   let src = null;
 
   if (file) {
@@ -22,16 +22,48 @@ const lintField = (file, data) => {
       'Invalid data source provided - missing "type" property.');
   }
 
-  const validation = linter.validateField(src);
-  return message(validation);
+  return {
+    src,
+  }
 };
 
-const lintForm = () => message({ valid: false });
+const performLint = (src, type) => linter[`validate${type}`](src);
 
-const lintAll = () => message({ valid: false });
+const lintField = (file, data) => {
+  const source = parseSource(file, data);
+
+  if (source.message) return source;
+
+  return performLint(source.src, 'Field');
+};
+
+const lintForm = (file, data) => {
+  const source = parseSource(file, data);
+
+  if (source.message) return source;
+
+  return performLint(source.src, 'Form');
+};
+
+const lintPage = (file, data) => {
+  const source = parseSource(file, data);
+
+  if (source.message) return source;
+
+  return performLint(source.src, 'Page');
+};
+
+const lintAll = (file, data) => {
+  const source = parseSource(file, data);
+
+  if (source.message) return source;
+
+  return performLint(source.src, '');
+};
 
 module.exports = {
   validate: lintAll,
   validateField: lintField,
   validateForm: lintForm,
+  validatePage: lintPage,
 };
