@@ -2,19 +2,73 @@
   box-sizing: border-box;
 }
 
-#jsoneditor {
+body {
+  height: 100%;
+}
+
+.clearfix:before,
+.clearfix:after {
+ content: " ";
+ display: table;
+}
+
+.clearfix:after {
+ clear: both;
+}
+
+.left {
   float: left;
+}
+
+.right {
+  float: right;
+}
+
+.toolbar {
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 64px;
+  padding: 5px;
+  box-shadow: 0 2px 4px -1px rgba(0,0,0,.2), 0 4px 5px 0 rgba(0,0,0,.14), 0 1px 10px 0 rgba(0,0,0,.12);
+  background-color: #1976D2;
+  border-color: #1976D2;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  background: url('logo.svg') center/contain no-repeat;
+}
+
+.content {
+  padding: 80px 16px 16px;
+  background-color: #fafafa;
+}
+
+.content-card {
+  border-radius: 2px;
+  position: relative;
+  padding: 16px;
   width: 49%;
-  height: 600px;
-  margin-right: 20px;
+  min-width: 400px;
   margin-bottom: 20px;
+  background-color: #fff;
+  color: rgba(0,0,0,.87);
+  box-shadow: 0 2px 1px -1px rgba(0,0,0,.2), 0 1px 1px 0 rgba(0,0,0,.14), 0 1px 3px 0 rgba(0,0,0,.12);
+}
+
+#jsoneditor {
+  width: 100%;
+  height: 700px;
 }
 
 .validation-types {
   position: relative;
-  float: right;
-  width: 49%;
-  height: 600px;
+  height: 700px;
+  width: 100%;
   border: 1px solid #3883fa;
   font-family: arial,sans-serif;
 }

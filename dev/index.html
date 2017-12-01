@@ -4,35 +4,47 @@
   <meta charset="utf-8">
   <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons' rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/jsoneditor/5.10.1/jsoneditor.min.css" rel="stylesheet">
-  <link href='style.css' rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jsoneditor/5.10.1/jsoneditor.min.js"></script>
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <title>Chameleon Notation</title>
 </head>
 <body>
-  <div id="app">
-    <div id="jsoneditor"></div>
-
-    <div class="validation-types">
-      <div class="validation-header">
-        <p class="validation-title">Choose validation type</p>
-      </div>
-      <div class="validation-content">
-        <select class="validation-select">
-          <option value="" selected>Default</option>
-          <option value="Page">Page</option>
-          <option value="Form">Form</option>
-          <option value="Field">Field</option>
-        </select>
-        <button name="button" class="validation-button">Validate</button>
-        <div class="validation-result">
-          <div class="validation-result-content">
-            <span class="validation-message"></span>
+  <main>
+    <div id="app">
+      <nav class="toolbar">
+        <div class="logo"></div>
+      </nav>
+      <div class="content-wrap">
+        <main class="content clearfix">
+          <div class="content-card left">
+            <div id="jsoneditor"></div>
           </div>
-        </div>
+          <div class="content-card right">
+            <div class="validation-types">
+              <div class="validation-header">
+                <p class="validation-title">Choose validation type</p>
+              </div>
+              <div class="validation-content">
+                <select class="validation-select">
+                  <option value="" selected>Default</option>
+                  <option value="Page">Page</option>
+                  <option value="Form">Form</option>
+                  <option value="Field">Field</option>
+                </select>
+                <button name="button" class="validation-button">Validate</button>
+                <div class="validation-result">
+                  <div class="validation-result-content">
+                    <span class="validation-message"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
       </div>
     </div>
-  </div>
+  </main>
   <script src="dev/main.js"></script>
 </body>
 </html>
