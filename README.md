@@ -24,6 +24,38 @@ npm run unit
 npm test
 ```
 
+## Using
+
+### Import
+
+```javascript
+import chameleonNotation from 'chameleon-notation';
+```
+
+in Node.js
+
+```javascript
+const chameleonNotation = require('chameleon-notation').default;
+```
+
+Perform validation
+
+```javascript
+const validation = chameleonNotation.validate(data);
+if (!validation.isValid) {
+  const errors = validation.errors;
+  console.log(validation.message);
+}
+```
+
+or use some of predefined item validators
+
+```javascript
+const pageValidation = chameleonNotation.validatePage(data);
+const formValidation = chameleonNotation.validateForm(data);
+const fieldValidation = chameleonNotation.validateField(data);
+```
+
 ## CLI Setup
 **Prerequisite - run build step**
 
