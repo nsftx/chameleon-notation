@@ -7,7 +7,23 @@ let validate = null;
 const addKeywords = () => {
   // Custom keyword for number/integer differentiation
   ajv.addKeyword('cn-withDecimals', {
-    validate: (schema, data) => (!schema ? data === parseInt(data, 10) : true),
+    validate: function myValidation(schema, data) {
+      const result = !schema ? data === parseInt(data, 10) : true;
+
+      if (!result) {
+        if (myValidation.errors === null) myValidation.errors = [];
+
+        myValidation.errors.push({
+          keyword: 'cn-withDecimals',
+          message: 'no decimal points are allowed',
+          params: {
+            keyword: 'cn-withDecimals',
+          },
+        });
+      }
+
+      return result;
+    },
   });
 
   // Custom keyword for allowing only one of the boolean values
@@ -30,7 +46,7 @@ const addKeywords = () => {
         });
       }
 
-      return (schema === data);
+      return result;
     },
   });
 };

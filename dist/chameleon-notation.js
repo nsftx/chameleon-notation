@@ -994,8 +994,22 @@ var validate = null;
 var addKeywords = function addKeywords() {
   // Custom keyword for number/integer differentiation
   ajv.addKeyword('cn-withDecimals', {
-    validate: function validate(schema, data) {
-      return !schema ? data === parseInt(data, 10) : true;
+    validate: function myValidation(schema, data) {
+      var result = !schema ? data === parseInt(data, 10) : true;
+
+      if (!result) {
+        if (myValidation.errors === null) myValidation.errors = [];
+
+        myValidation.errors.push({
+          keyword: 'cn-withDecimals',
+          message: 'no decimal points are allowed',
+          params: {
+            keyword: 'cn-withDecimals'
+          }
+        });
+      }
+
+      return result;
     }
   });
 
@@ -1019,7 +1033,7 @@ var addKeywords = function addKeywords() {
         });
       }
 
-      return schema === data;
+      return result;
     }
   });
 };

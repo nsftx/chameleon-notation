@@ -88,8 +88,9 @@ body {
 }
 
 .validation-content {
+  position: relative;
   padding: 5px;
-  height: 565px;
+  height: 665px;
 }
 
 .validation-select {
