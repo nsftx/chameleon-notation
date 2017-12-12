@@ -3583,14 +3583,12 @@ var parseErrorMessage = function parseErrorMessage(errors) {
   var message = errors.map(function (error) {
     var itemMessage = error.dataPath + ' ' + error.message + '. In ' + error.schemaPath;
 
-    if (error.params) {
-      if (error.params.allowedValues) {
-        itemMessage += '\n Allowed values: ' + error.params.allowedValues.join(', ');
-      }
+    if (error.params && error.params.allowedValues) {
+      itemMessage += '\n Allowed values: ' + error.params.allowedValues.join(', ');
+    }
 
-      if (error.params.type) {
-        itemMessage += '\n Should be of type: ' + error.params.type;
-      }
+    if (error.params && error.params.type) {
+      itemMessage += '\n Should be of type: ' + error.params.type;
     }
 
     return itemMessage;
