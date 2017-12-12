@@ -11,7 +11,8 @@ module.exports = merge(baseWebpackConfig, {
     filename: '[name].js',
     path: resolve('../dev'),
     publicPath: '/dev/',
-    library: 'ChameleonNotation'
+    library: 'ChameleonNotation',
+    libraryExport: 'default',
   },
   resolve: {
     extensions: ['*', '.js', '.json'],

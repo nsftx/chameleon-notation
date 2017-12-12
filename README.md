@@ -1,6 +1,6 @@
 # chameleon-notation
 
-> Chameleon notation validator
+> Chameleon notation validator based on Ajv json schema validator
 
 ## Build Setup
 
@@ -35,7 +35,7 @@ import chameleonNotation from 'chameleon-notation';
 in Node.js
 
 ```javascript
-const chameleonNotation = require('chameleon-notation').default;
+const chameleonNotation = require('chameleon-notation');
 ```
 
 Perform validation

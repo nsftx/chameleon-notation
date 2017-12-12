@@ -1,5 +1,5 @@
 const utils = require('./utils');
-const linter = require('../dist/chameleon-notation').default;
+const linter = require('../dist/chameleon-notation');
 
 const { message } = linter;
 

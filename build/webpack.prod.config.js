@@ -10,7 +10,8 @@ module.exports = merge(baseWebpackConfig, {
   output: {
     path: path.resolve(__dirname, '../dist'),
     publicPath: '/dist/',
-    library: 'ChameleonNotation'
+    library: 'ChameleonNotation',
+    libraryExport: 'default',
   },
   module: {
     noParse: /es6-promise\.js$/, // avoid webpack shimming process
