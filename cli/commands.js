@@ -27,43 +27,20 @@ const parseSource = (file, data) => {
   }
 };
 
+const getLinter = (type) => {
+  return (file, data) => {
+    const source = parseSource(file, data);
+    if (source.message) return source;
+
+    return performLint(source.src, type);
+  }
+};
+
 const performLint = (src, type) => linter[`validate${type}`](src);
 
-const lintField = (file, data) => {
-  const source = parseSource(file, data);
-
-  if (source.message) return source;
-
-  return performLint(source.src, 'Field');
-};
-
-const lintForm = (file, data) => {
-  const source = parseSource(file, data);
-
-  if (source.message) return source;
-
-  return performLint(source.src, 'Form');
-};
-
-const lintPage = (file, data) => {
-  const source = parseSource(file, data);
-
-  if (source.message) return source;
-
-  return performLint(source.src, 'Page');
-};
-
-const lintAll = (file, data) => {
-  const source = parseSource(file, data);
-
-  if (source.message) return source;
-
-  return performLint(source.src, '');
-};
-
 module.exports = {
-  validate: lintAll,
-  validateField: lintField,
-  validateForm: lintForm,
-  validatePage: lintPage,
+  validate: getLinter(''),
+  validateField: getLinter('Field'),
+  validateForm: getLinter('Form'),
+  validatePage: getLinter('Page'),
 };
