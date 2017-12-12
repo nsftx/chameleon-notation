@@ -1,3 +1,5 @@
+[![codebeat badge](https://codebeat.co/badges/38d14024-5fae-49ea-85a4-eeaaed1686dc)](https://codebeat.co/projects/github-com-chmjs-chameleon-notation-master)
+
 # chameleon-notation
 
 > Chameleon notation validator based on Ajv json schema validator
