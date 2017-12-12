@@ -1,7 +1,6 @@
 import utils from '@utils';
 import { field, isField } from './field';
-import form from './form';
-import page from './page';
+import base from './base';
 
 const { message } = utils;
 
@@ -10,10 +9,10 @@ const parseLintLevel = (type) => {
 
   switch (type.toLowerCase()) {
     case 'page':
-      linter = page;
+      linter = base;
       break;
     case 'form':
-      linter = form;
+      linter = base;
       break;
     case 'field':
       linter = field;
@@ -32,12 +31,12 @@ const lint = (item, type) => {
   const linter = parseLintLevel(itemType);
   if (!linter) return message('predefined', 'invalidFieldType');
 
-  return linter(item);
+  return linter(item, itemType.toLowerCase());
 };
 
 export default {
   lint,
-  lintPage: page,
+  lintPage: base,
   lintField: field,
-  lintForm: form,
+  lintForm: base,
 };
