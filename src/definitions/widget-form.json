@@ -40,7 +40,8 @@
           { "$ref": "field-number.json#" },
           { "$ref": "field-money.json#" },
           { "$ref": "field-richText.json#" },
-          { "$ref": "field-date.json#" }
+          { "$ref": "field-date.json#" },
+          { "$ref": "field-dateRange.json#" }
         ]
       }
     }

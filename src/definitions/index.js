@@ -5,6 +5,7 @@ import number from './field-number.json';
 import money from './field-money.json';
 import richText from './field-richText.json';
 import date from './field-date.json';
+import dateRange from './field-dateRange.json';
 import form from './widget-form.json';
 import page from './page.json';
 
@@ -14,6 +15,7 @@ const fields = {
   money,
   richText,
   date,
+  dateRange,
 };
 
 const widgets = {
@@ -29,6 +31,7 @@ export default {
     money: 'http://chameleon-notation/field-money.json#',
     richText: 'http://chameleon-notation/field-richText.json#',
     date: 'http://chameleon-notation/field-date.json#',
+    dateRange: 'http://chameleon-notation/field-dateRange.json#',
     form: 'http://chameleon-notation/widget-form.json#',
     page: 'http://chameleon-notation/page.json#',
   },
