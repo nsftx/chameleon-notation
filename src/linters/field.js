@@ -7,22 +7,10 @@ const { message } = utils;
 
 const lint = (item) => {
   const fieldType = item.type;
-
-  if (!fieldType) {
-    return message(
-      { isValid: false },
-      'Invalid data source provided - missing "type" property.',
-    );
-  }
+  if (!fieldType) return message('predefined', 'missingType');
 
   const schema = fields[fieldType];
-
-  if (!schema) {
-    return message(
-      { isValid: false },
-      `Invalid data source provided - validation for field type "${fieldType}" is not supported.`,
-    );
-  }
+  if (!schema) return message('predefined', 'invalidFieldType');
 
   const validation = schemaLint(item, fieldType);
 

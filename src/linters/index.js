@@ -27,22 +27,10 @@ const parseLintLevel = (type) => {
 
 const lint = (item, type) => {
   const itemType = type || item.type;
-
-  if (!itemType) {
-    return message(
-      { isValid: false },
-      'Invalid data source provided - missing "type" property in root.',
-    );
-  }
+  if (!itemType) return message('predefined', 'missingRootType');
 
   const linter = parseLintLevel(itemType);
-
-  if (!linter) {
-    return message(
-      { isValid: false },
-      `Invalid data source provided - validation for ${itemType} is not supported.`,
-    );
-  }
+  if (!linter) return message('predefined', 'invalidFieldType');
 
   return linter(item);
 };
