@@ -1,4 +1,5 @@
 [![Build Status](https://travis-ci.org/chmjs/chameleon-notation.svg?branch=master)](https://travis-ci.org/chmjs/chameleon-notation)
+[![codecov](https://codecov.io/gh/chmjs/chameleon-notation/branch/master/graph/badge.svg)](https://codecov.io/gh/chmjs/chameleon-notation)
 [![codebeat badge](https://codebeat.co/badges/38d14024-5fae-49ea-85a4-eeaaed1686dc)](https://codebeat.co/projects/github-com-chmjs-chameleon-notation-master)
 
 # chameleon-notation 
