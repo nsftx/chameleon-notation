@@ -10,6 +10,7 @@ module.exports = {
       '@linters': resolve('../src/linters'),
       '@keywords': resolve('../src/linters/keywords'),
       '@utils': resolve('../src/utils'),
+      '@examples': resolve('../examples'),
     }
   },
   node: {

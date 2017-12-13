@@ -7,7 +7,7 @@
 		exports["ChameleonNotation"] = factory();
 	else
 		root["ChameleonNotation"] = factory();
-})(this, function() {
+})(typeof self !== 'undefined' ? self : this, function() {
 return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
@@ -177,7 +177,7 @@ module.exports = __webpack_require__(7) ? function (object, key, value) {
 /* 6 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var anObject = __webpack_require__(20);
+var anObject = __webpack_require__(21);
 var IE8_DOM_DEFINE = __webpack_require__(64);
 var toPrimitive = __webpack_require__(32);
 var dP = Object.defineProperty;
@@ -533,6 +533,15 @@ module.exports = isObjectLike;
 
 /***/ }),
 /* 11 */
+/***/ (function(module, exports) {
+
+module.exports = function (it) {
+  return typeof it === 'object' ? it !== null : typeof it === 'function';
+};
+
+
+/***/ }),
+/* 12 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -544,7 +553,7 @@ module.exports = isObjectLike;
 });
 
 /***/ }),
-/* 12 */
+/* 13 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var listCacheClear = __webpack_require__(88),
@@ -582,10 +591,10 @@ module.exports = ListCache;
 
 
 /***/ }),
-/* 13 */
+/* 14 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var eq = __webpack_require__(14);
+var eq = __webpack_require__(15);
 
 /**
  * Gets the index at which the `key` is found in `array` of key-value pairs.
@@ -609,7 +618,7 @@ module.exports = assocIndexOf;
 
 
 /***/ }),
-/* 14 */
+/* 15 */
 /***/ (function(module, exports) {
 
 /**
@@ -652,7 +661,7 @@ module.exports = eq;
 
 
 /***/ }),
-/* 15 */
+/* 16 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var Symbol = __webpack_require__(48),
@@ -686,7 +695,7 @@ module.exports = baseGetTag;
 
 
 /***/ }),
-/* 16 */
+/* 17 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var getNative = __webpack_require__(27);
@@ -698,7 +707,7 @@ module.exports = nativeCreate;
 
 
 /***/ }),
-/* 17 */
+/* 18 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var isKeyable = __webpack_require__(114);
@@ -722,7 +731,7 @@ module.exports = getMapData;
 
 
 /***/ }),
-/* 18 */
+/* 19 */
 /***/ (function(module, exports) {
 
 module.exports = function(module) {
@@ -750,30 +759,21 @@ module.exports = function(module) {
 
 
 /***/ }),
-/* 19 */
+/* 20 */
 /***/ (function(module, exports) {
 
-var core = module.exports = { version: '2.5.1' };
+var core = module.exports = { version: '2.5.3' };
 if (typeof __e == 'number') __e = core; // eslint-disable-line no-undef
 
 
 /***/ }),
-/* 20 */
+/* 21 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var isObject = __webpack_require__(21);
+var isObject = __webpack_require__(11);
 module.exports = function (it) {
   if (!isObject(it)) throw TypeError(it + ' is not an object!');
   return it;
-};
-
-
-/***/ }),
-/* 21 */
-/***/ (function(module, exports) {
-
-module.exports = function (it) {
-  return typeof it === 'object' ? it !== null : typeof it === 'function';
 };
 
 
@@ -862,7 +862,7 @@ module.exports = getNative;
 /* 28 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var baseGetTag = __webpack_require__(15),
+var baseGetTag = __webpack_require__(16),
     isObject = __webpack_require__(1);
 
 /** `Object#toString` result references. */
@@ -976,7 +976,7 @@ module.exports = isArrayLike;
 /***/ (function(module, exports, __webpack_require__) {
 
 var global = __webpack_require__(0);
-var core = __webpack_require__(19);
+var core = __webpack_require__(20);
 var ctx = __webpack_require__(164);
 var hide = __webpack_require__(5);
 var PROTOTYPE = 'prototype';
@@ -1043,7 +1043,7 @@ module.exports = $export;
 /***/ (function(module, exports, __webpack_require__) {
 
 // 7.1.1 ToPrimitive(input [, PreferredType])
-var isObject = __webpack_require__(21);
+var isObject = __webpack_require__(11);
 // instead of the ES6 spec version, we didn't implement @@toPrimitive case
 // and the second argument - flag - preferred type is a string
 module.exports = function (it, S) {
@@ -1520,7 +1520,7 @@ exports.f = __webpack_require__(9);
 /***/ (function(module, exports, __webpack_require__) {
 
 var global = __webpack_require__(0);
-var core = __webpack_require__(19);
+var core = __webpack_require__(20);
 var LIBRARY = __webpack_require__(41);
 var wksExt = __webpack_require__(44);
 var defineProperty = __webpack_require__(6).f;
@@ -1665,7 +1665,7 @@ module.exports = g;
 /***/ (function(module, exports, __webpack_require__) {
 
 var baseAssignValue = __webpack_require__(29),
-    eq = __webpack_require__(14);
+    eq = __webpack_require__(15);
 
 /**
  * This function is like `assignValue` except that it doesn't assign
@@ -1897,7 +1897,7 @@ var isBuffer = nativeIsBuffer || stubFalse;
 
 module.exports = isBuffer;
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(18)(module)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(19)(module)))
 
 /***/ }),
 /* 59 */
@@ -2095,7 +2095,7 @@ module.exports = !__webpack_require__(7) && !__webpack_require__(22)(function ()
 /* 65 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var isObject = __webpack_require__(21);
+var isObject = __webpack_require__(11);
 var document = __webpack_require__(0).document;
 // typeof document.createElement is 'object' in old IE
 var is = isObject(document) && isObject(document.createElement);
@@ -3375,7 +3375,7 @@ module.exports = function (Base, NAME, Constructor, next, DEFAULT, IS_SET, FORCE
   var VALUES_BUG = false;
   var proto = Base.prototype;
   var $native = proto[ITERATOR] || proto[FF_ITERATOR] || DEFAULT && proto[DEFAULT];
-  var $default = $native || getMethod(DEFAULT);
+  var $default = (!BUGGY && $native) || getMethod(DEFAULT);
   var $entries = DEFAULT ? !DEF_VALUES ? $default : getMethod('entries') : undefined;
   var $anyNative = NAME == 'Array' ? proto.entries || $native : $native;
   var methods, key, IteratorPrototype;
@@ -3427,7 +3427,7 @@ module.exports = __webpack_require__(5);
 /***/ (function(module, exports, __webpack_require__) {
 
 // 19.1.2.2 / 15.2.3.5 Object.create(O [, Properties])
-var anObject = __webpack_require__(20);
+var anObject = __webpack_require__(21);
 var dPs = __webpack_require__(217);
 var enumBugKeys = __webpack_require__(37);
 var IE_PROTO = __webpack_require__(35)('IE_PROTO');
@@ -3496,7 +3496,7 @@ exports.f = Object.getOwnPropertyNames || function getOwnPropertyNames(O) {
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__linters__ = __webpack_require__(82);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils__ = __webpack_require__(12);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__package_json__ = __webpack_require__(238);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__package_json___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__package_json__);
 
@@ -3522,7 +3522,7 @@ var ChameleonNotation = {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__utils__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__utils__ = __webpack_require__(12);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__field__ = __webpack_require__(84);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__base__ = __webpack_require__(237);
 
@@ -3598,7 +3598,7 @@ var predefinedMessages = {
   valid: 'Provided source is valid.',
   missingType: 'Invalid data source provided - missing "type" property.',
   missingRootType: 'Invalid data source provided - missing "type" property in root.',
-  typeMismatch: 'Invalid data source provided - data type and validation type are not matching',
+  typeMismatch: 'Invalid data source provided - data type and validation type are not matching.',
   invalidFieldType: 'Invalid data source provided - validation for provided field type is not supported.',
   notImplemented: 'This validation is not implemented yet.'
 };
@@ -3606,6 +3606,7 @@ var predefinedMessages = {
 var generatePredefinedMessage = function generatePredefinedMessage(type) {
   var result = {
     isValid: false,
+    errors: null,
     message: predefinedMessages[type]
   };
 
@@ -3641,7 +3642,7 @@ var create = function create(validation, message) {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return lint; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return belongs; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__definitions__ = __webpack_require__(46);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils__ = __webpack_require__(12);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__schemaLint__ = __webpack_require__(63);
 
 
@@ -3768,7 +3769,7 @@ module.exports = baseMerge;
 /* 87 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var ListCache = __webpack_require__(12),
+var ListCache = __webpack_require__(13),
     stackClear = __webpack_require__(93),
     stackDelete = __webpack_require__(94),
     stackGet = __webpack_require__(95),
@@ -3820,7 +3821,7 @@ module.exports = listCacheClear;
 /* 89 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var assocIndexOf = __webpack_require__(13);
+var assocIndexOf = __webpack_require__(14);
 
 /** Used for built-in method references. */
 var arrayProto = Array.prototype;
@@ -3861,7 +3862,7 @@ module.exports = listCacheDelete;
 /* 90 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var assocIndexOf = __webpack_require__(13);
+var assocIndexOf = __webpack_require__(14);
 
 /**
  * Gets the list cache value for `key`.
@@ -3886,7 +3887,7 @@ module.exports = listCacheGet;
 /* 91 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var assocIndexOf = __webpack_require__(13);
+var assocIndexOf = __webpack_require__(14);
 
 /**
  * Checks if a list cache value for `key` exists.
@@ -3908,7 +3909,7 @@ module.exports = listCacheHas;
 /* 92 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var assocIndexOf = __webpack_require__(13);
+var assocIndexOf = __webpack_require__(14);
 
 /**
  * Sets the list cache `key` to `value`.
@@ -3940,7 +3941,7 @@ module.exports = listCacheSet;
 /* 93 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var ListCache = __webpack_require__(12);
+var ListCache = __webpack_require__(13);
 
 /**
  * Removes all key-value entries from the stack.
@@ -4025,7 +4026,7 @@ module.exports = stackHas;
 /* 97 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var ListCache = __webpack_require__(12),
+var ListCache = __webpack_require__(13),
     Map = __webpack_require__(47),
     MapCache = __webpack_require__(105);
 
@@ -4326,7 +4327,7 @@ module.exports = MapCache;
 /***/ (function(module, exports, __webpack_require__) {
 
 var Hash = __webpack_require__(107),
-    ListCache = __webpack_require__(12),
+    ListCache = __webpack_require__(13),
     Map = __webpack_require__(47);
 
 /**
@@ -4390,7 +4391,7 @@ module.exports = Hash;
 /* 108 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var nativeCreate = __webpack_require__(16);
+var nativeCreate = __webpack_require__(17);
 
 /**
  * Removes all key-value entries from the hash.
@@ -4434,7 +4435,7 @@ module.exports = hashDelete;
 /* 110 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var nativeCreate = __webpack_require__(16);
+var nativeCreate = __webpack_require__(17);
 
 /** Used to stand-in for `undefined` hash values. */
 var HASH_UNDEFINED = '__lodash_hash_undefined__';
@@ -4470,7 +4471,7 @@ module.exports = hashGet;
 /* 111 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var nativeCreate = __webpack_require__(16);
+var nativeCreate = __webpack_require__(17);
 
 /** Used for built-in method references. */
 var objectProto = Object.prototype;
@@ -4499,7 +4500,7 @@ module.exports = hashHas;
 /* 112 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var nativeCreate = __webpack_require__(16);
+var nativeCreate = __webpack_require__(17);
 
 /** Used to stand-in for `undefined` hash values. */
 var HASH_UNDEFINED = '__lodash_hash_undefined__';
@@ -4528,7 +4529,7 @@ module.exports = hashSet;
 /* 113 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var getMapData = __webpack_require__(17);
+var getMapData = __webpack_require__(18);
 
 /**
  * Removes `key` and its value from the map.
@@ -4573,7 +4574,7 @@ module.exports = isKeyable;
 /* 115 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var getMapData = __webpack_require__(17);
+var getMapData = __webpack_require__(18);
 
 /**
  * Gets the map value for `key`.
@@ -4595,7 +4596,7 @@ module.exports = mapCacheGet;
 /* 116 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var getMapData = __webpack_require__(17);
+var getMapData = __webpack_require__(18);
 
 /**
  * Checks if a map value for `key` exists.
@@ -4617,7 +4618,7 @@ module.exports = mapCacheHas;
 /* 117 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var getMapData = __webpack_require__(17);
+var getMapData = __webpack_require__(18);
 
 /**
  * Sets the map `key` to `value`.
@@ -4833,7 +4834,7 @@ function cloneBuffer(buffer, isDeep) {
 
 module.exports = cloneBuffer;
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(18)(module)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(19)(module)))
 
 /***/ }),
 /* 122 */
@@ -5002,7 +5003,7 @@ module.exports = overArg;
 /* 129 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var baseGetTag = __webpack_require__(15),
+var baseGetTag = __webpack_require__(16),
     isObjectLike = __webpack_require__(10);
 
 /** `Object#toString` result references. */
@@ -5089,7 +5090,7 @@ module.exports = stubFalse;
 /* 132 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var baseGetTag = __webpack_require__(15),
+var baseGetTag = __webpack_require__(16),
     getPrototype = __webpack_require__(53),
     isObjectLike = __webpack_require__(10);
 
@@ -5157,7 +5158,7 @@ module.exports = isPlainObject;
 /* 133 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var baseGetTag = __webpack_require__(15),
+var baseGetTag = __webpack_require__(16),
     isLength = __webpack_require__(57),
     isObjectLike = __webpack_require__(10);
 
@@ -5266,7 +5267,7 @@ var nodeUtil = (function() {
 
 module.exports = nodeUtil;
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(18)(module)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(19)(module)))
 
 /***/ }),
 /* 136 */
@@ -5357,7 +5358,7 @@ module.exports = copyObject;
 /***/ (function(module, exports, __webpack_require__) {
 
 var baseAssignValue = __webpack_require__(29),
-    eq = __webpack_require__(14);
+    eq = __webpack_require__(15);
 
 /** Used for built-in method references. */
 var objectProto = Object.prototype;
@@ -5794,7 +5795,7 @@ module.exports = shortOut;
 /* 151 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var eq = __webpack_require__(14),
+var eq = __webpack_require__(15),
     isArrayLike = __webpack_require__(30),
     isIndex = __webpack_require__(61),
     isObject = __webpack_require__(1);
@@ -5891,7 +5892,7 @@ module.exports = { "default": __webpack_require__(162), __esModule: true };
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(163);
-module.exports = __webpack_require__(19).Object.values;
+module.exports = __webpack_require__(20).Object.values;
 
 
 /***/ }),
@@ -6166,11 +6167,12 @@ function compile(schema, _meta) {
  * @param {String} key Optional schema key. Can be passed to `validate` method instead of schema object or id/ref. One schema per instance can have empty `id` and `key`.
  * @param {Boolean} _skipValidation true to skip schema validation. Used internally, option validateSchema should be used instead.
  * @param {Boolean} _meta true if schema is a meta-schema. Used internally, addMetaSchema should be used instead.
+ * @return {Ajv} this for method chaining
  */
 function addSchema(schema, key, _skipValidation, _meta) {
   if (Array.isArray(schema)){
     for (var i=0; i<schema.length; i++) this.addSchema(schema[i], undefined, _skipValidation, _meta);
-    return;
+    return this;
   }
   var id = this._getId(schema);
   if (id !== undefined && typeof id != 'string')
@@ -6178,6 +6180,7 @@ function addSchema(schema, key, _skipValidation, _meta) {
   key = resolve.normalizeId(key || id);
   checkUnique(this, key);
   this._schemas[key] = this._addSchema(schema, _skipValidation, _meta, true);
+  return this;
 }
 
 
@@ -6188,9 +6191,11 @@ function addSchema(schema, key, _skipValidation, _meta) {
  * @param {Object} schema schema object
  * @param {String} key optional schema key
  * @param {Boolean} skipValidation true to skip schema validation, can be used to override validateSchema option for meta-schema
+ * @return {Ajv} this for method chaining
  */
 function addMetaSchema(schema, key, skipValidation) {
   this.addSchema(schema, key, skipValidation, true);
+  return this;
 }
 
 
@@ -6287,25 +6292,26 @@ function _getSchemaObj(self, keyRef) {
  * Even if schema is referenced by other schemas it still can be removed as other schemas have local references.
  * @this   Ajv
  * @param  {String|Object|RegExp} schemaKeyRef key, ref, pattern to match key/ref or schema object
+ * @return {Ajv} this for method chaining
  */
 function removeSchema(schemaKeyRef) {
   if (schemaKeyRef instanceof RegExp) {
     _removeAllSchemas(this, this._schemas, schemaKeyRef);
     _removeAllSchemas(this, this._refs, schemaKeyRef);
-    return;
+    return this;
   }
   switch (typeof schemaKeyRef) {
     case 'undefined':
       _removeAllSchemas(this, this._schemas);
       _removeAllSchemas(this, this._refs);
       this._cache.clear();
-      return;
+      return this;
     case 'string':
       var schemaObj = _getSchemaObj(this, schemaKeyRef);
       if (schemaObj) this._cache.del(schemaObj.cacheKey);
       delete this._schemas[schemaKeyRef];
       delete this._refs[schemaKeyRef];
-      return;
+      return this;
     case 'object':
       var serialize = this._opts.serialize;
       var cacheKey = serialize ? serialize(schemaKeyRef) : schemaKeyRef;
@@ -6317,6 +6323,7 @@ function removeSchema(schemaKeyRef) {
         delete this._refs[id];
       }
   }
+  return this;
 }
 
 
@@ -6467,10 +6474,12 @@ function errorsText(errors, options) {
  * @this   Ajv
  * @param {String} name format name
  * @param {String|RegExp|Function} format string is converted to RegExp; function should return boolean (true when valid)
+ * @return {Ajv} this for method chaining
  */
 function addFormat(name, format) {
   if (typeof format == 'string') format = new RegExp(format);
   this._formats[name] = format;
+  return this;
 }
 
 
@@ -8176,9 +8185,9 @@ Url.prototype.parseHost = function() {
 	if (
 		true
 	) {
-		!(__WEBPACK_AMD_DEFINE_RESULT__ = function() {
+		!(__WEBPACK_AMD_DEFINE_RESULT__ = (function() {
 			return punycode;
-		}.call(exports, __webpack_require__, exports, module),
+		}).call(exports, __webpack_require__, exports, module),
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
 	} else if (freeExports && freeModule) {
 		if (module.exports == freeExports) {
@@ -8197,7 +8206,7 @@ Url.prototype.parseHost = function() {
 
 }(this));
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(18)(module), __webpack_require__(50)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(19)(module), __webpack_require__(50)))
 
 /***/ }),
 /* 175 */
@@ -11232,6 +11241,7 @@ module.exports = {
  * @this  Ajv
  * @param {String} keyword custom keyword, should be unique (including different from all standard, custom and macro keywords).
  * @param {Object} definition keyword definition object with properties `type` (type(s) which the keyword applies to), `validate` or `compile`.
+ * @return {Ajv} this for method chaining
  */
 function addKeyword(keyword, definition) {
   /* jshint validthis: true */
@@ -11309,6 +11319,8 @@ function addKeyword(keyword, definition) {
   function checkDataType(dataType) {
     if (!RULES.types[dataType]) throw new Error('Unknown type ' + dataType);
   }
+
+  return this;
 }
 
 
@@ -11329,6 +11341,7 @@ function getKeyword(keyword) {
  * Remove keyword
  * @this  Ajv
  * @param {String} keyword pre-defined or custom keyword.
+ * @return {Ajv} this for method chaining
  */
 function removeKeyword(keyword) {
   /* jshint validthis: true */
@@ -11345,6 +11358,7 @@ function removeKeyword(keyword) {
       }
     }
   }
+  return this;
 }
 
 
@@ -11758,7 +11772,7 @@ module.exports = function (Constructor, NAME, next) {
 /***/ (function(module, exports, __webpack_require__) {
 
 var dP = __webpack_require__(6);
-var anObject = __webpack_require__(20);
+var anObject = __webpack_require__(21);
 var getKeys = __webpack_require__(24);
 
 module.exports = __webpack_require__(7) ? Object.defineProperties : function defineProperties(O, Properties) {
@@ -11906,7 +11920,7 @@ __webpack_require__(227);
 __webpack_require__(233);
 __webpack_require__(234);
 __webpack_require__(235);
-module.exports = __webpack_require__(19).Symbol;
+module.exports = __webpack_require__(20).Symbol;
 
 
 /***/ }),
@@ -11931,7 +11945,8 @@ var wksExt = __webpack_require__(44);
 var wksDefine = __webpack_require__(45);
 var enumKeys = __webpack_require__(229);
 var isArray = __webpack_require__(230);
-var anObject = __webpack_require__(20);
+var anObject = __webpack_require__(21);
+var isObject = __webpack_require__(11);
 var toIObject = __webpack_require__(3);
 var toPrimitive = __webpack_require__(32);
 var createDesc = __webpack_require__(23);
@@ -12124,15 +12139,14 @@ $JSON && $export($export.S + $export.F * (!USE_NATIVE || $fails(function () {
   return _stringify([S]) != '[null]' || _stringify({ a: S }) != '{}' || _stringify(Object(S)) != '{}';
 })), 'JSON', {
   stringify: function stringify(it) {
-    if (it === undefined || isSymbol(it)) return; // IE8 returns string on undefined
     var args = [it];
     var i = 1;
     var replacer, $replacer;
     while (arguments.length > i) args.push(arguments[i++]);
-    replacer = args[1];
-    if (typeof replacer == 'function') $replacer = replacer;
-    if ($replacer || !isArray(replacer)) replacer = function (key, value) {
-      if ($replacer) value = $replacer.call(this, key, value);
+    $replacer = replacer = args[1];
+    if (!isObject(replacer) && it === undefined || isSymbol(it)) return; // IE8 returns string on undefined
+    if (!isArray(replacer)) replacer = function (key, value) {
+      if (typeof $replacer == 'function') value = $replacer.call(this, key, value);
       if (!isSymbol(value)) return value;
     };
     args[1] = replacer;
@@ -12155,7 +12169,7 @@ setToStringTag(global.JSON, 'JSON', true);
 /***/ (function(module, exports, __webpack_require__) {
 
 var META = __webpack_require__(25)('meta');
-var isObject = __webpack_require__(21);
+var isObject = __webpack_require__(11);
 var has = __webpack_require__(2);
 var setDesc = __webpack_require__(6).f;
 var id = 0;
@@ -12343,7 +12357,7 @@ __webpack_require__(45)('observable');
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__utils__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__utils__ = __webpack_require__(12);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__schemaLint__ = __webpack_require__(63);
 
 
@@ -12369,7 +12383,7 @@ var lint = function lint(item, type) {
 /* 238 */
 /***/ (function(module, exports) {
 
-module.exports = {"name":"chameleon-notation","version":"1.0.0","description":"Chameleon notation validator","author":"Lana Dzidic <dzidic.lana@nsoft.com>","private":true,"scripts":{"start":"cross-env NODE_ENV=development webpack --config build/webpack.dev.config.js","dev":"cross-env NODE_ENV=development webpack-dev-server --config build/webpack.dev.config.js --open --hot","unit":"cross-env BABEL_ENV=test karma start test/unit/karma.conf.js --single-run","test":"npm run unit","lint":"eslint --ext .js src test/unit/specs","build":"rimraf dist && cross-env NODE_ENV=production webpack --config build/config.js --progress --hide-modules"},"main":"dist/chameleon-notation.js","dependencies":{"ajv":"^5.4.0","lodash":"^4.17.4"},"bin":{"clint":"cli/index.js"},"devDependencies":{"babel-core":"^6.26.0","babel-eslint":"^7.2.3","babel-loader":"^7.1.2","babel-plugin-transform-runtime":"^6.23.0","babel-polyfill":"^6.26.0","babel-preset-env":"^1.6.1","babel-preset-stage-2":"^6.24.1","babel-register":"^6.26.0","copy-webpack-plugin":"^4.2.1","cross-env":"^5.1.1","dotenv":"^4.0.0","eslint":"^4.11.0","eslint-config-airbnb-base":"^12.1.0","eslint-friendly-formatter":"^3.0.0","eslint-import-resolver-webpack":"^0.8.3","eslint-loader":"^1.9.0","eslint-plugin-import":"^2.8.0","eventsource-polyfill":"^0.9.6","express":"^4.14.1","file-loader":"^1.1.4","friendly-errors-webpack-plugin":"^1.6.1","html-webpack-plugin":"^2.30.1","optimize-js-plugin":"0.0.4","rimraf":"^2.6.2","url-loader":"^0.5.8","webpack":"^3.6.0","webpack-bundle-analyzer":"^2.9.0","webpack-dev-server":"^2.9.1","webpack-merge":"^4.1.0"}}
+module.exports = {"name":"chameleon-notation","version":"1.0.0","description":"Chameleon notation validator","author":"Lana Dzidic <dzidic.lana@nsoft.com>","private":true,"scripts":{"start":"cross-env NODE_ENV=development webpack --config build/webpack.dev.config.js","dev":"cross-env NODE_ENV=development webpack-dev-server --config build/webpack.dev.config.js --open --hot","unit":"cross-env BABEL_ENV=test karma start test/unit/karma.conf.js --single-run","test":"npm run unit","lint":"eslint --ext .js src test/unit/specs","build":"rimraf dist && cross-env NODE_ENV=production webpack --config build/config.js --progress --hide-modules"},"main":"dist/chameleon-notation.js","dependencies":{"ajv":"^5.4.0","lodash":"^4.17.4"},"bin":{"clint":"cli/index.js"},"devDependencies":{"babel-core":"^6.26.0","babel-eslint":"^7.2.3","babel-loader":"^7.1.2","babel-plugin-istanbul":"^4.1.5","babel-plugin-transform-runtime":"^6.23.0","babel-polyfill":"^6.26.0","babel-preset-env":"^1.6.1","babel-preset-stage-2":"^6.24.1","babel-register":"^6.26.0","chai":"^4.1.2","codecov":"^3.0.0","copy-webpack-plugin":"^4.2.1","cross-env":"^5.1.1","dotenv":"^4.0.0","eslint":"^4.11.0","eslint-config-airbnb-base":"^12.1.0","eslint-friendly-formatter":"^3.0.0","eslint-import-resolver-webpack":"^0.8.3","eslint-loader":"^1.9.0","eslint-plugin-import":"^2.8.0","eventsource-polyfill":"^0.9.6","express":"^4.14.1","file-loader":"^1.1.4","friendly-errors-webpack-plugin":"^1.6.1","html-webpack-plugin":"^2.30.1","inject-loader":"^3.0.0","karma":"^1.7.1","karma-coverage":"^1.1.1","karma-mocha":"^1.3.0","karma-phantomjs-launcher":"^1.0.4","karma-phantomjs-shim":"^1.5.0","karma-sinon-chai":"^1.3.3","karma-sourcemap-loader":"^0.3.7","karma-spec-reporter":"0.0.31","karma-webpack":"^2.0.6","mocha":"^4.0.1","optimize-js-plugin":"0.0.4","phantomjs-prebuilt":"^2.1.16","rimraf":"^2.6.2","sinon":"^4.1.2","sinon-chai":"^2.14.0","url-loader":"^0.5.8","webpack":"^3.6.0","webpack-bundle-analyzer":"^2.9.0","webpack-dev-server":"^2.9.1","webpack-merge":"^4.1.0"}}
 
 /***/ })
 /******/ ])["default"];
