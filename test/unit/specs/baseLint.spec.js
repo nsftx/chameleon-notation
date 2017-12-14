@@ -1,5 +1,6 @@
 import _ from 'lodash';
 import baseLinter from '@linters/base';
+import predefinedMessages from '@utils/predefinedMessages';
 import pageSrc from '@examples/page.json';
 import formSrc from '@examples/form.json';
 
@@ -9,7 +10,7 @@ describe('linters', () => {
       const result = {
         isValid: true,
         errors: null,
-        message: 'Provided source is valid.',
+        message: predefinedMessages.valid,
       };
 
       expect(baseLinter(pageSrc, 'page')).to.deep.equal(result);
@@ -22,7 +23,7 @@ describe('linters', () => {
       const result = {
         isValid: false,
         errors: null,
-        message: 'Invalid data source provided - missing "type" property.',
+        message: predefinedMessages.missingType,
       };
 
       delete pageSrcCopy.type;
@@ -36,7 +37,7 @@ describe('linters', () => {
       const result = {
         isValid: false,
         errors: null,
-        message: 'Invalid data source provided - data type and validation type are not matching.',
+        message: predefinedMessages.typeMismatch,
       };
 
       expect(baseLinter(pageSrc, 'form')).to.deep.equal(result);

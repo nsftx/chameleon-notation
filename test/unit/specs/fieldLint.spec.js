@@ -1,4 +1,5 @@
 import _ from 'lodash';
+import predefinedMessages from '@utils/predefinedMessages';
 import { field as fieldLinter, isField } from '@linters/field';
 import fieldSrc from '@examples/field.json';
 
@@ -8,7 +9,7 @@ describe('linters', () => {
       const result = {
         isValid: true,
         errors: null,
-        message: 'Provided source is valid.',
+        message: predefinedMessages.valid,
       };
 
       expect(fieldLinter(fieldSrc)).to.deep.equal(result);
@@ -19,7 +20,7 @@ describe('linters', () => {
       const result = {
         isValid: false,
         errors: null,
-        message: 'Invalid data source provided - missing "type" property.',
+        message: predefinedMessages.missingType,
       };
 
       delete fieldSrcCopy.type;
@@ -32,7 +33,7 @@ describe('linters', () => {
       const result = {
         isValid: false,
         errors: null,
-        message: 'Invalid data source provided - validation for provided field type is not supported.',
+        message: predefinedMessages.invalidFieldType,
       };
 
       fieldSrcCopy.type = 'custom';
