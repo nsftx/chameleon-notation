@@ -25,7 +25,8 @@
       "$ref": "field-base.json#mask"
     },
     "multiLine": {
-      "$ref": "field-base.json#multiLine"
+      "id": "#multiLine",
+      "enum": [null, false]
     },
     "name": {
       "$ref": "field-base.json#name"
@@ -49,7 +50,7 @@
       "$ref": "field-base.json#searchable"
     },
     "step": {
-      "type": "number"
+      "type": ["number", "boolean", "null"]
     },
     "suffix": {
       "$ref": "field-base.json#suffix"

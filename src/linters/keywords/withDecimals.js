@@ -4,6 +4,8 @@ export default {
   name: 'cn-withDecimals',
   definition: {
     validate: function myValidation(schema, data) {
+      if (typeof data !== 'number') return true;
+
       const result = !schema ? data === parseInt(data, 10) : true;
 
       if (!result) {

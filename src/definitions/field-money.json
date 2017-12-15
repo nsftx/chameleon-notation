@@ -45,7 +45,8 @@
       "$ref": "field-base.json#placeholder"
     },
     "prefix": {
-      "$ref": "field-base.json#prefix"
+      "id": "#prefix",
+      "enum": ["name", "symbol", null, false]
     },
     "prependIcon": {
       "$ref": "field-base.json#prependIcon"
@@ -57,7 +58,8 @@
       "$ref": "field-base.json#searchable"
     },
     "suffix": {
-      "$ref": "field-base.json#suffix"
+      "id": "#prefix",
+      "enum": ["name", "symbol", null, false]
     },
     "tooltip": {
       "$ref": "field-base.json#tooltip"

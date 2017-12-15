@@ -7,7 +7,8 @@ const parseErrorMessage = (errors) => {
     let itemMessage = `${error.dataPath} ${error.message}. In ${error.schemaPath}`;
 
     if (error.params && error.params.allowedValues) {
-      itemMessage += `\n Allowed values: ${error.params.allowedValues.join(', ')}`;
+      const allowedValues = error.params.allowedValues.map(item => String(item));
+      itemMessage += `\n Allowed values: ${allowedValues.join(', ')}`;
     }
 
     if (error.params && error.params.type) {
