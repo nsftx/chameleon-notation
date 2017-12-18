@@ -1,0 +1,107 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "http://chameleon-notation/field-select.json#",
+  "title": "Select field",
+  "description": "Schema defines select field",
+  "type": "object",
+  "properties": {
+    "type": {
+      "type": "string",
+      "enum": ["select"]
+    },
+    "appendIcon": {
+      "$ref": "field-base.json#appendIcon"
+    },
+    "clearable": {
+      "$ref": "field-base.json#clearable"
+    },
+    "hint": {
+      "$ref": "field-base.json#hint"
+    },
+    "items": {
+      "id": "#items",
+      "type": "array"
+    },
+    "label": {
+      "$ref": "field-base.json#label"
+    },
+    "mask": {
+      "$ref": "field-base.json#mask"
+    },
+    "multiLine": {
+      "$ref": "field-base.json#multiLine"
+    },
+    "multiple": {
+      "id": "#multiple",
+      "type": "boolean"
+    },
+    "name": {
+      "$ref": "field-base.json#name"
+    },
+    "persistentHint": {
+      "$ref": "field-base.json#persistentHint"
+    },
+    "placeholder": {
+      "$ref": "field-base.json#placeholder"
+    },
+    "prependIcon": {
+      "$ref": "field-base.json#prependIcon"
+    },
+    "private": {
+      "$ref": "field-base.json#private"
+    },
+    "readonly": {
+      "id": "#readonly",
+      "type": "boolean"
+    },
+    "searchable": {
+      "$ref": "field-base.json#searchable"
+    },
+    "tags": {
+      "id": "#tags",
+      "type": "boolean"
+    },
+    "tooltip": {
+      "$ref": "field-base.json#tooltip"
+    },
+    "validateOn": {
+      "$ref": "field-base.json#validateOn"
+    },
+    "validation": {
+      "$ref": "field-base.json#validation"
+    },
+    "value": {
+      "id": "value"
+    }
+  },
+  "allOf": [
+    {
+      "anyOf": [
+        {
+          "properties": {
+            "multiple": {
+              "enum": [true]
+            },
+            "value": {
+              "type": "array"
+            }
+          }
+        },
+        {
+          "properties": {
+            "multiple": {
+              "enum": [false]
+            },
+            "value": {
+              "type": "string"
+            },
+            "tags": {
+              "enum": [false]
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "required": ["name", "type", "label"]
+}
