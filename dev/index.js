@@ -1,5 +1,5 @@
 import ChameleonNotation from 'chameleon-notation';
-import _debounce from 'lodash/debounce';
+import _ from 'lodash';
 
 let editor = null;
 let messageContainer = null;
@@ -37,7 +37,7 @@ const initEditor = () => {
     modes: ['text', 'tree'],
     search: true,
     indentation: 2,
-    onChange: _debounce(validate, 1000),
+    onChange: _.debounce(validate, 1000),
   };
 
   editor = new JSONEditor(container, options);

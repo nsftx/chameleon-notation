@@ -1,4 +1,4 @@
-import _merge from 'lodash/merge';
+import _ from 'lodash';
 import base from './field-base.json';
 import text from './field-text.json';
 import number from './field-number.json';
@@ -22,7 +22,7 @@ const widgets = {
   form,
 };
 
-const items = _merge({ base, page }, fields, widgets);
+const items = _.merge({ base, page }, fields, widgets);
 
 export default {
   mapper: {

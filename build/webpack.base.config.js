@@ -1,5 +1,5 @@
 const FriendlyErrorsWebpackPlugin = require('friendly-errors-webpack-plugin');
-
+const LodashModuleReplacementPlugin = require('lodash-webpack-plugin');
 const resolve = file => require('path').resolve(__dirname, file);
 
 module.exports = {
@@ -19,6 +19,10 @@ module.exports = {
   plugins: [
     new FriendlyErrorsWebpackPlugin({
       clearConsole: true
-    })
+    }),
+    new LodashModuleReplacementPlugin({
+      shorthands: true,
+      collections: true,
+    }),
   ],
 };
