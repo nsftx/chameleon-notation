@@ -15,12 +15,23 @@
     "clearable": {
       "$ref": "field-base.json#clearable"
     },
+    "dataSource": {
+      "type": "object",
+      "properties": {
+        "items": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        },
+        "options": {
+          "type": "object",
+          "required": "displayProp"
+        }
+      }
+    },
     "hint": {
       "$ref": "field-base.json#hint"
-    },
-    "items": {
-      "id": "#items",
-      "type": "array"
     },
     "label": {
       "$ref": "field-base.json#label"
@@ -57,10 +68,6 @@
     "searchable": {
       "$ref": "field-base.json#searchable"
     },
-    "tags": {
-      "id": "#tags",
-      "type": "boolean"
-    },
     "tooltip": {
       "$ref": "field-base.json#tooltip"
     },
@@ -71,37 +78,12 @@
       "$ref": "field-base.json#validation"
     },
     "value": {
-      "id": "value"
+      "id": "value",
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
     }
   },
-  "allOf": [
-    {
-      "anyOf": [
-        {
-          "properties": {
-            "multiple": {
-              "enum": [true]
-            },
-            "value": {
-              "type": "array"
-            }
-          }
-        },
-        {
-          "properties": {
-            "multiple": {
-              "enum": [false]
-            },
-            "value": {
-              "type": "string"
-            },
-            "tags": {
-              "enum": [false]
-            }
-          }
-        }
-      ]
-    }
-  ],
   "required": ["name", "type", "label"]
 }
