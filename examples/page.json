@@ -69,6 +69,27 @@
               "value": "Existing Value"
             },
             {
+              "name": "fullName",
+              "type": "calculation",
+              "label": "Full Name",
+              "prependIcon": "person",
+              "appendIcon": null,
+              "prefix": null,
+              "suffix": null,
+              "placeholder": "Please enter formula",
+              "hint": null,
+              "tooltip": null,
+              "multiLine": false,
+              "clearable": true,
+              "searchable": true,
+              "private": false,
+              "validateOn": "blur",
+              "validation": {
+                "required": true
+              },
+              "value": "Mr. ${firstName}"
+            },
+            {
               "name": "creditCard",
               "type": "text",
               "label": "Credit Card Number",
