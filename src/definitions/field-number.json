@@ -65,7 +65,8 @@
       "$ref": "field-base.json#validation"
     },
     "value": {
-      "$ref": "field-base.json#value"
+      "id": "#value",
+      "type": ["number", "null"]
     }
   },
   "allOf": [
