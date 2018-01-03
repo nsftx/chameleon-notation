@@ -149,7 +149,7 @@
                 },
                 "custom": null
               },
-              "value": "100"
+              "value": 100
             },
             {
               "name": "amount",
@@ -179,7 +179,7 @@
                 },
                 "custom": null
               },
-              "value": "100,20"
+              "value": 100.20
             },
             {
               "name": "about",
