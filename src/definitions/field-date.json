@@ -54,6 +54,12 @@
       "properties": {
         "required": {
           "type": "boolean"
+        },
+        "minDate": {
+          "type": ["string", "null"]
+        },
+        "maxDate": {
+          "type": ["string", "null"]
         }
       }
     },
@@ -74,6 +80,16 @@
         },
         "value": {
           "format": "date-time"
+        },
+        "validation": {
+          "properties": {
+            "minDate": {
+              "format": "date-time"
+            },
+            "maxDate": {
+              "format": "date-time"
+            }
+          }
         }
       }
     },
@@ -90,6 +106,16 @@
         },
         "value": {
           "format": "date"
+        },
+        "validation": {
+          "properties": {
+            "minDate": {
+              "format": "date"
+            },
+            "maxDate": {
+              "format": "date"
+            }
+          }
         }
       }
     }
