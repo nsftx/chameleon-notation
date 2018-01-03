@@ -1,13 +1,13 @@
 {
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "$id": "http://chameleon-notation/field-select.json#",
-  "title": "Select field",
-  "description": "Schema defines select field",
+  "$id": "http://chameleon-notation/field-tags.json#",
+  "title": "Tags field",
+  "description": "Schema defines tags field",
   "type": "object",
   "properties": {
     "type": {
       "type": "string",
-      "enum": ["select"]
+      "enum": ["tags"]
     },
     "appendIcon": {
       "$ref": "field-base.json#appendIcon"
@@ -16,20 +16,7 @@
       "$ref": "field-base.json#clearable"
     },
     "dataSource": {
-      "id": "#dataSource",
-      "type": "object",
-      "properties": {
-        "items": {
-          "type": "array",
-          "items": {
-            "type": "object"
-          }
-        },
-        "options": {
-          "type": "object",
-          "required": ["displayProp"]
-        }
-      }
+      "$ref": "field-select.json#dataSource"
     },
     "hint": {
       "$ref": "field-base.json#hint"
@@ -44,8 +31,7 @@
       "$ref": "field-base.json#multiLine"
     },
     "multiple": {
-      "id": "#multiple",
-      "type": "boolean"
+      "$ref": "field-select.json#multiple"
     },
     "name": {
       "$ref": "field-base.json#name"
@@ -63,8 +49,7 @@
       "$ref": "field-base.json#private"
     },
     "readonly": {
-      "id": "#readonly",
-      "type": "boolean"
+      "$ref": "field-select.json#readonly"
     },
     "tooltip": {
       "$ref": "field-base.json#tooltip"
@@ -76,11 +61,7 @@
       "$ref": "field-base.json#validation"
     },
     "value": {
-      "id": "#value",
-      "type": "array",
-      "items": {
-        "type": "object"
-      }
+      "$ref": "field-select.json#value"
     }
   },
   "required": ["name", "type", "label"]

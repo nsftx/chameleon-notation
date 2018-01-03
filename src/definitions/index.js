@@ -8,6 +8,7 @@ import richText from './field-richText.json';
 import date from './field-date.json';
 import dateRange from './field-dateRange.json';
 import select from './field-select.json';
+import tags from './field-tags.json';
 import form from './widget-form.json';
 import page from './page.json';
 
@@ -20,6 +21,7 @@ const fields = {
   date,
   dateRange,
   select,
+  tags,
 };
 
 const widgets = {
@@ -38,6 +40,7 @@ export default {
     date: 'http://chameleon-notation/field-date.json#',
     dateRange: 'http://chameleon-notation/field-dateRange.json#',
     select: 'http://chameleon-notation/field-select.json#',
+    tags: 'http://chameleon-notation/field-select.json#',
     form: 'http://chameleon-notation/widget-form.json#',
     page: 'http://chameleon-notation/page.json#',
   },

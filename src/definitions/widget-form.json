@@ -43,7 +43,8 @@
           { "$ref": "field-richText.json#" },
           { "$ref": "field-date.json#" },
           { "$ref": "field-dateRange.json#" },
-          { "$ref": "field-select.json#" }
+          { "$ref": "field-select.json#" },
+          { "$ref": "field-tags.json#" }
         ]
       }
     }
