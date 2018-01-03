@@ -37,6 +37,7 @@
       "items": {
         "oneOf": [
           { "$ref": "field-text.json#" },
+          { "$ref": "field-calculation.json#" },
           { "$ref": "field-number.json#" },
           { "$ref": "field-money.json#" },
           { "$ref": "field-richText.json#" },
