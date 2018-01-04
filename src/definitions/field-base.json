@@ -49,6 +49,14 @@
       "id": "#persistentHint",
       "type": "boolean"
     },
+    "color": {
+      "id": "#color",
+      "type": "string"
+    },
+    "disabled": {
+      "id": "#disabled",
+      "type": ["boolean", "null"]
+    },
     "tooltip": {
       "id": "#tooltip",
       "type": ["string", "null"]

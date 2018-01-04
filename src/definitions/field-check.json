@@ -1,0 +1,45 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "http://chameleon-notation/field-check.json#",
+  "title": "Check field",
+  "description": "Schema defines check field",
+  "type": "object",
+  "properties": {
+    "type": {
+      "type": "string",
+      "enum": ["checkbox"]
+    },
+    "label": {
+      "$ref": "field-base.json#label"
+    },
+    "name": {
+      "$ref": "field-base.json#name"
+    },
+    "appendIcon": {
+      "$ref": "field-base.json#appendIcon"
+    },
+    "prependIcon": {
+      "$ref": "field-base.json#prependIcon"
+    },
+    "hint": {
+      "$ref": "field-base.json#hint"
+    },
+    "persistentHint": {
+      "$ref": "field-base.json#persistentHint"
+    },
+    "disabled": {
+      "$ref": "field-base.json#disabled"
+    },
+    "color": {
+      "$ref": "field-base.json#color"
+    },
+    "validation": {
+      "$ref": "field-base.json#validation"
+    },
+    "inputValue": {
+      "id": "#inputValue",
+      "type": ["boolean", "null"]
+    }
+  },
+  "required": ["name", "type", "label"]
+}

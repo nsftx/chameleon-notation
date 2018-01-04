@@ -44,7 +44,8 @@
           { "$ref": "field-date.json#" },
           { "$ref": "field-dateRange.json#" },
           { "$ref": "field-select.json#" },
-          { "$ref": "field-tags.json#" }
+          { "$ref": "field-tags.json#" },
+          { "$ref": "field-check.json#" }
         ]
       }
     }

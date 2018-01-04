@@ -226,6 +226,21 @@
       },
       "format": "LLL",
       "value": "2017-11-09T20:35:00.000Z"
+    },
+    {
+      "name": "remember",
+      "type": "checkbox",
+      "label": "Remember me",
+      "color": "primary",
+      "prependIcon": null,
+      "appendIcon": null,
+      "hint": null,
+      "disabled": false,
+      "persistentHint": false,
+      "inputValue": true,
+      "validation": {
+        "required": false
+      }
     }
   ],
   "actions": [
