@@ -1,5 +1,6 @@
 import ChameleonNotation from 'chameleon-notation';
 import _ from 'lodash';
+import page from '../examples/page.json';
 
 let editor = null;
 let messageContainer = null;
@@ -40,7 +41,8 @@ const initEditor = () => {
     onChange: _.debounce(validate, 1000),
   };
 
-  editor = new JSONEditor(container, options);
+  editor = new JSONEditor(container, options, page);
+  setTimeout(validate, 500);
 };
 
 const initialize = () => {

@@ -57,6 +57,112 @@
       "value": "Mr. ${firstName}"
     },
     {
+      "name": "gender",
+      "type": "select",
+      "label": "Gender",
+      "prependIcon": "people",
+      "appendIcon": null,
+      "placeholder": "Please select a gender",
+      "hint": null,
+      "persistentHint": false,
+      "tooltip": null,
+      "multiLine": false,
+      "multiple": false,
+      "clearable": false,
+      "private": false,
+      "readonly": false,
+      "validateOn": "blur",
+      "mask": {
+        "predefined": false,
+        "value": null
+      },
+      "validation": {
+        "required": true
+      },
+      "dataSource": {
+        "items": [
+          {
+            "id": 1,
+            "name": "Male"
+          },
+          {
+            "id": 2,
+            "name": "Female"
+          },
+          {
+            "id": 3,
+            "name": "Other"
+          }
+        ],
+        "options": {
+          "displayProp": "name"
+        }
+      },
+      "value": [
+        {
+          "id": 1,
+          "name": "Male"
+        }
+      ]
+    },
+    {
+      "name": "language",
+      "type": "tags",
+      "label": "Language",
+      "prependIcon": "language",
+      "appendIcon": null,
+      "placeholder": "Please select a language",
+      "hint": null,
+      "persistentHint": false,
+      "tooltip": null,
+      "multiLine": false,
+      "multiple": true,
+      "clearable": true,
+      "private": false,
+      "readonly": false,
+      "validateOn": "blur",
+      "mask": {
+        "predefined": false,
+        "value": null
+      },
+      "validation": {
+        "required": true
+      },
+      "dataSource": {
+        "items": [
+          {
+            "id": 43,
+            "name": "English",
+            "isoCode2": "en",
+            "isoCode3": "eng"
+          },
+          {
+            "id": 49,
+            "name": "Finnish",
+            "isoCode2": "fi",
+            "isoCode3": "\tfi"
+          },
+          {
+            "id": 50,
+            "name": "French",
+            "isoCode2": "fr",
+            "isoCode3": "fra"
+          }
+        ],
+        "options": {
+          "displayProp": "name"
+        }
+      },
+      "value": [
+        {
+          "id": 43,
+          "name": "English",
+          "isoCode2": "en",
+          "isoCode3": "eng"
+        }
+      ]
+    },
+    {
       "name": "creditCard",
       "type": "text",
       "label": "Credit Card Number",
@@ -142,7 +248,7 @@
         "required": true,
         "pattern": {
           "predefined": false,
-          "value": "^-?\\d*(\\,\\d+)?$"
+          "value": "^-?\\d*(\\.\\d+)?$"
         },
         "custom": null
       },
@@ -199,7 +305,7 @@
       "validation": {
         "required": true,
         "pattern": {
-          "value": "^-?\\d*(\\,\\d+)?$"
+          "value": "^-?\\d*(\\.\\d+)?$"
         }
       },
       "value": "120,35"
@@ -254,6 +360,18 @@
       "persistentHint": false,
       "value": "",
       "mandatory": false
+    },
+    {
+      "name": "rating",
+      "type": "rating",
+      "label": "Rate your experience",
+      "maxRating": 5,
+      "ratingInfo": true,
+      "icon": "star",
+      "value": 0,
+      "validation": {
+        "required": true
+      }
     }
   ],
   "actions": [
