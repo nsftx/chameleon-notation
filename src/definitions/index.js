@@ -10,6 +10,7 @@ import dateRange from './field-dateRange.json';
 import select from './field-select.json';
 import tags from './field-tags.json';
 import check from './field-check.json';
+import radio from './field-radio.json';
 import form from './widget-form.json';
 import page from './page.json';
 
@@ -24,6 +25,7 @@ const fields = {
   select,
   tags,
   check,
+  radio,
 };
 
 const widgets = {
@@ -44,6 +46,7 @@ export default {
     select: 'http://chameleon-notation/field-select.json#',
     tags: 'http://chameleon-notation/field-select.json#',
     check: 'http://chameleon-notation/field-check.json#',
+    radio: 'http://chameleon-notation/field-radio.json#',
     form: 'http://chameleon-notation/widget-form.json#',
     page: 'http://chameleon-notation/page.json#',
   },
