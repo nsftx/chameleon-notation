@@ -285,7 +285,7 @@
               ]
             },
             {
-              "name": "remember",
+              "name": "rememberCheck",
               "type": "checkbox",
               "label": "Remember me",
               "color": "primary",
@@ -300,7 +300,7 @@
               }
             },
             {
-              "name": "remember",
+              "name": "rememberRadio",
               "type": "radio",
               "label": "Remember me",
               "color": "primary",
@@ -311,6 +311,19 @@
               "persistentHint": false,
               "value": "",
               "mandatory": false
+            },
+            {
+              "name": "rememberSwitch",
+              "type": "switch",
+              "label": "Remember me",
+              "color": "primary",
+              "prependIcon": null,
+              "appendIcon": null,
+              "hint": null,
+              "disabled": false,
+              "persistentHint": false,
+              "inputValue": false,
+              "value": ""
             }
           ],
           "actions": [

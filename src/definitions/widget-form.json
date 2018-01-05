@@ -47,6 +47,7 @@
           { "$ref": "field-tags.json#" },
           { "$ref": "field-check.json#" },
           { "$ref": "field-radio.json#" },
+          { "$ref": "field-switch.json#" },
           { "$ref": "field-rating.json#" }
         ]
       }

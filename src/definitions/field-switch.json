@@ -1,0 +1,46 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "http://chameleon-notation/field-switch.json#",
+  "title": "Switch field",
+  "description": "Schema defines switch field",
+  "type": "object",
+  "properties": {
+    "type": {
+      "type": "string",
+      "enum": ["switch"]
+    },
+    "label": {
+      "$ref": "field-base.json#label"
+    },
+    "name": {
+      "$ref": "field-base.json#name"
+    },
+    "appendIcon": {
+      "$ref": "field-base.json#appendIcon"
+    },
+    "prependIcon": {
+      "$ref": "field-base.json#prependIcon"
+    },
+    "hint": {
+      "$ref": "field-base.json#hint"
+    },
+    "persistentHint": {
+      "$ref": "field-base.json#persistentHint"
+    },
+    "disabled": {
+      "$ref": "field-base.json#disabled"
+    },
+    "color": {
+      "$ref": "field-base.json#color"
+    },
+    "value": {
+      "id": "#value",
+      "type": "string"
+    },
+    "inputValue": {
+      "id": "#inputValue",
+      "type": "boolean"
+    }
+  },
+  "required": ["name", "type", "label"]
+}
