@@ -285,6 +285,29 @@
               ]
             },
             {
+              "name": "age",
+              "type": "slider",
+              "label": "Age",
+              "color": "primary",
+              "trackColor": "",
+              "thumbColor": "",
+              "thumbLabel": true,
+              "prependIcon": null,
+              "appendIcon": null,
+              "hint": null,
+              "persistentHint": false,
+              "searchable": false,
+              "private": false,
+              "validateOn": "blur",
+              "validation": {
+                "required": true,
+                "min": 1,
+                "max": 100
+              },
+              "value": null,
+              "step": 1
+            },
+            {
               "name": "rememberCheck",
               "type": "check",
               "label": "Remember me",

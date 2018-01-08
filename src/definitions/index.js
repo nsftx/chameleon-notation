@@ -12,6 +12,7 @@ import radio from './field-radio.json';
 import rating from './field-rating.json';
 import richText from './field-richText.json';
 import select from './field-select.json';
+import slider from './field-slider.json';
 import toggle from './field-switch.json';
 import tags from './field-tags.json';
 import text from './field-text.json';
@@ -28,6 +29,7 @@ const fields = {
   rating,
   richText,
   select,
+  slider,
   switch: toggle,
   tags,
   text,
@@ -54,6 +56,7 @@ export default {
     rating: 'http://chameleon-notation/field-rating.json#',
     richText: 'http://chameleon-notation/field-richText.json#',
     select: 'http://chameleon-notation/field-select.json#',
+    slider: 'http://chameleon-notation/field-slider.json#',
     switch: 'http://chameleon-notation/field-switch.json#',
     tags: 'http://chameleon-notation/field-select.json#',
     text: 'http://chameleon-notation/field-text.json#',

@@ -111,6 +111,12 @@
           "type": "number",
           "multipleOf": 1
         },
+        "max": {
+          "type": "number"
+        },
+        "min": {
+          "type": "number"
+        },
         "pattern": {
           "type": "object",
           "properties": {
@@ -130,6 +136,8 @@
         { "required": ["required"] },
         { "required": ["minLength"] },
         { "required": ["maxLength"] },
+        { "required": ["max"] },
+        { "required": ["min"] },
         { "required": ["pattern"] },
         { "required": ["custom"] }
       ]
