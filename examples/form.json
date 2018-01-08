@@ -335,7 +335,7 @@
     },
     {
       "name": "rememberCheck",
-      "type": "checkbox",
+      "type": "check",
       "label": "Remember me",
       "color": "primary",
       "prependIcon": null,

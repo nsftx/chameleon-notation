@@ -37,6 +37,6 @@ const performLint = (src, type) => linter[`validate${type}`](src);
 module.exports = {
   validate: getLinter(''),
   validateField: getLinter('Field'),
-  validateForm: getLinter('Form'),
+  validateWidget: getLinter('Widget'),
   validatePage: getLinter('Page'),
 };

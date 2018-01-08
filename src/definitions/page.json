@@ -51,7 +51,8 @@
             "type": "array",
             "items": {
               "oneOf": [
-                { "$ref": "widget-form.json#" }
+                { "$ref": "widget-form.json#" },
+                { "$ref": "widget-video.json#" }
               ]
             }
           }

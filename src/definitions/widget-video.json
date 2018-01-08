@@ -1,0 +1,39 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "http://chameleon-notation/widget-video.json#",
+  "title": "Video widget",
+  "description": "Schema defines video widget",
+  "type": "object",
+  "properties": {
+    "type": {
+      "type": "string",
+      "enum": ["video"]
+    },
+    "autoplay": {
+      "type": "boolean"
+    },
+    "controls": {
+      "type": "boolean"
+    },
+    "label": {
+      "$ref": "field-base.json#label"
+    },
+    "muted": {
+      "type": "boolean"
+    },
+    "name": {
+      "$ref": "field-base.json#name"
+    },
+    "repeat": {
+      "type": "boolean"
+    },
+    "value": {
+      "type": ["string", "array"],
+      "items": {
+        "type": "string",
+        "format": "url"
+      },
+      "format": "url"
+    }
+  }
+}

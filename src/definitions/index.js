@@ -15,6 +15,7 @@ import select from './field-select.json';
 import toggle from './field-switch.json';
 import tags from './field-tags.json';
 import text from './field-text.json';
+import video from './widget-video.json';
 
 const fields = {
   calculation,
@@ -34,6 +35,7 @@ const fields = {
 
 const widgets = {
   form,
+  video,
 };
 
 const items = _.merge({ base, page }, fields, widgets);
@@ -55,6 +57,7 @@ export default {
     switch: 'http://chameleon-notation/field-switch.json#',
     tags: 'http://chameleon-notation/field-select.json#',
     text: 'http://chameleon-notation/field-text.json#',
+    video: 'http://chameleon-notation/widget-video.json#',
   },
   items,
   fields,

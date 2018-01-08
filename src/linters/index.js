@@ -1,5 +1,6 @@
 import utils from '@utils';
 import { field, isField } from './field';
+import { widget, isWidget } from './widget';
 import base from './base';
 
 const { message } = utils;
@@ -11,14 +12,18 @@ const parseLintLevel = (type) => {
     case 'page':
       linter = base;
       break;
-    case 'form':
-      linter = base;
+    case 'widget':
+      linter = widget;
       break;
     case 'field':
       linter = field;
       break;
     default:
-      linter = isField(type) ? field : false;
+      if (isWidget(type)) {
+        linter = widget;
+      } else {
+        linter = isField(type) ? field : false;
+      }
   }
 
   return linter;
