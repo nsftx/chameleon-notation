@@ -28,9 +28,9 @@
       "message": "The ${field} field is required."
     }
   },
-  "containers": [
+  "elements": [
     {
-      "widgets": [
+      "elements": [
         {
           "type": "form",
           "name": "person",

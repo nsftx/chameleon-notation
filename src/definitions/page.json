@@ -42,12 +42,12 @@
     "validators": {
       "type": "object"
     },
-    "containers": {
+    "elements": {
       "type": "array",
       "items": {
         "type": "object",
         "properties": {
-          "widgets": {
+          "elements": {
             "type": "array",
             "items": {
               "oneOf": [
