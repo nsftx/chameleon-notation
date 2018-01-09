@@ -56,7 +56,14 @@
       "$ref": "field-base.json#validateOn"
     },
     "validation": {
-      "$ref": "field-base.json#validation"
+      "allOf": [
+        {
+          "$ref": "field-base.json#validation"
+        },
+        {
+          "required": ["max", "min"]
+        }
+      ]
     },
     "value": {
       "id": "#value",
