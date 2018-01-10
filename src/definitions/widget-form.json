@@ -45,7 +45,7 @@
           { "$ref": "field-dateRange.json#" },
           { "$ref": "field-tags.json#" },
           { "$ref": "field-check.json#" },
-          { "$ref": "field-radio.json#" },
+          { "$ref": "field-radioList.json#" },
           { "$ref": "field-select.json#" },
           { "$ref": "field-slider.json#" },
           { "$ref": "field-switch.json#" },

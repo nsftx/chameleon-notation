@@ -1,0 +1,64 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "http://chameleon-notation/field-radioList.json#",
+  "title": "Radio list field",
+  "description": "Schema defines radio list field",
+  "type": "object",
+  "properties": {
+    "name": {
+      "$ref": "field-base.json#name"
+    },
+    "type": {
+      "type": "string",
+      "enum": ["radioList"]
+    },
+    "appendIcon": {
+      "$ref": "field-base.json#appendIcon"
+    },
+    "prependIcon": {
+      "$ref": "field-base.json#prependIcon"
+    },
+    "hint": {
+      "$ref": "field-base.json#hint"
+    },
+    "persistentHint": {
+      "$ref": "field-base.json#persistentHint"
+    },
+    "inputValue": {
+      "id": "#inputValue",
+      "type": ["string", "null"]
+    },
+    "validation": {
+      "$ref": "field-base.json#validation"
+    },
+    "dataSource": {
+      "id": "#dataSource",
+      "type": "object",
+      "properties": {
+        "items": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "value": {
+                "$ref": "field-base.json#value"
+              },
+              "label": {
+                "$ref": "field-base.json#label"
+              },
+              "color": {
+                "$ref": "field-base.json#color"
+              },
+              "disabled": {
+                "$ref": "field-base.json#disabled"
+              }
+            },
+            "required": ["value"]
+          }
+        }
+      },
+      "required": ["items"]
+    }
+  },
+  "required": ["name", "type", "dataSource"]
+}

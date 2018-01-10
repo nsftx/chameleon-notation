@@ -8,7 +8,7 @@ import form from './widget-form.json';
 import money from './field-money.json';
 import number from './field-number.json';
 import page from './page.json';
-import radio from './field-radio.json';
+import radioList from './field-radioList.json';
 import rating from './field-rating.json';
 import richText from './field-richText.json';
 import select from './field-select.json';
@@ -25,7 +25,7 @@ const fields = {
   dateRange,
   money,
   number,
-  radio,
+  radioList,
   rating,
   richText,
   select,
@@ -52,7 +52,7 @@ export default {
     money: 'http://chameleon-notation/field-money.json#',
     number: 'http://chameleon-notation/field-number.json#',
     page: 'http://chameleon-notation/page.json#',
-    radio: 'http://chameleon-notation/field-radio.json#',
+    radioList: 'http://chameleon-notation/field-radioList.json#',
     rating: 'http://chameleon-notation/field-rating.json#',
     richText: 'http://chameleon-notation/field-richText.json#',
     select: 'http://chameleon-notation/field-select.json#',
