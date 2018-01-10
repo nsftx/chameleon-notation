@@ -837,7 +837,6 @@ var addKeywords = function addKeywords() {
 };
 
 var initialize = function initialize(type) {
-  console.log(__WEBPACK_IMPORTED_MODULE_2__definitions__["a" /* default */]);
   ajv = new __WEBPACK_IMPORTED_MODULE_1_ajv___default.a({
     allErrors: true,
     $data: true,

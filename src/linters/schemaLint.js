@@ -11,7 +11,6 @@ const addKeywords = () => {
 };
 
 const initialize = (type) => {
-  console.log(definitions);
   ajv = new Ajv({
     allErrors: true,
     $data: true,
