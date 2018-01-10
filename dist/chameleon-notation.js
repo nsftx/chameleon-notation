@@ -631,8 +631,8 @@ exports.f = {}.propertyIsEnumerable;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__field_number_json___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8__field_number_json__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__page_json__ = __webpack_require__(118);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__page_json___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_9__page_json__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__field_radio_json__ = __webpack_require__(119);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__field_radio_json___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_10__field_radio_json__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__field_radioList_json__ = __webpack_require__(119);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__field_radioList_json___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_10__field_radioList_json__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__field_rating_json__ = __webpack_require__(120);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__field_rating_json___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_11__field_rating_json__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__field_richText_json__ = __webpack_require__(121);
@@ -677,7 +677,7 @@ var fields = {
   dateRange: __WEBPACK_IMPORTED_MODULE_5__field_dateRange_json___default.a,
   money: __WEBPACK_IMPORTED_MODULE_7__field_money_json___default.a,
   number: __WEBPACK_IMPORTED_MODULE_8__field_number_json___default.a,
-  radio: __WEBPACK_IMPORTED_MODULE_10__field_radio_json___default.a,
+  radioList: __WEBPACK_IMPORTED_MODULE_10__field_radioList_json___default.a,
   rating: __WEBPACK_IMPORTED_MODULE_11__field_rating_json___default.a,
   richText: __WEBPACK_IMPORTED_MODULE_12__field_richText_json___default.a,
   select: __WEBPACK_IMPORTED_MODULE_13__field_select_json___default.a,
@@ -704,7 +704,7 @@ var items = __WEBPACK_IMPORTED_MODULE_0_lodash_merge___default()({ base: __WEBPA
     money: 'http://chameleon-notation/field-money.json#',
     number: 'http://chameleon-notation/field-number.json#',
     page: 'http://chameleon-notation/page.json#',
-    radio: 'http://chameleon-notation/field-radio.json#',
+    radioList: 'http://chameleon-notation/field-radioList.json#',
     rating: 'http://chameleon-notation/field-rating.json#',
     richText: 'http://chameleon-notation/field-richText.json#',
     select: 'http://chameleon-notation/field-select.json#',
@@ -4593,7 +4593,7 @@ module.exports = {"$schema":"http://json-schema.org/draft-06/schema#","$id":"htt
 /* 112 */
 /***/ (function(module, exports) {
 
-module.exports = {"$schema":"http://json-schema.org/draft-06/schema#","$id":"http://chameleon-notation/field-check.json#","title":"Check field","description":"Schema defines check field","type":"object","properties":{"type":{"type":"string","enum":["check"]},"label":{"$ref":"field-base.json#label"},"name":{"$ref":"field-base.json#name"},"appendIcon":{"$ref":"field-base.json#appendIcon"},"prependIcon":{"$ref":"field-base.json#prependIcon"},"hint":{"$ref":"field-base.json#hint"},"persistentHint":{"$ref":"field-base.json#persistentHint"},"disabled":{"$ref":"field-base.json#disabled"},"color":{"$ref":"field-base.json#color"},"validation":{"$ref":"field-base.json#validation"},"inputValue":{"id":"#inputValue","type":["boolean","null"]}},"required":["name","type","label"]}
+module.exports = {"$schema":"http://json-schema.org/draft-06/schema#","$id":"http://chameleon-notation/field-check.json#","title":"Check field","description":"Schema defines check field","type":"object","properties":{"type":{"type":"string","enum":["check"]},"label":{"$ref":"field-base.json#label"},"name":{"$ref":"field-base.json#name"},"appendIcon":{"$ref":"field-base.json#appendIcon"},"prependIcon":{"$ref":"field-base.json#prependIcon"},"hint":{"$ref":"field-base.json#hint"},"persistentHint":{"$ref":"field-base.json#persistentHint"},"disabled":{"$ref":"field-base.json#disabled"},"color":{"$ref":"field-base.json#color"},"validation":{"$ref":"field-base.json#validation"},"inputValue":{"id":"#inputValue","type":["boolean","null"]},"value":{"$ref":"field-base.json#value"},"trueValue":{"id":"#trueValue","type":["boolean","null"]}},"required":["name","type","label"]}
 
 /***/ }),
 /* 113 */
@@ -4611,7 +4611,7 @@ module.exports = {"$schema":"http://json-schema.org/draft-06/schema#","$id":"htt
 /* 115 */
 /***/ (function(module, exports) {
 
-module.exports = {"$schema":"http://json-schema.org/draft-06/schema#","$id":"http://chameleon-notation/widget-form.json#","title":"Form widget","description":"Schema defines form widget","type":"object","properties":{"type":{"type":"string","enum":["form"]},"actions":{"type":"array","items":{"type":"object","properties":{"name":{"type":"string","minLength":1},"type":{"type":"string","minLength":1},"label":{"type":"string","minLength":1},"actions":{"type":"object"}}}},"fields":{"type":"array","items":{"oneOf":[{"$ref":"field-text.json#"},{"$ref":"field-calculation.json#"},{"$ref":"field-number.json#"},{"$ref":"field-money.json#"},{"$ref":"field-richText.json#"},{"$ref":"field-date.json#"},{"$ref":"field-dateRange.json#"},{"$ref":"field-tags.json#"},{"$ref":"field-check.json#"},{"$ref":"field-radio.json#"},{"$ref":"field-select.json#"},{"$ref":"field-slider.json#"},{"$ref":"field-switch.json#"},{"$ref":"field-rating.json#"}]}}},"required":["name","type","fields"]}
+module.exports = {"$schema":"http://json-schema.org/draft-06/schema#","$id":"http://chameleon-notation/widget-form.json#","title":"Form widget","description":"Schema defines form widget","type":"object","properties":{"type":{"type":"string","enum":["form"]},"actions":{"type":"array","items":{"type":"object","properties":{"name":{"type":"string","minLength":1},"type":{"type":"string","minLength":1},"label":{"type":"string","minLength":1},"actions":{"type":"object"}}}},"fields":{"type":"array","items":{"oneOf":[{"$ref":"field-text.json#"},{"$ref":"field-calculation.json#"},{"$ref":"field-number.json#"},{"$ref":"field-money.json#"},{"$ref":"field-richText.json#"},{"$ref":"field-date.json#"},{"$ref":"field-dateRange.json#"},{"$ref":"field-tags.json#"},{"$ref":"field-check.json#"},{"$ref":"field-radioList.json#"},{"$ref":"field-select.json#"},{"$ref":"field-slider.json#"},{"$ref":"field-switch.json#"},{"$ref":"field-rating.json#"}]}}},"required":["name","type","fields"]}
 
 /***/ }),
 /* 116 */
@@ -4635,7 +4635,7 @@ module.exports = {"$schema":"http://json-schema.org/draft-06/schema#","$id":"htt
 /* 119 */
 /***/ (function(module, exports) {
 
-module.exports = {"$schema":"http://json-schema.org/draft-06/schema#","$id":"http://chameleon-notation/field-radio.json#","title":"Radio field","description":"Schema defines radio field","type":"object","properties":{"type":{"type":"string","enum":["radio"]},"label":{"$ref":"field-base.json#label"},"name":{"$ref":"field-base.json#name"},"appendIcon":{"$ref":"field-base.json#appendIcon"},"prependIcon":{"$ref":"field-base.json#prependIcon"},"hint":{"$ref":"field-base.json#hint"},"persistentHint":{"$ref":"field-base.json#persistentHint"},"disabled":{"$ref":"field-base.json#disabled"},"color":{"$ref":"field-base.json#color"},"value":{"id":"#value","type":["string","null"]},"mandatory":{"id":"#mandatory","type":"boolean"}},"required":["name","type","label"]}
+module.exports = {"$schema":"http://json-schema.org/draft-06/schema#","$id":"http://chameleon-notation/field-radioList.json#","title":"Radio list field","description":"Schema defines radio list field","type":"object","properties":{"name":{"$ref":"field-base.json#name"},"type":{"type":"string","enum":["radioList"]},"appendIcon":{"$ref":"field-base.json#appendIcon"},"prependIcon":{"$ref":"field-base.json#prependIcon"},"hint":{"$ref":"field-base.json#hint"},"persistentHint":{"$ref":"field-base.json#persistentHint"},"inputValue":{"id":"#inputValue","type":["string","null"]},"validation":{"$ref":"field-base.json#validation"},"dataSource":{"id":"#dataSource","type":"object","properties":{"items":{"type":"array","items":{"type":"object","properties":{"value":{"$ref":"field-base.json#value"},"label":{"$ref":"field-base.json#label"},"color":{"$ref":"field-base.json#color"},"disabled":{"$ref":"field-base.json#disabled"}},"required":["value"]}}},"required":["items"]}},"required":["name","type","dataSource"]}
 
 /***/ }),
 /* 120 */
