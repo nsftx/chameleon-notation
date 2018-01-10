@@ -39,6 +39,13 @@
     "inputValue": {
       "id": "#inputValue",
       "type": ["boolean", "null"]
+    },
+    "value": {
+      "$ref": "field-base.json#value"
+    },
+    "trueValue": {
+      "id": "#trueValue",
+      "type": ["boolean", "null"]
     }
   },
   "required": ["name", "type", "label"]
