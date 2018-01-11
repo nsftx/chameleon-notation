@@ -35,10 +35,6 @@
     },
     "value": {
       "id": "#value",
-      "type": "string"
-    },
-    "inputValue": {
-      "id": "#inputValue",
       "type": "boolean"
     }
   },

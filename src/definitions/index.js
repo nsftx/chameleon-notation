@@ -2,6 +2,7 @@ import _ from 'lodash';
 import base from './field-base.json';
 import calculation from './field-calculation.json';
 import check from './field-check.json';
+import checkList from './field-checkList.json';
 import date from './field-date.json';
 import dateRange from './field-dateRange.json';
 import form from './widget-form.json';
@@ -21,6 +22,7 @@ import video from './widget-video.json';
 const fields = {
   calculation,
   check,
+  checkList,
   date,
   dateRange,
   money,
@@ -46,6 +48,7 @@ export default {
   mapper: {
     calculation: 'http://chameleon-notation/field-calculation.json#',
     check: 'http://chameleon-notation/field-check.json#',
+    checkList: 'http://chameleon-notation/field-checkList.json#',
     date: 'http://chameleon-notation/field-date.json#',
     dateRange: 'http://chameleon-notation/field-dateRange.json#',
     form: 'http://chameleon-notation/widget-form.json#',

@@ -308,6 +308,45 @@
               "step": 1
             },
             {
+              "name": "cities",
+              "type": "checkList",
+              "label": "Select cities",
+              "prependIcon": null,
+              "appendIcon": null,
+              "hint": null,
+              "persistentHint": false,
+              "hideDetails": false,
+              "value": [],
+              "validateOn": "blur",
+              "validation": {
+                "required": false,
+                "minCount": 1,
+                "maxCount": 2
+              },
+              "dataSource": {
+                "items": [
+                  {
+                    "value": "London",
+                    "label": "London",
+                    "color": "primary",
+                    "disabled": false
+                  },
+                  {
+                    "value": "Manchester",
+                    "label": "Manchester",
+                    "color": "primary",
+                    "disabled": false
+                  },
+                  {
+                    "value": "Liverpool",
+                    "label": "Liverpool",
+                    "color": "primary",
+                    "disabled": false
+                  }
+                ]
+              }
+            },
+            {
               "name": "rememberCheck",
               "type": "check",
               "label": "Remember me",
@@ -317,7 +356,7 @@
               "hint": null,
               "disabled": false,
               "persistentHint": false,
-              "inputValue": true,
+              "value": false,
               "validation": {
                 "required": false
               }
@@ -329,7 +368,7 @@
               "appendIcon": null,
               "hint": null,
               "persistentHint": false,
-              "inputValue": "",
+              "value": "",
               "validation": {
                 "required": true
               },
@@ -366,8 +405,7 @@
               "hint": null,
               "disabled": false,
               "persistentHint": false,
-              "inputValue": false,
-              "value": ""
+              "value": false
             }
           ],
           "actions": [
