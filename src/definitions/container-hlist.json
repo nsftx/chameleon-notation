@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "http://chameleon-notation/container-hlist.json#",
+  "title": "Horizontal list container",
+  "description": "Schema defines horizontal list container",
+  "type": "object",
+  "properties": {
+    "type": {
+      "type": "string",
+      "enum": ["hlist"]
+    },
+    "color": {
+      "type": "string"
+    },
+    "elements": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "flat": {
+      "type": "boolean"
+    },
+    "gutter": {
+      "type": "boolean"
+    },
+    "name": {
+      "$ref": "field-base.json#name"
+    }
+  },
+  "required": ["type", "color", "elements"]
+}

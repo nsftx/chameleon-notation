@@ -100,7 +100,7 @@ module.exports = function (it, key) {
 /***/ (function(module, exports, __webpack_require__) {
 
 // to indexed object, toObject with fallback for non-array-like ES3 strings
-var IObject = __webpack_require__(134);
+var IObject = __webpack_require__(137);
 var defined = __webpack_require__(25);
 module.exports = function (it) {
   return IObject(defined(it));
@@ -170,7 +170,7 @@ module.exports = {
   getProperty: getProperty,
   escapeQuotes: escapeQuotes,
   equal: __webpack_require__(31),
-  ucs2length: __webpack_require__(146),
+  ucs2length: __webpack_require__(149),
   varOccurences: varOccurences,
   varReplace: varReplace,
   cleanUpCode: cleanUpCode,
@@ -625,30 +625,39 @@ exports.f = {}.propertyIsEnumerable;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__field_dateRange_json___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__field_dateRange_json__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__widget_form_json__ = __webpack_require__(115);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__widget_form_json___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6__widget_form_json__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__field_money_json__ = __webpack_require__(116);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__field_money_json___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7__field_money_json__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__field_number_json__ = __webpack_require__(117);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__field_number_json___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8__field_number_json__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__page_json__ = __webpack_require__(118);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__page_json___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_9__page_json__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__field_radioList_json__ = __webpack_require__(119);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__field_radioList_json___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_10__field_radioList_json__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__field_rating_json__ = __webpack_require__(120);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__field_rating_json___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_11__field_rating_json__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__field_richText_json__ = __webpack_require__(121);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__field_richText_json___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_12__field_richText_json__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__field_select_json__ = __webpack_require__(122);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__field_select_json___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_13__field_select_json__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__field_slider_json__ = __webpack_require__(123);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__field_slider_json___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_14__field_slider_json__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__field_switch_json__ = __webpack_require__(124);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__field_switch_json___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_15__field_switch_json__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__field_tags_json__ = __webpack_require__(125);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__field_tags_json___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_16__field_tags_json__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__field_text_json__ = __webpack_require__(126);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__field_text_json___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_17__field_text_json__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__widget_video_json__ = __webpack_require__(127);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__widget_video_json___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_18__widget_video_json__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__container_hlist_json__ = __webpack_require__(116);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__container_hlist_json___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7__container_hlist_json__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__field_money_json__ = __webpack_require__(117);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__field_money_json___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8__field_money_json__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__field_number_json__ = __webpack_require__(118);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__field_number_json___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_9__field_number_json__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__page_json__ = __webpack_require__(119);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__page_json___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_10__page_json__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__container_panel_json__ = __webpack_require__(120);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__container_panel_json___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_11__container_panel_json__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__field_radioList_json__ = __webpack_require__(121);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__field_radioList_json___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_12__field_radioList_json__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__field_rating_json__ = __webpack_require__(122);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__field_rating_json___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_13__field_rating_json__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__field_richText_json__ = __webpack_require__(123);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__field_richText_json___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_14__field_richText_json__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__field_select_json__ = __webpack_require__(124);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__field_select_json___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_15__field_select_json__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__field_slider_json__ = __webpack_require__(125);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__field_slider_json___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_16__field_slider_json__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__field_switch_json__ = __webpack_require__(126);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__field_switch_json___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_17__field_switch_json__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__field_tags_json__ = __webpack_require__(127);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__field_tags_json___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_18__field_tags_json__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__field_text_json__ = __webpack_require__(128);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__field_text_json___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_19__field_text_json__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__widget_video_json__ = __webpack_require__(129);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__widget_video_json___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_20__widget_video_json__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__container_vlist_json__ = __webpack_require__(130);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__container_vlist_json___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_21__container_vlist_json__);
+
+
+
 
 
 
@@ -675,24 +684,30 @@ var fields = {
   check: __WEBPACK_IMPORTED_MODULE_3__field_check_json___default.a,
   date: __WEBPACK_IMPORTED_MODULE_4__field_date_json___default.a,
   dateRange: __WEBPACK_IMPORTED_MODULE_5__field_dateRange_json___default.a,
-  money: __WEBPACK_IMPORTED_MODULE_7__field_money_json___default.a,
-  number: __WEBPACK_IMPORTED_MODULE_8__field_number_json___default.a,
-  radioList: __WEBPACK_IMPORTED_MODULE_10__field_radioList_json___default.a,
-  rating: __WEBPACK_IMPORTED_MODULE_11__field_rating_json___default.a,
-  richText: __WEBPACK_IMPORTED_MODULE_12__field_richText_json___default.a,
-  select: __WEBPACK_IMPORTED_MODULE_13__field_select_json___default.a,
-  slider: __WEBPACK_IMPORTED_MODULE_14__field_slider_json___default.a,
-  switch: __WEBPACK_IMPORTED_MODULE_15__field_switch_json___default.a,
-  tags: __WEBPACK_IMPORTED_MODULE_16__field_tags_json___default.a,
-  text: __WEBPACK_IMPORTED_MODULE_17__field_text_json___default.a
+  money: __WEBPACK_IMPORTED_MODULE_8__field_money_json___default.a,
+  number: __WEBPACK_IMPORTED_MODULE_9__field_number_json___default.a,
+  radioList: __WEBPACK_IMPORTED_MODULE_12__field_radioList_json___default.a,
+  rating: __WEBPACK_IMPORTED_MODULE_13__field_rating_json___default.a,
+  richText: __WEBPACK_IMPORTED_MODULE_14__field_richText_json___default.a,
+  select: __WEBPACK_IMPORTED_MODULE_15__field_select_json___default.a,
+  slider: __WEBPACK_IMPORTED_MODULE_16__field_slider_json___default.a,
+  switch: __WEBPACK_IMPORTED_MODULE_17__field_switch_json___default.a,
+  tags: __WEBPACK_IMPORTED_MODULE_18__field_tags_json___default.a,
+  text: __WEBPACK_IMPORTED_MODULE_19__field_text_json___default.a
 };
 
 var widgets = {
   form: __WEBPACK_IMPORTED_MODULE_6__widget_form_json___default.a,
-  video: __WEBPACK_IMPORTED_MODULE_18__widget_video_json___default.a
+  video: __WEBPACK_IMPORTED_MODULE_20__widget_video_json___default.a
 };
 
-var items = __WEBPACK_IMPORTED_MODULE_0_lodash_merge___default()({ base: __WEBPACK_IMPORTED_MODULE_1__field_base_json___default.a, page: __WEBPACK_IMPORTED_MODULE_9__page_json___default.a }, fields, widgets);
+var containers = {
+  hlist: __WEBPACK_IMPORTED_MODULE_7__container_hlist_json___default.a,
+  panel: __WEBPACK_IMPORTED_MODULE_11__container_panel_json___default.a,
+  vlist: __WEBPACK_IMPORTED_MODULE_21__container_vlist_json___default.a
+};
+
+var items = __WEBPACK_IMPORTED_MODULE_0_lodash_merge___default()({ base: __WEBPACK_IMPORTED_MODULE_1__field_base_json___default.a, page: __WEBPACK_IMPORTED_MODULE_10__page_json___default.a }, fields, widgets, containers);
 
 /* harmony default export */ __webpack_exports__["a"] = ({
   mapper: {
@@ -701,9 +716,11 @@ var items = __WEBPACK_IMPORTED_MODULE_0_lodash_merge___default()({ base: __WEBPA
     date: 'http://chameleon-notation/field-date.json#',
     dateRange: 'http://chameleon-notation/field-dateRange.json#',
     form: 'http://chameleon-notation/widget-form.json#',
+    hlist: 'http://chameleon-notation/container-hlist.json#',
     money: 'http://chameleon-notation/field-money.json#',
     number: 'http://chameleon-notation/field-number.json#',
     page: 'http://chameleon-notation/page.json#',
+    panel: 'http://chameleon-notation/container-panel.json#',
     radioList: 'http://chameleon-notation/field-radioList.json#',
     rating: 'http://chameleon-notation/field-rating.json#',
     richText: 'http://chameleon-notation/field-richText.json#',
@@ -712,11 +729,13 @@ var items = __WEBPACK_IMPORTED_MODULE_0_lodash_merge___default()({ base: __WEBPA
     switch: 'http://chameleon-notation/field-switch.json#',
     tags: 'http://chameleon-notation/field-select.json#',
     text: 'http://chameleon-notation/field-text.json#',
-    video: 'http://chameleon-notation/widget-video.json#'
+    video: 'http://chameleon-notation/widget-video.json#',
+    vlist: 'http://chameleon-notation/container-vlist.json#'
   },
   items: items,
   fields: fields,
-  widgets: widgets
+  widgets: widgets,
+  containers: containers
 });
 
 /***/ }),
@@ -798,12 +817,12 @@ module.exports = baseAssignValue;
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_values__ = __webpack_require__(128);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_values__ = __webpack_require__(131);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_values___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_values__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ajv__ = __webpack_require__(138);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ajv__ = __webpack_require__(141);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ajv___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_ajv__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__definitions__ = __webpack_require__(19);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__keywords__ = __webpack_require__(176);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__keywords__ = __webpack_require__(179);
 
 
 
@@ -856,7 +875,7 @@ var lint = function lint(item, type) {
 
 var global = __webpack_require__(0);
 var core = __webpack_require__(12);
-var ctx = __webpack_require__(131);
+var ctx = __webpack_require__(134);
 var hide = __webpack_require__(3);
 var PROTOTYPE = 'prototype';
 
@@ -998,11 +1017,11 @@ module.exports = (
 "use strict";
 
 
-var url = __webpack_require__(140)
+var url = __webpack_require__(143)
   , equal = __webpack_require__(31)
   , util = __webpack_require__(6)
   , SchemaObject = __webpack_require__(51)
-  , traverse = __webpack_require__(147);
+  , traverse = __webpack_require__(150);
 
 module.exports = resolve;
 
@@ -1677,7 +1696,7 @@ module.exports = function (it) {
 
 var has = __webpack_require__(1);
 var toIObject = __webpack_require__(2);
-var arrayIndexOf = __webpack_require__(135)(false);
+var arrayIndexOf = __webpack_require__(138)(false);
 var IE_PROTO = __webpack_require__(27)('IE_PROTO');
 
 module.exports = function (object, names) {
@@ -2917,9 +2936,9 @@ var redefine = __webpack_require__(60);
 var hide = __webpack_require__(3);
 var has = __webpack_require__(1);
 var Iterators = __webpack_require__(34);
-var $iterCreate = __webpack_require__(183);
+var $iterCreate = __webpack_require__(186);
 var setToStringTag = __webpack_require__(35);
-var getPrototypeOf = __webpack_require__(186);
+var getPrototypeOf = __webpack_require__(189);
 var ITERATOR = __webpack_require__(7)('iterator');
 var BUGGY = !([].keys && 'next' in [].keys()); // Safari has buggy iterators w/o `next`
 var FF_ITERATOR = '@@iterator';
@@ -2995,7 +3014,7 @@ module.exports = __webpack_require__(3);
 
 // 19.1.2.2 / 15.2.3.5 Object.create(O [, Properties])
 var anObject = __webpack_require__(13);
-var dPs = __webpack_require__(184);
+var dPs = __webpack_require__(187);
 var enumBugKeys = __webpack_require__(29);
 var IE_PROTO = __webpack_require__(27)('IE_PROTO');
 var Empty = function () { /* empty */ };
@@ -3010,7 +3029,7 @@ var createDict = function () {
   var gt = '>';
   var iframeDocument;
   iframe.style.display = 'none';
-  __webpack_require__(185).appendChild(iframe);
+  __webpack_require__(188).appendChild(iframe);
   iframe.src = 'javascript:'; // eslint-disable-line no-script-url
   // createDict = iframe.contentWindow.Object;
   // html.removeChild(iframe);
@@ -3064,7 +3083,7 @@ exports.f = Object.getOwnPropertyNames || function getOwnPropertyNames(O) {
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__linters__ = __webpack_require__(65);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils__ = __webpack_require__(8);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__package_json__ = __webpack_require__(206);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__package_json__ = __webpack_require__(209);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__package_json___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__package_json__);
 
 
@@ -3091,8 +3110,8 @@ var ChameleonNotation = {
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__utils__ = __webpack_require__(8);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__field__ = __webpack_require__(68);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__widget__ = __webpack_require__(204);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__base__ = __webpack_require__(205);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__widget__ = __webpack_require__(207);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__base__ = __webpack_require__(208);
 
 
 
@@ -4617,95 +4636,113 @@ module.exports = {"$schema":"http://json-schema.org/draft-06/schema#","$id":"htt
 /* 116 */
 /***/ (function(module, exports) {
 
-module.exports = {"$schema":"http://json-schema.org/draft-06/schema#","$id":"http://chameleon-notation/field-money.json#","title":"Money field","description":"Schema defines money field","type":"object","properties":{"type":{"type":"string","enum":["money"]},"appendIcon":{"$ref":"field-base.json#appendIcon"},"clearable":{"$ref":"field-base.json#clearable"},"currency":{"id":"#currency","type":"object","properties":{"name":{"type":"string","minLength":1},"symbol":{"type":"string","minLength":1}}},"hint":{"$ref":"field-base.json#hint"},"label":{"$ref":"field-base.json#label"},"name":{"$ref":"field-base.json#name"},"persistentHint":{"$ref":"field-base.json#persistentHint"},"placeholder":{"$ref":"field-base.json#placeholder"},"prefix":{"id":"#prefix","enum":["name","symbol",null,false]},"prependIcon":{"$ref":"field-base.json#prependIcon"},"private":{"$ref":"field-base.json#private"},"searchable":{"$ref":"field-base.json#searchable"},"suffix":{"id":"#prefix","enum":["name","symbol",null,false]},"tooltip":{"$ref":"field-base.json#tooltip"},"validateOn":{"$ref":"field-base.json#validateOn"},"validation":{"id":"#validation","type":["null","object"],"properties":{"required":{"type":"boolean"},"pattern":{"type":"object","properties":{"value":{"type":"string","minLength":1}}}},"anyOf":[{"required":["required"]},{"required":["pattern"]}]},"value":{"$ref":"field-base.json#value"}},"anyOf":[{"properties":{"validateOn":{"enum":["blur","input","submit"]},"validation":{"type":"object"}}},{"properties":{"validateOn":{"enum":[null]},"validation":{"type":"null"}}}],"required":["name","type","label","currency"]}
+module.exports = {"$schema":"http://json-schema.org/draft-06/schema#","$id":"http://chameleon-notation/container-hlist.json#","title":"Horizontal list container","description":"Schema defines horizontal list container","type":"object","properties":{"type":{"type":"string","enum":["hlist"]},"color":{"type":"string"},"elements":{"type":"array","items":{"type":"object"}},"flat":{"type":"boolean"},"gutter":{"type":"boolean"},"name":{"$ref":"field-base.json#name"}},"required":["type","color","elements"]}
 
 /***/ }),
 /* 117 */
 /***/ (function(module, exports) {
 
-module.exports = {"$schema":"http://json-schema.org/draft-06/schema#","$id":"http://chameleon-notation/field-number.json#","title":"Number field","description":"Schema defines number field","type":"object","properties":{"type":{"type":"string","enum":["number"]},"appendIcon":{"$ref":"field-base.json#appendIcon"},"clearable":{"$ref":"field-base.json#clearable"},"hint":{"$ref":"field-base.json#hint"},"label":{"$ref":"field-base.json#label"},"mask":{"$ref":"field-base.json#mask"},"multiLine":{"id":"#multiLine","enum":[null,false]},"name":{"$ref":"field-base.json#name"},"persistentHint":{"$ref":"field-base.json#persistentHint"},"placeholder":{"$ref":"field-base.json#placeholder"},"prefix":{"$ref":"field-base.json#prefix"},"prependIcon":{"$ref":"field-base.json#prependIcon"},"private":{"$ref":"field-base.json#private"},"searchable":{"$ref":"field-base.json#searchable"},"step":{"type":["number","boolean","null"]},"suffix":{"$ref":"field-base.json#suffix"},"tooltip":{"$ref":"field-base.json#tooltip"},"validateOn":{"$ref":"field-base.json#validateOn"},"validation":{"$ref":"field-base.json#validation"},"value":{"id":"#value","type":["number","null"]}},"allOf":[{"anyOf":[{"properties":{"validateOn":{"enum":["blur","input","submit"]},"validation":{"type":"object"}}},{"properties":{"validateOn":{"enum":[null]},"validation":{"type":"null"}}}]},{"anyOf":[{"properties":{"validation":{"properties":{"pattern":{"properties":{"predefined":{"enum":["integer"]}}}}},"step":{"cn-withDecimals":false}}},{"properties":{"validation":{"properties":{"pattern":{"properties":{"predefined":{"not":{"enum":["integer"]}}}}}},"step":{"cn-withDecimals":true}}}]}],"required":["name","type","label"]}
+module.exports = {"$schema":"http://json-schema.org/draft-06/schema#","$id":"http://chameleon-notation/field-money.json#","title":"Money field","description":"Schema defines money field","type":"object","properties":{"type":{"type":"string","enum":["money"]},"appendIcon":{"$ref":"field-base.json#appendIcon"},"clearable":{"$ref":"field-base.json#clearable"},"currency":{"id":"#currency","type":"object","properties":{"name":{"type":"string","minLength":1},"symbol":{"type":"string","minLength":1}}},"hint":{"$ref":"field-base.json#hint"},"label":{"$ref":"field-base.json#label"},"name":{"$ref":"field-base.json#name"},"persistentHint":{"$ref":"field-base.json#persistentHint"},"placeholder":{"$ref":"field-base.json#placeholder"},"prefix":{"id":"#prefix","enum":["name","symbol",null,false]},"prependIcon":{"$ref":"field-base.json#prependIcon"},"private":{"$ref":"field-base.json#private"},"searchable":{"$ref":"field-base.json#searchable"},"suffix":{"id":"#prefix","enum":["name","symbol",null,false]},"tooltip":{"$ref":"field-base.json#tooltip"},"validateOn":{"$ref":"field-base.json#validateOn"},"validation":{"id":"#validation","type":["null","object"],"properties":{"required":{"type":"boolean"},"pattern":{"type":"object","properties":{"value":{"type":"string","minLength":1}}}},"anyOf":[{"required":["required"]},{"required":["pattern"]}]},"value":{"$ref":"field-base.json#value"}},"anyOf":[{"properties":{"validateOn":{"enum":["blur","input","submit"]},"validation":{"type":"object"}}},{"properties":{"validateOn":{"enum":[null]},"validation":{"type":"null"}}}],"required":["name","type","label","currency"]}
 
 /***/ }),
 /* 118 */
 /***/ (function(module, exports) {
 
-module.exports = {"$schema":"http://json-schema.org/draft-06/schema#","$id":"http://chameleon-notation/page.json#","title":"Page","description":"Schema defines page","type":"object","properties":{"type":{"type":"string","enum":["page"]},"layout":{"type":"string","minLength":1,"enum":["blank"]},"meta":{"type":"object","properties":{"description":{"type":"string","minLength":1},"keywords":{"type":"string","minLength":1},"title":{"type":"string","minLength":1}}},"name":{"type":"string","minLength":1},"template":{"type":"string","minLength":1},"validators":{"type":"object"},"elements":{"type":"array","items":{"type":"object","properties":{"elements":{"type":"array","items":{"oneOf":[{"$ref":"widget-form.json#"},{"$ref":"widget-video.json#"}]}}}}}},"required":["layout","template","type"]}
+module.exports = {"$schema":"http://json-schema.org/draft-06/schema#","$id":"http://chameleon-notation/field-number.json#","title":"Number field","description":"Schema defines number field","type":"object","properties":{"type":{"type":"string","enum":["number"]},"appendIcon":{"$ref":"field-base.json#appendIcon"},"clearable":{"$ref":"field-base.json#clearable"},"hint":{"$ref":"field-base.json#hint"},"label":{"$ref":"field-base.json#label"},"mask":{"$ref":"field-base.json#mask"},"multiLine":{"id":"#multiLine","enum":[null,false]},"name":{"$ref":"field-base.json#name"},"persistentHint":{"$ref":"field-base.json#persistentHint"},"placeholder":{"$ref":"field-base.json#placeholder"},"prefix":{"$ref":"field-base.json#prefix"},"prependIcon":{"$ref":"field-base.json#prependIcon"},"private":{"$ref":"field-base.json#private"},"searchable":{"$ref":"field-base.json#searchable"},"step":{"type":["number","boolean","null"]},"suffix":{"$ref":"field-base.json#suffix"},"tooltip":{"$ref":"field-base.json#tooltip"},"validateOn":{"$ref":"field-base.json#validateOn"},"validation":{"$ref":"field-base.json#validation"},"value":{"id":"#value","type":["number","null"]}},"allOf":[{"anyOf":[{"properties":{"validateOn":{"enum":["blur","input","submit"]},"validation":{"type":"object"}}},{"properties":{"validateOn":{"enum":[null]},"validation":{"type":"null"}}}]},{"anyOf":[{"properties":{"validation":{"properties":{"pattern":{"properties":{"predefined":{"enum":["integer"]}}}}},"step":{"cn-withDecimals":false}}},{"properties":{"validation":{"properties":{"pattern":{"properties":{"predefined":{"not":{"enum":["integer"]}}}}}},"step":{"cn-withDecimals":true}}}]}],"required":["name","type","label"]}
 
 /***/ }),
 /* 119 */
 /***/ (function(module, exports) {
 
-module.exports = {"$schema":"http://json-schema.org/draft-06/schema#","$id":"http://chameleon-notation/field-radioList.json#","title":"Radio list field","description":"Schema defines radio list field","type":"object","properties":{"name":{"$ref":"field-base.json#name"},"type":{"type":"string","enum":["radioList"]},"appendIcon":{"$ref":"field-base.json#appendIcon"},"prependIcon":{"$ref":"field-base.json#prependIcon"},"hint":{"$ref":"field-base.json#hint"},"persistentHint":{"$ref":"field-base.json#persistentHint"},"inputValue":{"id":"#inputValue","type":["string","null"]},"validation":{"$ref":"field-base.json#validation"},"dataSource":{"id":"#dataSource","type":"object","properties":{"items":{"type":"array","items":{"type":"object","properties":{"value":{"$ref":"field-base.json#value"},"label":{"$ref":"field-base.json#label"},"color":{"$ref":"field-base.json#color"},"disabled":{"$ref":"field-base.json#disabled"}},"required":["value"]}}},"required":["items"]}},"required":["name","type","dataSource"]}
+module.exports = {"$schema":"http://json-schema.org/draft-06/schema#","$id":"http://chameleon-notation/page.json#","title":"Page","description":"Schema defines page","type":"object","properties":{"type":{"type":"string","enum":["page"]},"layout":{"type":"string","minLength":1,"enum":["blank"]},"meta":{"type":"object","properties":{"description":{"type":"string","minLength":1},"keywords":{"type":"string","minLength":1},"title":{"type":"string","minLength":1}}},"name":{"type":"string","minLength":1},"template":{"type":"string","minLength":1},"validators":{"type":"object"},"elements":{"type":"array","items":{"anyOf":[{"$ref":"container-hlist.json#"},{"$ref":"container-panel.json#"},{"$ref":"container-vlist.json#"}]}}},"required":["layout","template","type"]}
 
 /***/ }),
 /* 120 */
 /***/ (function(module, exports) {
 
-module.exports = {"$schema":"http://json-schema.org/draft-06/schema#","$id":"http://chameleon-notation/field-rating.json#","title":"Rating field","description":"Schema defines rating field","type":"object","properties":{"type":{"type":"string","enum":["rating"]},"icon":{"type":"string"},"label":{"$ref":"field-base.json#label"},"maxRating":{"type":"number","maximum":10},"name":{"$ref":"field-base.json#name"},"private":{"$ref":"field-base.json#private"},"ratingInfo":{"type":["boolean","null"]},"searchable":{"$ref":"field-base.json#searchable"},"validation":{"$ref":"field-base.json#validation"},"value":{"id":"#value","type":["number","null"]}},"required":["name","type","label"]}
+module.exports = {"$schema":"http://json-schema.org/draft-06/schema#","$id":"http://chameleon-notation/container-panel.json#","title":"Panel container","description":"Schema defines panel container","type":"object","properties":{"type":{"type":"string","enum":["panel"]},"color":{"type":"string"},"elements":{"type":"array","items":{"type":"object"}},"flat":{"type":"boolean"},"name":{"$ref":"field-base.json#name"}},"required":["type","color","elements"]}
 
 /***/ }),
 /* 121 */
 /***/ (function(module, exports) {
 
-module.exports = {"$schema":"http://json-schema.org/draft-06/schema#","$id":"http://chameleon-notation/field-richText.json#","title":"Rich text field","description":"Schema defines rich text field","type":"object","properties":{"type":{"type":"string","enum":["richText"]},"label":{"$ref":"field-base.json#label"},"name":{"$ref":"field-base.json#name"},"private":{"$ref":"field-base.json#private"},"searchable":{"$ref":"field-base.json#searchable"},"toolbar":{"id":"#toolbar","type":["array","string"],"uniqueItems":true,"items":{"type":"string"}},"value":{"$ref":"field-base.json#value"}},"required":["name","type","label","toolbar"]}
+module.exports = {"$schema":"http://json-schema.org/draft-06/schema#","$id":"http://chameleon-notation/field-radioList.json#","title":"Radio list field","description":"Schema defines radio list field","type":"object","properties":{"name":{"$ref":"field-base.json#name"},"type":{"type":"string","enum":["radioList"]},"appendIcon":{"$ref":"field-base.json#appendIcon"},"prependIcon":{"$ref":"field-base.json#prependIcon"},"hint":{"$ref":"field-base.json#hint"},"persistentHint":{"$ref":"field-base.json#persistentHint"},"inputValue":{"id":"#inputValue","type":["string","null"]},"validation":{"$ref":"field-base.json#validation"},"dataSource":{"id":"#dataSource","type":"object","properties":{"items":{"type":"array","items":{"type":"object","properties":{"value":{"$ref":"field-base.json#value"},"label":{"$ref":"field-base.json#label"},"color":{"$ref":"field-base.json#color"},"disabled":{"$ref":"field-base.json#disabled"}},"required":["value"]}}},"required":["items"]}},"required":["name","type","dataSource"]}
 
 /***/ }),
 /* 122 */
 /***/ (function(module, exports) {
 
-module.exports = {"$schema":"http://json-schema.org/draft-06/schema#","$id":"http://chameleon-notation/field-select.json#","title":"Select field","description":"Schema defines select field","type":"object","properties":{"type":{"type":"string","enum":["select"]},"appendIcon":{"$ref":"field-base.json#appendIcon"},"clearable":{"$ref":"field-base.json#clearable"},"dataSource":{"id":"#dataSource","type":"object","properties":{"items":{"type":"array","items":{"type":"object"}},"options":{"type":"object","required":["displayProp"]}}},"hint":{"$ref":"field-base.json#hint"},"label":{"$ref":"field-base.json#label"},"mask":{"$ref":"field-base.json#mask"},"multiLine":{"$ref":"field-base.json#multiLine"},"multiple":{"id":"#multiple","type":"boolean"},"name":{"$ref":"field-base.json#name"},"persistentHint":{"$ref":"field-base.json#persistentHint"},"placeholder":{"$ref":"field-base.json#placeholder"},"prependIcon":{"$ref":"field-base.json#prependIcon"},"private":{"$ref":"field-base.json#private"},"readonly":{"id":"#readonly","type":"boolean"},"tooltip":{"$ref":"field-base.json#tooltip"},"validateOn":{"$ref":"field-base.json#validateOn"},"validation":{"$ref":"field-base.json#validation"},"value":{"id":"#value","type":"array","items":{"type":"object"}}},"required":["name","type","label"]}
+module.exports = {"$schema":"http://json-schema.org/draft-06/schema#","$id":"http://chameleon-notation/field-rating.json#","title":"Rating field","description":"Schema defines rating field","type":"object","properties":{"type":{"type":"string","enum":["rating"]},"icon":{"type":"string"},"label":{"$ref":"field-base.json#label"},"maxRating":{"type":"number","maximum":10},"name":{"$ref":"field-base.json#name"},"private":{"$ref":"field-base.json#private"},"ratingInfo":{"type":["boolean","null"]},"searchable":{"$ref":"field-base.json#searchable"},"validation":{"$ref":"field-base.json#validation"},"value":{"id":"#value","type":["number","null"]}},"required":["name","type","label"]}
 
 /***/ }),
 /* 123 */
 /***/ (function(module, exports) {
 
-module.exports = {"$schema":"http://json-schema.org/draft-06/schema#","$id":"http://chameleon-notation/field-slider.json#","title":"Slider field","description":"Schema defines slider field","type":"object","properties":{"type":{"type":"string","enum":["slider"]},"label":{"$ref":"field-base.json#label"},"name":{"$ref":"field-base.json#name"},"appendIcon":{"$ref":"field-base.json#appendIcon"},"prependIcon":{"$ref":"field-base.json#prependIcon"},"hint":{"$ref":"field-base.json#hint"},"persistentHint":{"$ref":"field-base.json#persistentHint"},"color":{"$ref":"field-base.json#color"},"trackColor":{"id":"#color","type":"string"},"thumbColor":{"id":"#color","type":"string"},"thumbLabel":{"id":"#thumbLabel","type":"boolean"},"searchable":{"$ref":"field-base.json#searchable"},"private":{"$ref":"field-base.json#private"},"step":{"id":"#step","type":"number"},"validateOn":{"$ref":"field-base.json#validateOn"},"validation":{"allOf":[{"$ref":"field-base.json#validation"},{"required":["max","min"]}]},"value":{"id":"#value","type":["string","null"]}},"required":["name","type","label"]}
+module.exports = {"$schema":"http://json-schema.org/draft-06/schema#","$id":"http://chameleon-notation/field-richText.json#","title":"Rich text field","description":"Schema defines rich text field","type":"object","properties":{"type":{"type":"string","enum":["richText"]},"label":{"$ref":"field-base.json#label"},"name":{"$ref":"field-base.json#name"},"private":{"$ref":"field-base.json#private"},"searchable":{"$ref":"field-base.json#searchable"},"toolbar":{"id":"#toolbar","type":["array","string"],"uniqueItems":true,"items":{"type":"string"}},"value":{"$ref":"field-base.json#value"}},"required":["name","type","label","toolbar"]}
 
 /***/ }),
 /* 124 */
 /***/ (function(module, exports) {
 
-module.exports = {"$schema":"http://json-schema.org/draft-06/schema#","$id":"http://chameleon-notation/field-switch.json#","title":"Switch field","description":"Schema defines switch field","type":"object","properties":{"type":{"type":"string","enum":["switch"]},"label":{"$ref":"field-base.json#label"},"name":{"$ref":"field-base.json#name"},"appendIcon":{"$ref":"field-base.json#appendIcon"},"prependIcon":{"$ref":"field-base.json#prependIcon"},"hint":{"$ref":"field-base.json#hint"},"persistentHint":{"$ref":"field-base.json#persistentHint"},"disabled":{"$ref":"field-base.json#disabled"},"color":{"$ref":"field-base.json#color"},"value":{"id":"#value","type":"string"},"inputValue":{"id":"#inputValue","type":"boolean"}},"required":["name","type","label"]}
+module.exports = {"$schema":"http://json-schema.org/draft-06/schema#","$id":"http://chameleon-notation/field-select.json#","title":"Select field","description":"Schema defines select field","type":"object","properties":{"type":{"type":"string","enum":["select"]},"appendIcon":{"$ref":"field-base.json#appendIcon"},"clearable":{"$ref":"field-base.json#clearable"},"dataSource":{"id":"#dataSource","type":"object","properties":{"items":{"type":"array","items":{"type":"object"}},"options":{"type":"object","required":["displayProp"]}}},"hint":{"$ref":"field-base.json#hint"},"label":{"$ref":"field-base.json#label"},"mask":{"$ref":"field-base.json#mask"},"multiLine":{"$ref":"field-base.json#multiLine"},"multiple":{"id":"#multiple","type":"boolean"},"name":{"$ref":"field-base.json#name"},"persistentHint":{"$ref":"field-base.json#persistentHint"},"placeholder":{"$ref":"field-base.json#placeholder"},"prependIcon":{"$ref":"field-base.json#prependIcon"},"private":{"$ref":"field-base.json#private"},"readonly":{"id":"#readonly","type":"boolean"},"tooltip":{"$ref":"field-base.json#tooltip"},"validateOn":{"$ref":"field-base.json#validateOn"},"validation":{"$ref":"field-base.json#validation"},"value":{"id":"#value","type":"array","items":{"type":"object"}}},"required":["name","type","label"]}
 
 /***/ }),
 /* 125 */
 /***/ (function(module, exports) {
 
-module.exports = {"$schema":"http://json-schema.org/draft-06/schema#","$id":"http://chameleon-notation/field-tags.json#","title":"Tags field","description":"Schema defines tags field","type":"object","properties":{"type":{"type":"string","enum":["tags"]},"appendIcon":{"$ref":"field-base.json#appendIcon"},"clearable":{"$ref":"field-base.json#clearable"},"dataSource":{"$ref":"field-select.json#dataSource"},"hint":{"$ref":"field-base.json#hint"},"label":{"$ref":"field-base.json#label"},"mask":{"$ref":"field-base.json#mask"},"multiLine":{"$ref":"field-base.json#multiLine"},"multiple":{"$ref":"field-select.json#multiple"},"name":{"$ref":"field-base.json#name"},"persistentHint":{"$ref":"field-base.json#persistentHint"},"placeholder":{"$ref":"field-base.json#placeholder"},"prependIcon":{"$ref":"field-base.json#prependIcon"},"private":{"$ref":"field-base.json#private"},"readonly":{"$ref":"field-select.json#readonly"},"tooltip":{"$ref":"field-base.json#tooltip"},"validateOn":{"$ref":"field-base.json#validateOn"},"validation":{"$ref":"field-base.json#validation"},"value":{"$ref":"field-select.json#value"}},"required":["name","type","label"]}
+module.exports = {"$schema":"http://json-schema.org/draft-06/schema#","$id":"http://chameleon-notation/field-slider.json#","title":"Slider field","description":"Schema defines slider field","type":"object","properties":{"type":{"type":"string","enum":["slider"]},"label":{"$ref":"field-base.json#label"},"name":{"$ref":"field-base.json#name"},"appendIcon":{"$ref":"field-base.json#appendIcon"},"prependIcon":{"$ref":"field-base.json#prependIcon"},"hint":{"$ref":"field-base.json#hint"},"persistentHint":{"$ref":"field-base.json#persistentHint"},"color":{"$ref":"field-base.json#color"},"trackColor":{"id":"#color","type":"string"},"thumbColor":{"id":"#color","type":"string"},"thumbLabel":{"id":"#thumbLabel","type":"boolean"},"searchable":{"$ref":"field-base.json#searchable"},"private":{"$ref":"field-base.json#private"},"step":{"id":"#step","type":"number"},"validateOn":{"$ref":"field-base.json#validateOn"},"validation":{"allOf":[{"$ref":"field-base.json#validation"},{"required":["max","min"]}]},"value":{"id":"#value","type":["string","null"]}},"required":["name","type","label"]}
 
 /***/ }),
 /* 126 */
 /***/ (function(module, exports) {
 
-module.exports = {"$schema":"http://json-schema.org/draft-06/schema#","$id":"http://chameleon-notation/field-text.json#","title":"Text field","description":"Schema defines text field","type":"object","properties":{"type":{"type":"string","enum":["text"]},"appendIcon":{"$ref":"field-base.json#appendIcon"},"clearable":{"$ref":"field-base.json#clearable"},"hint":{"$ref":"field-base.json#hint"},"label":{"$ref":"field-base.json#label"},"mask":{"$ref":"field-base.json#mask"},"multiLine":{"$ref":"field-base.json#multiLine"},"name":{"$ref":"field-base.json#name"},"persistentHint":{"$ref":"field-base.json#persistentHint"},"placeholder":{"$ref":"field-base.json#placeholder"},"prefix":{"$ref":"field-base.json#prefix"},"prependIcon":{"$ref":"field-base.json#prependIcon"},"private":{"$ref":"field-base.json#private"},"searchable":{"$ref":"field-base.json#searchable"},"suffix":{"$ref":"field-base.json#suffix"},"tooltip":{"$ref":"field-base.json#tooltip"},"validateOn":{"$ref":"field-base.json#validateOn"},"validation":{"$ref":"field-base.json#validation"},"value":{"$ref":"field-base.json#value"}},"anyOf":[{"properties":{"validateOn":{"enum":["blur","input","submit"]},"validation":{"type":"object"}}},{"properties":{"validateOn":{"enum":[null]},"validation":{"type":"null"}}}],"required":["name","type","label"]}
+module.exports = {"$schema":"http://json-schema.org/draft-06/schema#","$id":"http://chameleon-notation/field-switch.json#","title":"Switch field","description":"Schema defines switch field","type":"object","properties":{"type":{"type":"string","enum":["switch"]},"label":{"$ref":"field-base.json#label"},"name":{"$ref":"field-base.json#name"},"appendIcon":{"$ref":"field-base.json#appendIcon"},"prependIcon":{"$ref":"field-base.json#prependIcon"},"hint":{"$ref":"field-base.json#hint"},"persistentHint":{"$ref":"field-base.json#persistentHint"},"disabled":{"$ref":"field-base.json#disabled"},"color":{"$ref":"field-base.json#color"},"value":{"id":"#value","type":"string"},"inputValue":{"id":"#inputValue","type":"boolean"}},"required":["name","type","label"]}
 
 /***/ }),
 /* 127 */
 /***/ (function(module, exports) {
 
-module.exports = {"$schema":"http://json-schema.org/draft-06/schema#","$id":"http://chameleon-notation/widget-video.json#","title":"Video widget","description":"Schema defines video widget","type":"object","properties":{"type":{"type":"string","enum":["video"]},"autoplay":{"type":"boolean"},"controls":{"type":"boolean"},"label":{"$ref":"field-base.json#label"},"muted":{"type":"boolean"},"name":{"$ref":"field-base.json#name"},"repeat":{"type":"boolean"},"value":{"type":["string","array"],"items":{"type":"string","format":"url"},"format":"url"}}}
+module.exports = {"$schema":"http://json-schema.org/draft-06/schema#","$id":"http://chameleon-notation/field-tags.json#","title":"Tags field","description":"Schema defines tags field","type":"object","properties":{"type":{"type":"string","enum":["tags"]},"appendIcon":{"$ref":"field-base.json#appendIcon"},"clearable":{"$ref":"field-base.json#clearable"},"dataSource":{"$ref":"field-select.json#dataSource"},"hint":{"$ref":"field-base.json#hint"},"label":{"$ref":"field-base.json#label"},"mask":{"$ref":"field-base.json#mask"},"multiLine":{"$ref":"field-base.json#multiLine"},"multiple":{"$ref":"field-select.json#multiple"},"name":{"$ref":"field-base.json#name"},"persistentHint":{"$ref":"field-base.json#persistentHint"},"placeholder":{"$ref":"field-base.json#placeholder"},"prependIcon":{"$ref":"field-base.json#prependIcon"},"private":{"$ref":"field-base.json#private"},"readonly":{"$ref":"field-select.json#readonly"},"tooltip":{"$ref":"field-base.json#tooltip"},"validateOn":{"$ref":"field-base.json#validateOn"},"validation":{"$ref":"field-base.json#validation"},"value":{"$ref":"field-select.json#value"}},"required":["name","type","label"]}
 
 /***/ }),
 /* 128 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, exports) {
 
-module.exports = { "default": __webpack_require__(129), __esModule: true };
+module.exports = {"$schema":"http://json-schema.org/draft-06/schema#","$id":"http://chameleon-notation/field-text.json#","title":"Text field","description":"Schema defines text field","type":"object","properties":{"type":{"type":"string","enum":["text"]},"appendIcon":{"$ref":"field-base.json#appendIcon"},"clearable":{"$ref":"field-base.json#clearable"},"hint":{"$ref":"field-base.json#hint"},"label":{"$ref":"field-base.json#label"},"mask":{"$ref":"field-base.json#mask"},"multiLine":{"$ref":"field-base.json#multiLine"},"name":{"$ref":"field-base.json#name"},"persistentHint":{"$ref":"field-base.json#persistentHint"},"placeholder":{"$ref":"field-base.json#placeholder"},"prefix":{"$ref":"field-base.json#prefix"},"prependIcon":{"$ref":"field-base.json#prependIcon"},"private":{"$ref":"field-base.json#private"},"searchable":{"$ref":"field-base.json#searchable"},"suffix":{"$ref":"field-base.json#suffix"},"tooltip":{"$ref":"field-base.json#tooltip"},"validateOn":{"$ref":"field-base.json#validateOn"},"validation":{"$ref":"field-base.json#validation"},"value":{"$ref":"field-base.json#value"}},"anyOf":[{"properties":{"validateOn":{"enum":["blur","input","submit"]},"validation":{"type":"object"}}},{"properties":{"validateOn":{"enum":[null]},"validation":{"type":"null"}}}],"required":["name","type","label"]}
 
 /***/ }),
 /* 129 */
+/***/ (function(module, exports) {
+
+module.exports = {"$schema":"http://json-schema.org/draft-06/schema#","$id":"http://chameleon-notation/widget-video.json#","title":"Video widget","description":"Schema defines video widget","type":"object","properties":{"type":{"type":"string","enum":["video"]},"autoplay":{"type":"boolean"},"controls":{"type":"boolean"},"label":{"$ref":"field-base.json#label"},"muted":{"type":"boolean"},"name":{"$ref":"field-base.json#name"},"repeat":{"type":"boolean"},"value":{"type":["string","array"],"items":{"type":"string","format":"url"},"format":"url"}}}
+
+/***/ }),
+/* 130 */
+/***/ (function(module, exports) {
+
+module.exports = {"$schema":"http://json-schema.org/draft-06/schema#","$id":"http://chameleon-notation/container-vlist.json#","title":"Vertical list container","description":"Schema defines vertical list container","type":"object","properties":{"type":{"type":"string","enum":["vlist"]},"color":{"type":"string"},"elements":{"type":"array","items":{"type":"object"}},"flat":{"type":"boolean"},"gutter":{"type":"boolean"},"name":{"$ref":"field-base.json#name"}},"required":["type","color","elements"]}
+
+/***/ }),
+/* 131 */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(130);
+module.exports = { "default": __webpack_require__(132), __esModule: true };
+
+/***/ }),
+/* 132 */
+/***/ (function(module, exports, __webpack_require__) {
+
+__webpack_require__(133);
 module.exports = __webpack_require__(12).Object.values;
 
 
 /***/ }),
-/* 130 */
+/* 133 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // https://github.com/tc39/proposal-object-values-entries
 var $export = __webpack_require__(23);
-var $values = __webpack_require__(133)(false);
+var $values = __webpack_require__(136)(false);
 
 $export($export.S, 'Object', {
   values: function values(it) {
@@ -4715,11 +4752,11 @@ $export($export.S, 'Object', {
 
 
 /***/ }),
-/* 131 */
+/* 134 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // optional / simple context binding
-var aFunction = __webpack_require__(132);
+var aFunction = __webpack_require__(135);
 module.exports = function (fn, that, length) {
   aFunction(fn);
   if (that === undefined) return fn;
@@ -4741,7 +4778,7 @@ module.exports = function (fn, that, length) {
 
 
 /***/ }),
-/* 132 */
+/* 135 */
 /***/ (function(module, exports) {
 
 module.exports = function (it) {
@@ -4751,7 +4788,7 @@ module.exports = function (it) {
 
 
 /***/ }),
-/* 133 */
+/* 136 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var getKeys = __webpack_require__(16);
@@ -4773,7 +4810,7 @@ module.exports = function (isEntries) {
 
 
 /***/ }),
-/* 134 */
+/* 137 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // fallback for non-array-like ES3 and non-enumerable old V8 strings
@@ -4785,14 +4822,14 @@ module.exports = Object('z').propertyIsEnumerable(0) ? Object : function (it) {
 
 
 /***/ }),
-/* 135 */
+/* 138 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // false -> Array#indexOf
 // true  -> Array#includes
 var toIObject = __webpack_require__(2);
-var toLength = __webpack_require__(136);
-var toAbsoluteIndex = __webpack_require__(137);
+var toLength = __webpack_require__(139);
+var toAbsoluteIndex = __webpack_require__(140);
 module.exports = function (IS_INCLUDES) {
   return function ($this, el, fromIndex) {
     var O = toIObject($this);
@@ -4814,7 +4851,7 @@ module.exports = function (IS_INCLUDES) {
 
 
 /***/ }),
-/* 136 */
+/* 139 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // 7.1.15 ToLength
@@ -4826,7 +4863,7 @@ module.exports = function (it) {
 
 
 /***/ }),
-/* 137 */
+/* 140 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var toInteger = __webpack_require__(26);
@@ -4839,21 +4876,21 @@ module.exports = function (index, length) {
 
 
 /***/ }),
-/* 138 */
+/* 141 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var compileSchema = __webpack_require__(139)
+var compileSchema = __webpack_require__(142)
   , resolve = __webpack_require__(30)
-  , Cache = __webpack_require__(148)
+  , Cache = __webpack_require__(151)
   , SchemaObject = __webpack_require__(51)
   , stableStringify = __webpack_require__(52)
-  , formats = __webpack_require__(149)
-  , rules = __webpack_require__(150)
-  , $dataMetaSchema = __webpack_require__(169)
-  , patternGroups = __webpack_require__(170)
+  , formats = __webpack_require__(152)
+  , rules = __webpack_require__(153)
+  , $dataMetaSchema = __webpack_require__(172)
+  , patternGroups = __webpack_require__(173)
   , util = __webpack_require__(6)
   , co = __webpack_require__(54);
 
@@ -4872,8 +4909,8 @@ Ajv.prototype.errorsText = errorsText;
 Ajv.prototype._addSchema = _addSchema;
 Ajv.prototype._compile = _compile;
 
-Ajv.prototype.compileAsync = __webpack_require__(171);
-var customKeyword = __webpack_require__(172);
+Ajv.prototype.compileAsync = __webpack_require__(174);
+var customKeyword = __webpack_require__(175);
 Ajv.prototype.addKeyword = customKeyword.add;
 Ajv.prototype.getKeyword = customKeyword.get;
 Ajv.prototype.removeKeyword = customKeyword.remove;
@@ -5290,11 +5327,11 @@ function addFormat(name, format) {
 function addDraft6MetaSchema(self) {
   var $dataSchema;
   if (self._opts.$data) {
-    $dataSchema = __webpack_require__(174);
+    $dataSchema = __webpack_require__(177);
     self.addMetaSchema($dataSchema, $dataSchema.$id, true);
   }
   if (self._opts.meta === false) return;
-  var metaSchema = __webpack_require__(175);
+  var metaSchema = __webpack_require__(178);
   if (self._opts.$data) metaSchema = $dataMetaSchema(metaSchema, META_SUPPORT_DATA);
   self.addMetaSchema(metaSchema, META_SCHEMA_ID, true);
   self._refs['http://json-schema.org/schema'] = META_SCHEMA_ID;
@@ -5348,7 +5385,7 @@ function noop() {}
 
 
 /***/ }),
-/* 139 */
+/* 142 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5735,7 +5772,7 @@ function vars(arr, statement) {
 
 
 /***/ }),
-/* 140 */
+/* 143 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5762,8 +5799,8 @@ function vars(arr, statement) {
 
 
 
-var punycode = __webpack_require__(141);
-var util = __webpack_require__(142);
+var punycode = __webpack_require__(144);
+var util = __webpack_require__(145);
 
 exports.parse = urlParse;
 exports.resolve = urlResolve;
@@ -5838,7 +5875,7 @@ var protocolPattern = /^([a-z0-9.+-]+:)/i,
       'gopher:': true,
       'file:': true
     },
-    querystring = __webpack_require__(143);
+    querystring = __webpack_require__(146);
 
 function urlParse(url, parseQueryString, slashesDenoteHost) {
   if (url && util.isObject(url) && url instanceof Url) return url;
@@ -6474,7 +6511,7 @@ Url.prototype.parseHost = function() {
 
 
 /***/ }),
-/* 141 */
+/* 144 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(module, global) {var __WEBPACK_AMD_DEFINE_RESULT__;/*! https://mths.be/punycode v1.4.1 by @mathias */
@@ -7013,7 +7050,7 @@ Url.prototype.parseHost = function() {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(39)(module), __webpack_require__(41)))
 
 /***/ }),
-/* 142 */
+/* 145 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7036,18 +7073,18 @@ module.exports = {
 
 
 /***/ }),
-/* 143 */
+/* 146 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-exports.decode = exports.parse = __webpack_require__(144);
-exports.encode = exports.stringify = __webpack_require__(145);
+exports.decode = exports.parse = __webpack_require__(147);
+exports.encode = exports.stringify = __webpack_require__(148);
 
 
 /***/ }),
-/* 144 */
+/* 147 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7138,7 +7175,7 @@ var isArray = Array.isArray || function (xs) {
 
 
 /***/ }),
-/* 145 */
+/* 148 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7230,7 +7267,7 @@ var objectKeys = Object.keys || function (obj) {
 
 
 /***/ }),
-/* 146 */
+/* 149 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7257,7 +7294,7 @@ module.exports = function ucs2length(str) {
 
 
 /***/ }),
-/* 147 */
+/* 150 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7345,7 +7382,7 @@ function escapeJsonPtr(str) {
 
 
 /***/ }),
-/* 148 */
+/* 151 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7378,7 +7415,7 @@ Cache.prototype.clear = function Cache_clear() {
 
 
 /***/ }),
-/* 149 */
+/* 152 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7520,13 +7557,13 @@ function regex(str) {
 
 
 /***/ }),
-/* 150 */
+/* 153 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var ruleModules = __webpack_require__(151)
+var ruleModules = __webpack_require__(154)
   , toHash = __webpack_require__(6).toHash;
 
 module.exports = function rules() {
@@ -7585,7 +7622,7 @@ module.exports = function rules() {
 
 
 /***/ }),
-/* 151 */
+/* 154 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7593,15 +7630,15 @@ module.exports = function rules() {
 
 //all requires must be explicit because browserify won't work with dynamic requires
 module.exports = {
-  '$ref': __webpack_require__(152),
-  allOf: __webpack_require__(153),
-  anyOf: __webpack_require__(154),
-  const: __webpack_require__(155),
-  contains: __webpack_require__(156),
-  dependencies: __webpack_require__(157),
-  'enum': __webpack_require__(158),
-  format: __webpack_require__(159),
-  items: __webpack_require__(160),
+  '$ref': __webpack_require__(155),
+  allOf: __webpack_require__(156),
+  anyOf: __webpack_require__(157),
+  const: __webpack_require__(158),
+  contains: __webpack_require__(159),
+  dependencies: __webpack_require__(160),
+  'enum': __webpack_require__(161),
+  format: __webpack_require__(162),
+  items: __webpack_require__(163),
   maximum: __webpack_require__(55),
   minimum: __webpack_require__(55),
   maxItems: __webpack_require__(56),
@@ -7610,20 +7647,20 @@ module.exports = {
   minLength: __webpack_require__(57),
   maxProperties: __webpack_require__(58),
   minProperties: __webpack_require__(58),
-  multipleOf: __webpack_require__(161),
-  not: __webpack_require__(162),
-  oneOf: __webpack_require__(163),
-  pattern: __webpack_require__(164),
-  properties: __webpack_require__(165),
-  propertyNames: __webpack_require__(166),
-  required: __webpack_require__(167),
-  uniqueItems: __webpack_require__(168),
+  multipleOf: __webpack_require__(164),
+  not: __webpack_require__(165),
+  oneOf: __webpack_require__(166),
+  pattern: __webpack_require__(167),
+  properties: __webpack_require__(168),
+  propertyNames: __webpack_require__(169),
+  required: __webpack_require__(170),
+  uniqueItems: __webpack_require__(171),
   validate: __webpack_require__(53)
 };
 
 
 /***/ }),
-/* 152 */
+/* 155 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7753,7 +7790,7 @@ module.exports = function generate_ref(it, $keyword, $ruleType) {
 
 
 /***/ }),
-/* 153 */
+/* 156 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7803,7 +7840,7 @@ module.exports = function generate_allOf(it, $keyword, $ruleType) {
 
 
 /***/ }),
-/* 154 */
+/* 157 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7883,7 +7920,7 @@ module.exports = function generate_anyOf(it, $keyword, $ruleType) {
 
 
 /***/ }),
-/* 155 */
+/* 158 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7945,7 +7982,7 @@ module.exports = function generate_const(it, $keyword, $ruleType) {
 
 
 /***/ }),
-/* 156 */
+/* 159 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8033,7 +8070,7 @@ module.exports = function generate_contains(it, $keyword, $ruleType) {
 
 
 /***/ }),
-/* 157 */
+/* 160 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8207,7 +8244,7 @@ module.exports = function generate_dependencies(it, $keyword, $ruleType) {
 
 
 /***/ }),
-/* 158 */
+/* 161 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8279,7 +8316,7 @@ module.exports = function generate_enum(it, $keyword, $ruleType) {
 
 
 /***/ }),
-/* 159 */
+/* 162 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8435,7 +8472,7 @@ module.exports = function generate_format(it, $keyword, $ruleType) {
 
 
 /***/ }),
-/* 160 */
+/* 163 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8582,7 +8619,7 @@ module.exports = function generate_items(it, $keyword, $ruleType) {
 
 
 /***/ }),
-/* 161 */
+/* 164 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8665,7 +8702,7 @@ module.exports = function generate_multipleOf(it, $keyword, $ruleType) {
 
 
 /***/ }),
-/* 162 */
+/* 165 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8755,7 +8792,7 @@ module.exports = function generate_not(it, $keyword, $ruleType) {
 
 
 /***/ }),
-/* 163 */
+/* 166 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8832,7 +8869,7 @@ module.exports = function generate_oneOf(it, $keyword, $ruleType) {
 
 
 /***/ }),
-/* 164 */
+/* 167 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8913,7 +8950,7 @@ module.exports = function generate_pattern(it, $keyword, $ruleType) {
 
 
 /***/ }),
-/* 165 */
+/* 168 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9388,7 +9425,7 @@ module.exports = function generate_properties(it, $keyword, $ruleType) {
 
 
 /***/ }),
-/* 166 */
+/* 169 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9476,7 +9513,7 @@ module.exports = function generate_propertyNames(it, $keyword, $ruleType) {
 
 
 /***/ }),
-/* 167 */
+/* 170 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9751,7 +9788,7 @@ module.exports = function generate_required(it, $keyword, $ruleType) {
 
 
 /***/ }),
-/* 168 */
+/* 171 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9829,7 +9866,7 @@ module.exports = function generate_uniqueItems(it, $keyword, $ruleType) {
 
 
 /***/ }),
-/* 169 */
+/* 172 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9885,7 +9922,7 @@ module.exports = function (metaSchema, keywordsJsonPointers) {
 
 
 /***/ }),
-/* 170 */
+/* 173 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9928,7 +9965,7 @@ module.exports = function (ajv) {
 
 
 /***/ }),
-/* 171 */
+/* 174 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10025,14 +10062,14 @@ function compileAsync(schema, meta, callback) {
 
 
 /***/ }),
-/* 172 */
+/* 175 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
 var IDENTIFIER = /^[a-z_$][a-z0-9_$-]*$/i;
-var customRuleCode = __webpack_require__(173);
+var customRuleCode = __webpack_require__(176);
 
 module.exports = {
   add: addKeyword,
@@ -10167,7 +10204,7 @@ function removeKeyword(keyword) {
 
 
 /***/ }),
-/* 173 */
+/* 176 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10400,24 +10437,24 @@ module.exports = function generate_custom(it, $keyword, $ruleType) {
 
 
 /***/ }),
-/* 174 */
+/* 177 */
 /***/ (function(module, exports) {
 
 module.exports = {"$schema":"http://json-schema.org/draft-06/schema#","$id":"https://raw.githubusercontent.com/epoberezkin/ajv/master/lib/refs/$data.json#","description":"Meta-schema for $data reference (JSON-schema extension proposal)","type":"object","required":["$data"],"properties":{"$data":{"type":"string","anyOf":[{"format":"relative-json-pointer"},{"format":"json-pointer"}]}},"additionalProperties":false}
 
 /***/ }),
-/* 175 */
+/* 178 */
 /***/ (function(module, exports) {
 
 module.exports = {"$schema":"http://json-schema.org/draft-06/schema#","$id":"http://json-schema.org/draft-06/schema#","title":"Core schema meta-schema","definitions":{"schemaArray":{"type":"array","minItems":1,"items":{"$ref":"#"}},"nonNegativeInteger":{"type":"integer","minimum":0},"nonNegativeIntegerDefault0":{"allOf":[{"$ref":"#/definitions/nonNegativeInteger"},{"default":0}]},"simpleTypes":{"enum":["array","boolean","integer","null","number","object","string"]},"stringArray":{"type":"array","items":{"type":"string"},"uniqueItems":true,"default":[]}},"type":["object","boolean"],"properties":{"$id":{"type":"string","format":"uri-reference"},"$schema":{"type":"string","format":"uri"},"$ref":{"type":"string","format":"uri-reference"},"title":{"type":"string"},"description":{"type":"string"},"default":{},"examples":{"type":"array","items":{}},"multipleOf":{"type":"number","exclusiveMinimum":0},"maximum":{"type":"number"},"exclusiveMaximum":{"type":"number"},"minimum":{"type":"number"},"exclusiveMinimum":{"type":"number"},"maxLength":{"$ref":"#/definitions/nonNegativeInteger"},"minLength":{"$ref":"#/definitions/nonNegativeIntegerDefault0"},"pattern":{"type":"string","format":"regex"},"additionalItems":{"$ref":"#"},"items":{"anyOf":[{"$ref":"#"},{"$ref":"#/definitions/schemaArray"}],"default":{}},"maxItems":{"$ref":"#/definitions/nonNegativeInteger"},"minItems":{"$ref":"#/definitions/nonNegativeIntegerDefault0"},"uniqueItems":{"type":"boolean","default":false},"contains":{"$ref":"#"},"maxProperties":{"$ref":"#/definitions/nonNegativeInteger"},"minProperties":{"$ref":"#/definitions/nonNegativeIntegerDefault0"},"required":{"$ref":"#/definitions/stringArray"},"additionalProperties":{"$ref":"#"},"definitions":{"type":"object","additionalProperties":{"$ref":"#"},"default":{}},"properties":{"type":"object","additionalProperties":{"$ref":"#"},"default":{}},"patternProperties":{"type":"object","additionalProperties":{"$ref":"#"},"default":{}},"dependencies":{"type":"object","additionalProperties":{"anyOf":[{"$ref":"#"},{"$ref":"#/definitions/stringArray"}]}},"propertyNames":{"$ref":"#"},"const":{},"enum":{"type":"array","minItems":1,"uniqueItems":true},"type":{"anyOf":[{"$ref":"#/definitions/simpleTypes"},{"type":"array","items":{"$ref":"#/definitions/simpleTypes"},"minItems":1,"uniqueItems":true}]},"format":{"type":"string"},"allOf":{"$ref":"#/definitions/schemaArray"},"anyOf":{"$ref":"#/definitions/schemaArray"},"oneOf":{"$ref":"#/definitions/schemaArray"},"not":{"$ref":"#"}},"default":{}}
 
 /***/ }),
-/* 176 */
+/* 179 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__allowedBooleanType__ = __webpack_require__(177);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__withDecimals__ = __webpack_require__(203);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__allowedBooleanType__ = __webpack_require__(180);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__withDecimals__ = __webpack_require__(206);
 
 
 
@@ -10427,11 +10464,11 @@ module.exports = {"$schema":"http://json-schema.org/draft-06/schema#","$id":"htt
 });
 
 /***/ }),
-/* 177 */
+/* 180 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_helpers_typeof__ = __webpack_require__(178);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_helpers_typeof__ = __webpack_require__(181);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_helpers_typeof___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_helpers_typeof__);
 
 // Custom keyword for allowing only one of the boolean values
@@ -10463,7 +10500,7 @@ module.exports = {"$schema":"http://json-schema.org/draft-06/schema#","$id":"htt
 });
 
 /***/ }),
-/* 178 */
+/* 181 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10471,11 +10508,11 @@ module.exports = {"$schema":"http://json-schema.org/draft-06/schema#","$id":"htt
 
 exports.__esModule = true;
 
-var _iterator = __webpack_require__(179);
+var _iterator = __webpack_require__(182);
 
 var _iterator2 = _interopRequireDefault(_iterator);
 
-var _symbol = __webpack_require__(192);
+var _symbol = __webpack_require__(195);
 
 var _symbol2 = _interopRequireDefault(_symbol);
 
@@ -10490,27 +10527,27 @@ exports.default = typeof _symbol2.default === "function" && _typeof(_iterator2.d
 };
 
 /***/ }),
-/* 179 */
+/* 182 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = { "default": __webpack_require__(180), __esModule: true };
+module.exports = { "default": __webpack_require__(183), __esModule: true };
 
 /***/ }),
-/* 180 */
+/* 183 */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(181);
-__webpack_require__(188);
+__webpack_require__(184);
+__webpack_require__(191);
 module.exports = __webpack_require__(36).f('iterator');
 
 
 /***/ }),
-/* 181 */
+/* 184 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var $at = __webpack_require__(182)(true);
+var $at = __webpack_require__(185)(true);
 
 // 21.1.3.27 String.prototype[@@iterator]()
 __webpack_require__(59)(String, 'String', function (iterated) {
@@ -10529,7 +10566,7 @@ __webpack_require__(59)(String, 'String', function (iterated) {
 
 
 /***/ }),
-/* 182 */
+/* 185 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var toInteger = __webpack_require__(26);
@@ -10552,7 +10589,7 @@ module.exports = function (TO_STRING) {
 
 
 /***/ }),
-/* 183 */
+/* 186 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10572,7 +10609,7 @@ module.exports = function (Constructor, NAME, next) {
 
 
 /***/ }),
-/* 184 */
+/* 187 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var dP = __webpack_require__(4);
@@ -10591,7 +10628,7 @@ module.exports = __webpack_require__(5) ? Object.defineProperties : function def
 
 
 /***/ }),
-/* 185 */
+/* 188 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var document = __webpack_require__(0).document;
@@ -10599,12 +10636,12 @@ module.exports = document && document.documentElement;
 
 
 /***/ }),
-/* 186 */
+/* 189 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // 19.1.2.9 / 15.2.3.2 Object.getPrototypeOf(O)
 var has = __webpack_require__(1);
-var toObject = __webpack_require__(187);
+var toObject = __webpack_require__(190);
 var IE_PROTO = __webpack_require__(27)('IE_PROTO');
 var ObjectProto = Object.prototype;
 
@@ -10618,7 +10655,7 @@ module.exports = Object.getPrototypeOf || function (O) {
 
 
 /***/ }),
-/* 187 */
+/* 190 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // 7.1.13 ToObject(argument)
@@ -10629,10 +10666,10 @@ module.exports = function (it) {
 
 
 /***/ }),
-/* 188 */
+/* 191 */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(189);
+__webpack_require__(192);
 var global = __webpack_require__(0);
 var hide = __webpack_require__(3);
 var Iterators = __webpack_require__(34);
@@ -10654,13 +10691,13 @@ for (var i = 0; i < DOMIterables.length; i++) {
 
 
 /***/ }),
-/* 189 */
+/* 192 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var addToUnscopables = __webpack_require__(190);
-var step = __webpack_require__(191);
+var addToUnscopables = __webpack_require__(193);
+var step = __webpack_require__(194);
 var Iterators = __webpack_require__(34);
 var toIObject = __webpack_require__(2);
 
@@ -10695,14 +10732,14 @@ addToUnscopables('entries');
 
 
 /***/ }),
-/* 190 */
+/* 193 */
 /***/ (function(module, exports) {
 
 module.exports = function () { /* empty */ };
 
 
 /***/ }),
-/* 191 */
+/* 194 */
 /***/ (function(module, exports) {
 
 module.exports = function (done, value) {
@@ -10711,24 +10748,24 @@ module.exports = function (done, value) {
 
 
 /***/ }),
-/* 192 */
+/* 195 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = { "default": __webpack_require__(193), __esModule: true };
+module.exports = { "default": __webpack_require__(196), __esModule: true };
 
 /***/ }),
-/* 193 */
+/* 196 */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(194);
-__webpack_require__(200);
-__webpack_require__(201);
-__webpack_require__(202);
+__webpack_require__(197);
+__webpack_require__(203);
+__webpack_require__(204);
+__webpack_require__(205);
 module.exports = __webpack_require__(12).Symbol;
 
 
 /***/ }),
-/* 194 */
+/* 197 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10739,7 +10776,7 @@ var has = __webpack_require__(1);
 var DESCRIPTORS = __webpack_require__(5);
 var $export = __webpack_require__(23);
 var redefine = __webpack_require__(60);
-var META = __webpack_require__(195).KEY;
+var META = __webpack_require__(198).KEY;
 var $fails = __webpack_require__(14);
 var shared = __webpack_require__(28);
 var setToStringTag = __webpack_require__(35);
@@ -10747,16 +10784,16 @@ var uid = __webpack_require__(17);
 var wks = __webpack_require__(7);
 var wksExt = __webpack_require__(36);
 var wksDefine = __webpack_require__(37);
-var enumKeys = __webpack_require__(196);
-var isArray = __webpack_require__(197);
+var enumKeys = __webpack_require__(199);
+var isArray = __webpack_require__(200);
 var anObject = __webpack_require__(13);
 var isObject = __webpack_require__(9);
 var toIObject = __webpack_require__(2);
 var toPrimitive = __webpack_require__(24);
 var createDesc = __webpack_require__(15);
 var _create = __webpack_require__(61);
-var gOPNExt = __webpack_require__(198);
-var $GOPD = __webpack_require__(199);
+var gOPNExt = __webpack_require__(201);
+var $GOPD = __webpack_require__(202);
 var $DP = __webpack_require__(4);
 var $keys = __webpack_require__(16);
 var gOPD = $GOPD.f;
@@ -10969,7 +11006,7 @@ setToStringTag(global.JSON, 'JSON', true);
 
 
 /***/ }),
-/* 195 */
+/* 198 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var META = __webpack_require__(17)('meta');
@@ -11028,7 +11065,7 @@ var meta = module.exports = {
 
 
 /***/ }),
-/* 196 */
+/* 199 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // all enumerable object keys, includes symbols
@@ -11049,7 +11086,7 @@ module.exports = function (it) {
 
 
 /***/ }),
-/* 197 */
+/* 200 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // 7.2.2 IsArray(argument)
@@ -11060,7 +11097,7 @@ module.exports = Array.isArray || function isArray(arg) {
 
 
 /***/ }),
-/* 198 */
+/* 201 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // fallback for IE11 buggy Object.getOwnPropertyNames with iframe and window
@@ -11085,7 +11122,7 @@ module.exports.f = function getOwnPropertyNames(it) {
 
 
 /***/ }),
-/* 199 */
+/* 202 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var pIE = __webpack_require__(18);
@@ -11107,27 +11144,27 @@ exports.f = __webpack_require__(5) ? gOPD : function getOwnPropertyDescriptor(O,
 
 
 /***/ }),
-/* 200 */
+/* 203 */
 /***/ (function(module, exports) {
 
 
 
 /***/ }),
-/* 201 */
+/* 204 */
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(37)('asyncIterator');
 
 
 /***/ }),
-/* 202 */
+/* 205 */
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(37)('observable');
 
 
 /***/ }),
-/* 203 */
+/* 206 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -11159,7 +11196,7 @@ __webpack_require__(37)('observable');
 });
 
 /***/ }),
-/* 204 */
+/* 207 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -11198,7 +11235,7 @@ var belongs = function belongs(type) {
 
 
 /***/ }),
-/* 205 */
+/* 208 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -11225,7 +11262,7 @@ var lint = function lint(item, type) {
 /* harmony default export */ __webpack_exports__["a"] = (lint);
 
 /***/ }),
-/* 206 */
+/* 209 */
 /***/ (function(module, exports) {
 
 module.exports = {"name":"chameleon-notation","version":"1.0.0","description":"Chameleon notation validator","author":"Lana Dzidic <dzidic.lana@nsoft.com>","private":true,"scripts":{"start":"cross-env NODE_ENV=development webpack --config build/webpack.dev.config.js","dev":"cross-env NODE_ENV=development webpack-dev-server --config build/webpack.dev.config.js --open --hot","unit":"cross-env BABEL_ENV=test karma start test/unit/karma.conf.js --single-run","test":"npm run unit","lint":"eslint --ext .js src test/unit/specs","build":"rimraf dist && cross-env NODE_ENV=production webpack --config build/config.js --progress --hide-modules"},"main":"dist/chameleon-notation.js","dependencies":{"ajv":"^5.5.2","lodash":"^4.17.4"},"bin":{"clint":"cli/index.js"},"devDependencies":{"babel-core":"^6.26.0","babel-eslint":"^7.2.3","babel-loader":"^7.1.2","babel-plugin-istanbul":"^4.1.5","babel-plugin-lodash":"^3.3.2","babel-plugin-transform-runtime":"^6.23.0","babel-polyfill":"^6.26.0","babel-preset-env":"^1.6.1","babel-preset-stage-2":"^6.24.1","babel-register":"^6.26.0","chai":"^4.1.2","codecov":"^3.0.0","copy-webpack-plugin":"^4.3.1","cross-env":"^5.1.3","dotenv":"^4.0.0","eslint":"^4.14.0","eslint-config-airbnb-base":"^12.1.0","eslint-friendly-formatter":"^3.0.0","eslint-import-resolver-webpack":"^0.8.3","eslint-loader":"^1.9.0","eslint-plugin-import":"^2.8.0","eventsource-polyfill":"^0.9.6","express":"^4.14.1","file-loader":"^1.1.6","friendly-errors-webpack-plugin":"^1.6.1","html-webpack-plugin":"^2.30.1","inject-loader":"^3.0.0","karma":"^1.7.1","karma-coverage":"^1.1.1","karma-mocha":"^1.3.0","karma-phantomjs-launcher":"^1.0.4","karma-phantomjs-shim":"^1.5.0","karma-sinon-chai":"^1.3.3","karma-sourcemap-loader":"^0.3.7","karma-spec-reporter":"0.0.31","karma-webpack":"^2.0.6","lodash-webpack-plugin":"^0.11.4","mocha":"^4.0.1","optimize-js-plugin":"0.0.4","phantomjs-prebuilt":"^2.1.16","rimraf":"^2.6.2","sinon":"^4.1.2","sinon-chai":"^2.14.0","url-loader":"^0.5.8","webpack":"^3.10.0","webpack-bundle-analyzer":"^2.9.0","webpack-dev-server":"^2.9.7","webpack-merge":"^4.1.0"}}

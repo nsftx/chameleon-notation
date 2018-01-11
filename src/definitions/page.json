@@ -45,18 +45,11 @@
     "elements": {
       "type": "array",
       "items": {
-        "type": "object",
-        "properties": {
-          "elements": {
-            "type": "array",
-            "items": {
-              "oneOf": [
-                { "$ref": "widget-form.json#" },
-                { "$ref": "widget-video.json#" }
-              ]
-            }
-          }
-        }
+        "anyOf": [
+          { "$ref": "container-hlist.json#" },
+          { "$ref": "container-panel.json#" },
+          { "$ref": "container-vlist.json#" }
+        ]
       }
     }
   },

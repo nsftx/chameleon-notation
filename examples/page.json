@@ -12,6 +12,12 @@
     "creditCard": {
       "message": "The ${field} field is invalid credit card."
     },
+    "min": {
+      "message": "The ${field} field must be greater than ${limit}."
+    },
+    "max": {
+      "message": "The ${field} field may be less than ${limit}."
+    },
     "minLength": {
       "message": "The ${field} field must be at least ${limit} characters."
     },
@@ -30,6 +36,10 @@
   },
   "elements": [
     {
+      "type": "panel",
+      "name": "panel-1",
+      "flat": false,
+      "color": "#f5f5f5",
       "elements": [
         {
           "type": "form",
@@ -66,7 +76,40 @@
                 },
                 "custom": null
               },
-              "value": "Existing Value"
+              "value": "Jadranko"
+            },
+            {
+              "name": "lastName",
+              "type": "text",
+              "label": "Last Name",
+              "prependIcon": "person",
+              "appendIcon": null,
+              "prefix": null,
+              "suffix": null,
+              "placeholder": "Please enter your last name",
+              "hint": null,
+              "persistentHint": false,
+              "tooltip": null,
+              "multiLine": false,
+              "clearable": true,
+              "searchable": true,
+              "private": false,
+              "validateOn": "blur",
+              "mask": {
+                "predefined": false,
+                "value": null
+              },
+              "validation": {
+                "required": true,
+                "minLength": 2,
+                "maxLength": 20,
+                "pattern": {
+                  "predefined": false,
+                  "value": null
+                },
+                "custom": null
+              },
+              "value": "Dragoje"
             },
             {
               "name": "fullName",
@@ -87,7 +130,113 @@
               "validation": {
                 "required": true
               },
-              "value": "Mr. ${firstName}"
+              "value": "${lastName} ${firstName}"
+            },
+            {
+              "name": "country",
+              "type": "select",
+              "label": "Country",
+              "prependIcon": "language",
+              "appendIcon": null,
+              "placeholder": "Please select a country",
+              "hint": null,
+              "persistentHint": false,
+              "tooltip": null,
+              "multiLine": false,
+              "multiple": false,
+              "clearable": false,
+              "private": false,
+              "readonly": false,
+              "validateOn": "blur",
+              "mask": {
+                "predefined": false,
+                "value": null
+              },
+              "validation": {
+                "required": true
+              },
+              "dataSource": {
+                "items": [
+                  {
+                    "id": 1,
+                    "name": "Italy"
+                  },
+                  {
+                    "id": 2,
+                    "name": "France"
+                  },
+                  {
+                    "id": 3,
+                    "name": "England"
+                  }
+                ],
+                "options": {
+                  "displayProp": "name"
+                }
+              },
+              "value": [
+                {
+                  "id": 1,
+                  "name": "Male"
+                }
+              ]
+            },
+            {
+              "name": "language",
+              "type": "tags",
+              "label": "Language",
+              "prependIcon": "language",
+              "appendIcon": null,
+              "placeholder": "Please select a language",
+              "hint": null,
+              "persistentHint": false,
+              "tooltip": null,
+              "multiLine": false,
+              "multiple": true,
+              "clearable": true,
+              "private": false,
+              "readonly": false,
+              "validateOn": "blur",
+              "mask": {
+                "predefined": false,
+                "value": null
+              },
+              "validation": {
+                "required": true
+              },
+              "dataSource": {
+                "items": [
+                  {
+                    "id": 43,
+                    "name": "English",
+                    "isoCode2": "en",
+                    "isoCode3": "eng"
+                  },
+                  {
+                    "id": 49,
+                    "name": "Finnish",
+                    "isoCode2": "fi",
+                    "isoCode3": "\tfi"
+                  },
+                  {
+                    "id": 50,
+                    "name": "French",
+                    "isoCode2": "fr",
+                    "isoCode3": "fra"
+                  }
+                ],
+                "options": {
+                  "displayProp": "name"
+                }
+              },
+              "value": [
+                {
+                  "id": 43,
+                  "name": "English",
+                  "isoCode2": "en",
+                  "isoCode3": "eng"
+                }
+              ]
             },
             {
               "name": "creditCard",
@@ -175,7 +324,7 @@
                 "required": true,
                 "pattern": {
                   "predefined": false,
-                  "value": "^-?\\d*(\\,\\d+)?$"
+                  "value": "^-?\\d*(\\.\\d+)?$"
                 },
                 "custom": null
               },
@@ -252,7 +401,7 @@
               "validation": {
                 "required": true,
                 "minDate": "2017-11-05T20:35:00.000Z",
-                "maxDate": "2017-11-09T20:35:00.000Z"
+                "maxDate": "2017-11-21T20:35:00.000Z"
               },
               "time": {
                 "enabled": true
@@ -273,7 +422,9 @@
               "searchable": false,
               "private": true,
               "validation": {
-                "required": true
+                "required": true,
+                "minDate": "2017-11-05T20:35:00.000Z",
+                "maxDate": "2017-11-21T20:35:00.000Z"
               },
               "time": {
                 "enabled": true
@@ -306,6 +457,18 @@
               },
               "value": null,
               "step": 1
+            },
+            {
+              "name": "rating",
+              "type": "rating",
+              "label": "How did you like our fat bunny",
+              "maxRating": 5,
+              "ratingInfo": true,
+              "icon": "star",
+              "value": 0,
+              "validation": {
+                "required": true
+              }
             },
             {
               "name": "cities",
@@ -418,12 +581,21 @@
               }
             }
           ]
-        },
+        }
+      ]
+    },
+    {
+      "type": "vlist",
+      "name": "list-1",
+      "flat": false,
+      "color": "#f5f5f5",
+      "gutter": false,
+      "elements": [
         {
           "type": "video",
           "name": "video widget",
           "label": "Adventures of a big fat bunny",
-          "autoplay": true,
+          "autoplay": false,
           "controls": true,
           "repeat": true,
           "muted": true,

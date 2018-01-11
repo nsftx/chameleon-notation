@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "http://chameleon-notation/container-vlist.json#",
+  "title": "Vertical list container",
+  "description": "Schema defines vertical list container",
+  "type": "object",
+  "properties": {
+    "type": {
+      "type": "string",
+      "enum": ["vlist"]
+    },
+    "color": {
+      "type": "string"
+    },
+    "elements": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "flat": {
+      "type": "boolean"
+    },
+    "gutter": {
+      "type": "boolean"
+    },
+    "name": {
+      "$ref": "field-base.json#name"
+    }
+  },
+  "required": ["type", "color", "elements"]
+}
