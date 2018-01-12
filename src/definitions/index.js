@@ -21,6 +21,7 @@ import tags from './field-tags.json';
 import text from './field-text.json';
 import video from './widget-video.json';
 import vlist from './container-vlist.json';
+import youtube from './widget-youtube.json';
 
 const fields = {
   calculation,
@@ -43,6 +44,7 @@ const fields = {
 const widgets = {
   form,
   video,
+  youtube,
 };
 
 const containers = {
@@ -76,6 +78,7 @@ export default {
     text: 'http://chameleon-notation/field-text.json#',
     video: 'http://chameleon-notation/widget-video.json#',
     vlist: 'http://chameleon-notation/container-vlist.json#',
+    youtube: 'http://chameleon-notation/widget-youtube.json#',
   },
   items,
   fields,

@@ -15,7 +15,14 @@
     "elements": {
       "type": "array",
       "items": {
-        "type": "object"
+        "oneOf": [
+          { "$ref": "container-hlist.json#" },
+          { "$ref": "container-panel.json#" },
+          { "$ref": "container-vlist.json#" },
+          { "$ref": "widget-form.json#" },
+          { "$ref": "widget-video.json#" },
+          { "$ref": "widget-youtube.json#" }
+        ]
       }
     },
     "flat": {
@@ -28,5 +35,5 @@
       "$ref": "field-base.json#name"
     }
   },
-  "required": ["type", "color", "elements"]
+  "required": ["type", "elements"]
 }

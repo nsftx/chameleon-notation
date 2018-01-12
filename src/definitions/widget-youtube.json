@@ -1,0 +1,65 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "http://chameleon-notation/widget-youtube.json#",
+  "title": "Video widget",
+  "description": "Schema defines You tube widget",
+  "type": "object",
+  "properties": {
+    "type": {
+      "type": "string",
+      "enum": ["youtube"]
+    },
+    "autoplay": {
+      "type": "boolean"
+    },
+    "controls": {
+      "type": "boolean"
+    },
+    "muted": {
+      "type": "boolean"
+    },
+    "name": {
+      "$ref": "field-base.json#name"
+    },
+    "playlist": {
+      "type": "string",
+      "enum": ["playlist", "user_uploads", "search", ""]
+    },
+    "repeat": {
+      "type": "boolean"
+    },
+    "value": {
+      "type": "array"
+    }
+  },
+  "anyOf": [
+    {
+      "properties": {
+        "playlist": {
+          "enum": ["user_uploads", "search"]
+        },
+        "value": {
+          "items": {
+            "type": "string",
+            "not": {
+              "format": "url"
+            }
+          }
+        }
+      }
+    },
+    {
+      "properties": {
+        "playlist": {
+          "enum": ["playlist", ""]
+        },
+        "value": {
+          "items": {
+            "type": "string",
+            "format": "url"
+          }
+        }
+      }
+    }
+  ]
+}
