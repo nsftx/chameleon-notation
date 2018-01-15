@@ -139,6 +139,61 @@
               "value": "${lastName} ${firstName}"
             },
             {
+              "name": "company",
+              "type": "selectList",
+              "label": "Company",
+              "prependIcon": "business",
+              "appendIcon": null,
+              "placeholder": "Please select a company",
+              "hint": null,
+              "persistentHint": false,
+              "tooltip": null,
+              "multiple": true,
+              "clearable": false,
+              "readonly": false,
+              "validateOn": "blur",
+              "validation": {
+                "required": true
+              },
+              "dataSource": {
+                "items": [
+                  {
+                    "id": 1,
+                    "name": "Lottoland Ltd.",
+                    "thumb": "https://vuetifyjs.com/static/doc-images/lists/1.jpg",
+                    "icon": "business",
+                    "description": "Lottoland Solutions integrates our lottery betting games to operator platforms, with multi-million Euro jackpots guaranteed by Lottoland's proprietary risk management."
+                  },
+                  {
+                    "id": 2,
+                    "name": "Nsoft",
+                    "thumb": "https://vuetifyjs.com/static/doc-images/lists/2.jpg",
+                    "icon": "business",
+                    "description": "Lottoland Solutions integrates our lottery betting games to operator platforms, with multi-million Euro jackpots guaranteed by Lottoland's proprietary risk management."
+                  },
+                  {
+                    "id": 3,
+                    "name": "Superbet",
+                    "thumb": "",
+                    "icon": "business",
+                    "description": "Lottoland Solutions integrates our lottery betting games to operator platforms, with multi-million Euro jackpots guaranteed by Lottoland's proprietary risk management."
+                  }
+                ],
+                "options": {
+                  "displayProp": "name"
+                }
+              },
+              "value": [
+                {
+                  "id": 3,
+                  "name": "Superbet",
+                  "thumb": "",
+                  "icon": "business",
+                  "description": "Lottoland Solutions integrates our lottery betting games to operator platforms, with multi-million Euro jackpots guaranteed by Lottoland's proprietary risk management."
+                }
+              ]
+            },
+            {
               "name": "country",
               "type": "select",
               "label": "Country",
