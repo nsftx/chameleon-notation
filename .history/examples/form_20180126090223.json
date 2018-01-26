@@ -151,6 +151,7 @@
       "multiLine": false,
       "multiple": false,
       "clearable": false,
+      "private": false,
       "readonly": false,
       "validateOn": "blur",
       "mask": {
@@ -199,6 +200,7 @@
       "multiLine": false,
       "multiple": true,
       "clearable": true,
+      "private": false,
       "readonly": false,
       "validateOn": "blur",
       "mask": {
@@ -256,6 +258,8 @@
       "tooltip": "Some tooltip",
       "multiLine": false,
       "clearable": true,
+      "searchable": false,
+      "private": true,
       "validateOn": "blur",
       "mask": {
         "predefined": "creditCard",
@@ -284,6 +288,8 @@
       "persistentHint": false,
       "tooltip": null,
       "clearable": true,
+      "searchable": false,
+      "private": true,
       "step": 10,
       "validateOn": "blur",
       "mask": {
@@ -313,6 +319,8 @@
       "persistentHint": false,
       "tooltip": null,
       "clearable": true,
+      "searchable": false,
+      "private": true,
       "validateOn": "blur",
       "mask": {
         "predefined": false,
@@ -332,6 +340,8 @@
       "name": "about",
       "type": "richText",
       "label": "About",
+      "searchable": false,
+      "private": true,
       "validation": {
         "required": true
       },
@@ -347,6 +357,8 @@
       "type": "richText",
       "label": "Description",
       "placeholder": "Enter description",
+      "searchable": false,
+      "private": true,
       "validation": {
         "required": false
       },
@@ -365,6 +377,8 @@
       "persistentHint": false,
       "tooltip": null,
       "clearable": true,
+      "searchable": false,
+      "private": true,
       "currency": {
         "name": "EUR",
         "symbol": "€"
@@ -388,6 +402,8 @@
       "hint": null,
       "tooltip": null,
       "clearable": true,
+      "searchable": false,
+      "private": true,
       "validation": {
         "required": true,
         "minDate": "2017-11-05T20:35:00.000Z",
@@ -409,6 +425,8 @@
       "hint": null,
       "tooltip": null,
       "clearable": true,
+      "searchable": false,
+      "private": true,
       "validation": {
         "required": true,
         "minDate": "2017-11-05T20:35:00.000Z",
@@ -435,6 +453,8 @@
       "appendIcon": null,
       "hint": null,
       "persistentHint": false,
+      "searchable": false,
+      "private": false,
       "validateOn": "blur",
       "validation": {
         "required": true,

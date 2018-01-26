@@ -9,26 +9,30 @@
       "type": "string",
       "enum": ["slider"]
     },
+    "label": {
+      "$ref": "field-base.json#label"
+    },
     "name": {
       "$ref": "field-base.json#name"
     },
     "appendIcon": {
       "$ref": "field-base.json#appendIcon"
     },
-    "color": {
-      "$ref": "field-base.json#color"
+    "prependIcon": {
+      "$ref": "field-base.json#prependIcon"
     },
     "hint": {
       "$ref": "field-base.json#hint"
     },
-    "label": {
-      "$ref": "field-base.json#label"
-    },
     "persistentHint": {
       "$ref": "field-base.json#persistentHint"
     },
-    "prependIcon": {
-      "$ref": "field-base.json#prependIcon"
+    "color": {
+      "$ref": "field-base.json#color"
+    },
+    "trackColor": {
+      "id": "#color",
+      "type": "string"
     },
     "thumbColor": {
       "id": "#color",
@@ -38,9 +42,15 @@
       "id": "#thumbLabel",
       "type": "boolean"
     },
-    "trackColor": {
-      "id": "#color",
-      "type": "string"
+    "searchable": {
+      "$ref": "field-base.json#searchable"
+    },
+    "private": {
+      "$ref": "field-base.json#private"
+    },
+    "step": {
+      "id": "#step",
+      "type": "number"
     },
     "validateOn": {
       "$ref": "field-base.json#validateOn"

@@ -51,6 +51,12 @@
     "prependIcon": {
       "$ref": "field-base.json#prependIcon"
     },
+    "private": {
+      "$ref": "field-base.json#private"
+    },
+    "searchable": {
+      "$ref": "field-base.json#searchable"
+    },
     "suffix": {
       "id": "#prefix",
       "enum": ["name", "symbol", null, false]

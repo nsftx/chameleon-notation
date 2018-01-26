@@ -69,6 +69,14 @@
       "id": "#clearable",
       "type": "boolean"
     },
+    "searchable": {
+      "id": "#searchable",
+      "type": "boolean"
+    },
+    "private": {
+      "id": "#private",
+      "type": "boolean"
+    },
     "validateOn": {
       "id": "#validateOn",
       "type": ["string", "null"]

@@ -1,13 +1,13 @@
 {
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "$id": "http://chameleon-notation/field-dateRange.json#",
-  "title": "Date range field",
+  "$id": "http://chameleon-notation/field-date.json#",
+  "title": "Date field",
   "description": "Schema defines date field",
   "type": "object",
   "properties": {
     "type": {
       "type": "string",
-      "enum": ["dateRange"]
+      "enum": ["date"]
     },
     "appendIcon": {
       "$ref": "field-base.json#appendIcon"
@@ -33,6 +33,12 @@
     "prependIcon": {
       "$ref": "field-base.json#prependIcon"
     },
+    "private": {
+      "$ref": "field-base.json#private"
+    },
+    "searchable": {
+      "$ref": "field-base.json#searchable"
+    },
     "time": {
       "id": "#time",
       "type": "object",
@@ -48,12 +54,18 @@
       "properties": {
         "required": {
           "type": "boolean"
+        },
+        "minDate": {
+          "type": ["string", "null"]
+        },
+        "maxDate": {
+          "type": ["string", "null"]
         }
       }
     },
     "value": {
       "id": "#value",
-      "type": ["array", "null"]
+      "type": ["string", "null"]
     }
   },
   "anyOf": [
@@ -68,6 +80,16 @@
         },
         "value": {
           "format": "date-time"
+        },
+        "validation": {
+          "properties": {
+            "minDate": {
+              "format": "date-time"
+            },
+            "maxDate": {
+              "format": "date-time"
+            }
+          }
         }
       }
     },
@@ -84,6 +106,16 @@
         },
         "value": {
           "format": "date"
+        },
+        "validation": {
+          "properties": {
+            "minDate": {
+              "format": "date"
+            },
+            "maxDate": {
+              "format": "date"
+            }
+          }
         }
       }
     }

@@ -33,6 +33,12 @@
     "prependIcon": {
       "$ref": "field-base.json#prependIcon"
     },
+    "private": {
+      "$ref": "field-base.json#private"
+    },
+    "searchable": {
+      "$ref": "field-base.json#searchable"
+    },
     "time": {
       "id": "#time",
       "type": "object",

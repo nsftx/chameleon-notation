@@ -1,13 +1,13 @@
 {
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "$id": "http://chameleon-notation/field-money.json#",
-  "title": "Money field",
-  "description": "Schema defines money field",
+  "$id": "http://chameleon-notation/field-calculation.json#",
+  "title": "Calculation field",
+  "description": "Schema defines calculation field",
   "type": "object",
   "properties": {
     "type": {
       "type": "string",
-      "enum": ["money"]
+      "enum": ["calculation"]
     },
     "appendIcon": {
       "$ref": "field-base.json#appendIcon"
@@ -15,45 +15,35 @@
     "clearable": {
       "$ref": "field-base.json#clearable"
     },
-    "currency": {
-      "id": "#currency",
-      "type": "object",
-      "properties": {
-        "name": {
-          "type": "string",
-          "minLength": 1
-        },
-        "symbol": {
-          "type": "string",
-          "minLength": 1
-        }
-      }
-    },
     "hint": {
       "$ref": "field-base.json#hint"
     },
     "label": {
       "$ref": "field-base.json#label"
     },
+    "mask": {
+      "$ref": "field-base.json#mask"
+    },
     "name": {
       "$ref": "field-base.json#name"
-    },
-    "persistentHint": {
-      "$ref": "field-base.json#persistentHint"
     },
     "placeholder": {
       "$ref": "field-base.json#placeholder"
     },
     "prefix": {
-      "id": "#prefix",
-      "enum": ["name", "symbol", null, false]
+      "$ref": "field-base.json#prefix"
     },
     "prependIcon": {
       "$ref": "field-base.json#prependIcon"
     },
+    "private": {
+      "$ref": "field-base.json#private"
+    },
+    "searchable": {
+      "$ref": "field-base.json#searchable"
+    },
     "suffix": {
-      "id": "#prefix",
-      "enum": ["name", "symbol", null, false]
+      "$ref": "field-base.json#suffix"
     },
     "tooltip": {
       "$ref": "field-base.json#tooltip"
@@ -62,26 +52,7 @@
       "$ref": "field-base.json#validateOn"
     },
     "validation": {
-      "id": "#validation",
-      "type": ["null", "object"],
-      "properties": {
-        "required": {
-          "type": "boolean"
-        },
-        "pattern": {
-          "type": "object",
-          "properties": {
-            "value": {
-              "type": "string",
-              "minLength": 1
-            }
-          }
-        }
-      },
-      "anyOf": [
-        { "required": ["required"] },
-        { "required": ["pattern"] }
-      ]
+      "$ref": "field-base.json#validation"
     },
     "value": {
       "$ref": "field-base.json#value"
@@ -109,5 +80,5 @@
       }
     }
   ],
-  "required": ["name", "type", "label", "currency"]
+  "required": ["name", "type", "label"]
 }

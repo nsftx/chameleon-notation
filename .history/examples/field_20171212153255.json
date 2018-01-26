@@ -12,6 +12,8 @@
   "tooltip": null,
   "multiLine": false,
   "clearable": true,
+  "searchable": true,
+  "private": false,
   "validateOn": "blur",
   "mask": {
     "predefined": false,

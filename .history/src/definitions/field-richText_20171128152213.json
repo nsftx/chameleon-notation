@@ -15,6 +15,12 @@
     "name": {
       "$ref": "field-base.json#name"
     },
+    "private": {
+      "$ref": "field-base.json#private"
+    },
+    "searchable": {
+      "$ref": "field-base.json#searchable"
+    },
     "toolbar": {
       "id": "#toolbar",
       "type": ["array", "string"],

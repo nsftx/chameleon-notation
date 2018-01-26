@@ -151,6 +151,7 @@
       "multiLine": false,
       "multiple": false,
       "clearable": false,
+      "private": false,
       "readonly": false,
       "validateOn": "blur",
       "mask": {
@@ -199,6 +200,7 @@
       "multiLine": false,
       "multiple": true,
       "clearable": true,
+      "private": false,
       "readonly": false,
       "validateOn": "blur",
       "mask": {
@@ -435,6 +437,8 @@
       "appendIcon": null,
       "hint": null,
       "persistentHint": false,
+      "searchable": false,
+      "private": false,
       "validateOn": "blur",
       "validation": {
         "required": true,

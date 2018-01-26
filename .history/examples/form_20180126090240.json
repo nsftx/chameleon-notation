@@ -151,6 +151,7 @@
       "multiLine": false,
       "multiple": false,
       "clearable": false,
+      "private": false,
       "readonly": false,
       "validateOn": "blur",
       "mask": {
@@ -199,6 +200,7 @@
       "multiLine": false,
       "multiple": true,
       "clearable": true,
+      "private": false,
       "readonly": false,
       "validateOn": "blur",
       "mask": {
@@ -388,6 +390,8 @@
       "hint": null,
       "tooltip": null,
       "clearable": true,
+      "searchable": false,
+      "private": true,
       "validation": {
         "required": true,
         "minDate": "2017-11-05T20:35:00.000Z",
@@ -409,6 +413,8 @@
       "hint": null,
       "tooltip": null,
       "clearable": true,
+      "searchable": false,
+      "private": true,
       "validation": {
         "required": true,
         "minDate": "2017-11-05T20:35:00.000Z",
@@ -435,6 +441,8 @@
       "appendIcon": null,
       "hint": null,
       "persistentHint": false,
+      "searchable": false,
+      "private": false,
       "validateOn": "blur",
       "validation": {
         "required": true,

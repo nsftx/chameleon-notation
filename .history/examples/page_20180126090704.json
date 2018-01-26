@@ -248,6 +248,7 @@
               "multiLine": false,
               "multiple": true,
               "clearable": true,
+              "private": false,
               "readonly": false,
               "validateOn": "blur",
               "mask": {

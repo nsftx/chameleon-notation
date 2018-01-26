@@ -22,8 +22,14 @@
     "name": {
       "$ref": "field-base.json#name"
     },
+    "private": {
+      "$ref": "field-base.json#private"
+    },
     "ratingInfo": {
       "type": ["boolean", "null"]
+    },
+    "searchable": {
+      "$ref": "field-base.json#searchable"
     },
     "validation": {
       "$ref": "field-base.json#validation"
