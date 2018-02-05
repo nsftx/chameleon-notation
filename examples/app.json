@@ -1,0 +1,46 @@
+{
+	"id": "c39fe7ef-5160-4266-92ab-4234048fde50",
+	"name": "Test Dummy Lana",
+	"description": "Test Dummy Application",
+	"users": ["dzidic.lana@nsoft.com"],
+	"pages": [{
+		"name": "Home",
+		"type": "page",
+		"path": "/",
+		"meta": {
+			"title": "Home Page",
+			"description": "Test Home Chameleon Page",
+			"keywords": "chameleon, home, test, page"
+		},
+		"elements": [{
+			"color": "transparent",
+			"elements": [{
+				"type": "panel",
+				"color": "transparent",
+				"flat": true,
+				"width": "50%",
+				"elements": [{
+					"type": "luckysix",
+					"color": 230,
+					"drum": "solids",
+					"quality": "low",
+					"language": "en"
+				}]
+			}],
+			"flat": false,
+			"gutter": false,
+			"type": "hlist"
+		}]
+	}, {
+		"name": "Contact",
+		"type": "page",
+		"path": "/contact",
+		"meta": {
+			"title": "Contact Page",
+			"description": "Test Contact Chameleon Page",
+			"keywords": "chameleon, contact, test, page"
+		}
+	}],
+	"slug": "test-lana",
+	"updatedOn": "2018-02-01T13:26:22Z"
+}

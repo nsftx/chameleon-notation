@@ -14,16 +14,30 @@
     },
     "elements": {
       "type": "array",
-      "items": {
-        "oneOf": [
-          { "$ref": "container-hlist.json#" },
-          { "$ref": "container-panel.json#" },
-          { "$ref": "container-vlist.json#" },
-          { "$ref": "widget-form.json#" },
-          { "$ref": "widget-video.json#" },
-          { "$ref": "widget-youtube.json#" }
-        ]
-      }
+      "anyOf": [
+        {
+          "items": {
+            "oneOf": [
+              { "$ref": "container-hlist.json#" },
+              { "$ref": "container-panel.json#" },
+              { "$ref": "container-vlist.json#" },
+              { "$ref": "widget-form.json#" },
+              { "$ref": "widget-video.json#" },
+              { "$ref": "widget-youtube.json#" },
+              {
+                "properties": {
+                  "type": {
+                    "enum": ["luckysix"]
+                  }
+                }
+              }
+            ]
+          }
+        },
+        {
+          "maxItems": 0
+        }
+      ]
     },
     "flat": {
       "type": "boolean"

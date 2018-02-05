@@ -9,9 +9,9 @@ const parseSource = (file, data) => {
   if (file) {
     src = utils.getFile(file);
   } else {
-    try{
+    try {
       src = JSON.parse(data);
-    } catch(e) {
+    } catch (e) {
       src = data;
     }
   }
@@ -20,8 +20,10 @@ const parseSource = (file, data) => {
 
   return {
     src,
-  }
+  };
 };
+
+const performLint = (src, type) => linter[`validate${type}`](src);
 
 const getLinter = (type) => {
   return (file, data) => {
@@ -31,8 +33,6 @@ const getLinter = (type) => {
     return performLint(source.src, type);
   }
 };
-
-const performLint = (src, type) => linter[`validate${type}`](src);
 
 module.exports = {
   validate: getLinter(''),

@@ -1,4 +1,5 @@
 import _ from 'lodash';
+import app from './app.json';
 import base from './field-base.json';
 import calculation from './field-calculation.json';
 import check from './field-check.json';
@@ -55,10 +56,11 @@ const containers = {
   vlist,
 };
 
-const items = _.merge({ base, page }, fields, widgets, containers);
+const items = _.merge({ app, base, page }, fields, widgets, containers);
 
 export default {
   mapper: {
+    app: 'http://chameleon-notation/app.json#',
     calculation: 'http://chameleon-notation/field-calculation.json#',
     check: 'http://chameleon-notation/field-check.json#',
     checkList: 'http://chameleon-notation/field-checkList.json#',

@@ -2,20 +2,20 @@ import pageSrc from '@examples/page.json';
 import formSrc from '@examples/form.json';
 import fieldSrc from '@examples/field.json';
 import linter from '@linters';
-import * as base from '@linters/base';
+import * as page from '@linters/page';
 import * as field from '@linters/field';
 import * as widget from '@linters/widget';
 
 describe('linters', () => {
   describe('mainLinter', () => {
     it('calls page linter', () => {
-      const baseMock = sinon.spy(base, 'default');
+      const pageMock = sinon.spy(page, 'default');
       linter.lint(pageSrc);
       linter.lint(pageSrc, 'page');
 
-      expect(baseMock).to.have.been.calledTwice;
-      expect(baseMock).to.always.have.been.calledWith(pageSrc, 'page');
-      baseMock.restore();
+      expect(pageMock).to.have.been.calledTwice;
+      expect(pageMock).to.always.have.been.calledWith(pageSrc, 'page');
+      pageMock.restore();
     });
 
     it('calls widget linter', () => {

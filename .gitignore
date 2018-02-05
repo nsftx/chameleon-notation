@@ -10,3 +10,6 @@ npm-debug.log*
 *.ntvs*
 *.njsproj
 *.sln
+
+# History
+.history/

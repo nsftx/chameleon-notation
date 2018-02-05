@@ -8,11 +8,11 @@ const getFile = (filename) => {
   try {
     try {
       json = JSON.parse(fs.readFileSync(file).toString());
-    } catch(JSONerr) {
+    } catch (JSONerr) {
       json = require(file);
     }
-  } catch(err) {
-    console.error('error:  ' + err);
+  } catch (err) {
+    console.error(`error:  ${err}`);
     process.exit(2);
   }
   return json;

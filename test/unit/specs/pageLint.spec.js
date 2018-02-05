@@ -1,10 +1,10 @@
 import _ from 'lodash';
-import baseLinter from '@linters/base';
+import pageLinter from '@linters/page';
 import predefinedMessages from '@utils/predefinedMessages';
 import pageSrc from '@examples/page.json';
 
 describe('linters', () => {
-  describe('baseLinter', () => {
+  describe('pageLinter', () => {
     it('successfully lints valid page json', () => {
       const result = {
         isValid: true,
@@ -12,7 +12,7 @@ describe('linters', () => {
         message: predefinedMessages.valid,
       };
 
-      expect(baseLinter(pageSrc, 'page')).to.deep.equal(result);
+      expect(pageLinter(pageSrc, 'page')).to.deep.equal(result);
     });
 
     it('returns missing type error if page json does not have type prop', () => {
@@ -25,7 +25,7 @@ describe('linters', () => {
 
       delete pageSrcCopy.type;
 
-      expect(baseLinter(pageSrcCopy, 'page')).to.deep.equal(result);
+      expect(pageLinter(pageSrcCopy, 'page')).to.deep.equal(result);
     });
 
     it('returns mismatch error if page json type mismatches passed type', () => {
@@ -35,7 +35,7 @@ describe('linters', () => {
         message: predefinedMessages.typeMismatch,
       };
 
-      expect(baseLinter(pageSrc, 'form')).to.deep.equal(result);
+      expect(pageLinter(pageSrc, 'form')).to.deep.equal(result);
     });
   });
 });

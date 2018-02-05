@@ -53,5 +53,5 @@
       }
     }
   },
-  "required": ["layout", "template", "type"]
+  "required": ["type"]
 }
