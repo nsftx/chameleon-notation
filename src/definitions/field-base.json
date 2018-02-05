@@ -93,14 +93,14 @@
           "type": "boolean"
         },
         "minLength": {
-          "type": "number",
+          "type": ["null", "number"],
           "multipleOf": 1,
           "maximum": {
             "$data": "1/maxLength"
           }
         },
         "maxLength": {
-          "type": "number",
+          "type": ["null", "number"],
           "multipleOf": 1
         },
         "max": {
@@ -119,7 +119,7 @@
           "type": "object",
           "properties": {
             "predefined": {
-              "type": ["boolean", "string"]
+              "type": ["null", "string"]
             },
             "value": {
               "type": ["string", "null"]
