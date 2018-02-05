@@ -23,7 +23,6 @@ const initialize = (type) => {
 };
 
 const updateSchema = (type) => {
-  console.log(type);
   validate = ajv.getSchema(definitions.mapper[type]);
   return validate;
 };

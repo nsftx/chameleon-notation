@@ -1,7 +1,7 @@
 {
   "type": "form",
   "name": "person",
-  "fields": [
+  "elements": [
     {
       "name": "firstName",
       "type": "text",
@@ -26,7 +26,7 @@
         "minLength": 2,
         "maxLength": 20,
         "pattern": {
-          "predefined": false,
+          "predefined": null,
           "value": null
         },
         "custom": null
@@ -57,7 +57,7 @@
         "minLength": 2,
         "maxLength": 20,
         "pattern": {
-          "predefined": false,
+          "predefined": null,
           "value": null
         },
         "custom": null
@@ -321,7 +321,7 @@
       "validation": {
         "required": true,
         "pattern": {
-          "predefined": false,
+          "predefined": null,
           "value": "^-?\\d*(\\.\\d+)?$"
         },
         "custom": null
