@@ -73,6 +73,15 @@
       "id": "#validateOn",
       "type": ["string", "null"]
     },
+    "pagination": {
+      "id": "#pagination",
+      "type": "object",
+      "properties": {
+        "rowsPerPage": {
+          "type": "number"
+        }
+      }
+    },
     "mask": {
       "id": "#mask",
       "type": "object",
