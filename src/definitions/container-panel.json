@@ -46,5 +46,5 @@
       "$ref": "field-base.json#name"
     }
   },
-  "required": ["type", "elements"]
+  "required": ["type"]
 }
