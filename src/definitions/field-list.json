@@ -1,0 +1,52 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "http://chameleon-notation/field-list.json#",
+  "title": "List",
+  "description": "Schema defines list field",
+  "type": "object",
+  "properties": {
+    "type": {
+      "type": "string",
+      "enum": ["list"]
+    },
+    "noDataText": {
+      "id": "#noDataText",
+      "type": ["string", "null"]
+    },
+    "name": {
+      "$ref": "field-base.json#name"
+    },
+    "hideActions": {
+      "id": "#hideActions",
+      "type": "boolean"
+    },
+    "rowsPerPageText": {
+      "id": "#rowsPerPageText",
+      "type": ["string", "null"]
+    },
+    "noResultsText": {
+      "id": "#noResultsText",
+      "type": ["string", "null"]
+    },
+    "rowsPerPageItems": {
+      "id": "#rowsPerPageItems",
+      "type": ["array", "null"]
+    },
+    "pagination": {
+      "$ref": "field-base.json#pagination"
+    },
+    "dataSource": {
+      "id": "#dataSource",
+      "type": "object",
+      "properties": {
+        "items": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        }
+      }
+    }
+  },
+  "required": ["name", "type"]
+}
