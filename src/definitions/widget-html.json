@@ -1,0 +1,23 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "http://chameleon-notation/widget-html.json#",
+  "title": "Html widget",
+  "description": "Schema defines html widget",
+  "type": "object",
+  "properties": {
+    "type": {
+      "type": "string",
+      "enum": ["html"]
+    },
+    "name": {
+      "$ref": "field-base.json#name"
+    },
+    "label": {
+      "$ref": "field-base.json#label"
+    },
+    "value": {
+      "$ref": "field-base.json#value"
+    }
+  },
+  "required": ["type"]
+}

@@ -8,7 +8,8 @@ import date from './field-date.json';
 import dateRange from './field-dateRange.json';
 import form from './widget-form.json';
 import hlist from './container-hlist.json';
-import list from './field-list.json';
+import html from './widget-html.json';
+import list from './widget-list.json';
 import money from './field-money.json';
 import number from './field-number.json';
 import page from './page.json';
@@ -32,6 +33,7 @@ const fields = {
   checkList,
   date,
   dateRange,
+  html,
   list,
   money,
   number,
@@ -70,7 +72,8 @@ export default {
     dateRange: 'http://chameleon-notation/field-dateRange.json#',
     form: 'http://chameleon-notation/widget-form.json#',
     hlist: 'http://chameleon-notation/container-hlist.json#',
-    list: 'http://chameleon-notation/field-list.json#',
+    html: 'http://chameleon-notation/widget-html.json#',
+    list: 'http://chameleon-notation/widget-list.json#',
     money: 'http://chameleon-notation/field-money.json#',
     number: 'http://chameleon-notation/field-number.json#',
     page: 'http://chameleon-notation/page.json#',

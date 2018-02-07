@@ -22,6 +22,8 @@
               { "$ref": "container-panel.json#" },
               { "$ref": "container-vlist.json#" },
               { "$ref": "widget-form.json#" },
+              { "$ref": "widget-html.json#" },
+              { "$ref": "widget-list.json#" },
               { "$ref": "widget-video.json#" },
               { "$ref": "widget-youtube.json#" },
               {
