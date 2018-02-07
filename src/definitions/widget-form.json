@@ -34,5 +34,5 @@
       }
     }
   },
-  "required": ["type", "elements"]
+  "required": ["type"]
 }
