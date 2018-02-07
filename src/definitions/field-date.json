@@ -114,5 +114,5 @@
       }
     }
   ],
-  "required": ["name", "type", "label"]
+  "required": ["type"]
 }

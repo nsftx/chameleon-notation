@@ -27,5 +27,5 @@
       "$ref": "field-base.json#value"
     }
   },
-  "required": ["name", "type", "label", "toolbar"]
+  "required": ["type"]
 }

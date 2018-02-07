@@ -33,5 +33,5 @@
       "type": ["number", "null"]
     }
   },
-  "required": ["name", "type", "label"]
+  "required": ["type"]
 }

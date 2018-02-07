@@ -80,5 +80,5 @@
       }
     }
   ],
-  "required": ["type", "label"]
+  "required": ["type"]
 }

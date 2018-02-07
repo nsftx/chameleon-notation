@@ -60,5 +60,5 @@
       "type": ["string", "null"]
     }
   },
-  "required": ["name", "type", "label"]
+  "required": ["type"]
 }

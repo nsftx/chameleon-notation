@@ -109,5 +109,5 @@
       }
     }
   ],
-  "required": ["name", "type", "label", "currency"]
+  "required": ["type"]
 }

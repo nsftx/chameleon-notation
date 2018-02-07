@@ -55,5 +55,5 @@
       "$ref": "field-select.json#value"
     }
   },
-  "required": ["name", "type", "label"]
+  "required": ["type"]
 }

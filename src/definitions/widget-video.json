@@ -35,5 +35,6 @@
       },
       "format": "url"
     }
-  }
+  },
+  "required": ["type"]
 }
