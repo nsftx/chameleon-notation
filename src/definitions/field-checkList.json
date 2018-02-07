@@ -10,7 +10,7 @@
     },
     "type": {
       "type": "string",
-      "enum": ["checkList"]
+      "enum": ["check-list"]
     },
     "label": {
       "$ref": "field-base.json#label"

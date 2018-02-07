@@ -11,7 +11,7 @@
     },
     "label": {
       "id": "#label",
-      "type": "string"
+      "type": ["string", "null"]
     },
     "prependIcon": {
       "id": "#prependIcon",
@@ -51,7 +51,7 @@
     },
     "color": {
       "id": "#color",
-      "type": "string"
+      "type": ["string", "null"]
     },
     "disabled": {
       "id": "#disabled",
@@ -119,10 +119,10 @@
           "type": "number"
         },
         "minCount": {
-          "type": "number"
+          "type": ["number", "null"]
         },
         "maxCount": {
-          "type": "number"
+          "type": ["number", "null"]
         },
         "pattern": {
           "type": "object",

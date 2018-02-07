@@ -551,7 +551,7 @@
             },
             {
               "name": "cities",
-              "type": "checkList",
+              "type": "check-list",
               "label": "Select cities",
               "prependIcon": null,
               "appendIcon": null,
