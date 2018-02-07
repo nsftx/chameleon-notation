@@ -4741,7 +4741,7 @@ module.exports = {"$schema":"http://json-schema.org/draft-06/schema#","$id":"htt
 /* 127 */
 /***/ (function(module, exports) {
 
-module.exports = {"$schema":"http://json-schema.org/draft-06/schema#","$id":"http://chameleon-notation/field-richText.json#","title":"Rich text field","description":"Schema defines rich text field","type":"object","properties":{"type":{"type":"string","enum":["rich-text"]},"label":{"$ref":"field-base.json#label"},"name":{"$ref":"field-base.json#name"},"toolbar":{"id":"#toolbar","type":["array","string"],"uniqueItems":true,"items":{"type":"string"}},"value":{"$ref":"field-base.json#value"}},"required":["type"]}
+module.exports = {"$schema":"http://json-schema.org/draft-06/schema#","$id":"http://chameleon-notation/field-richText.json#","title":"Rich text field","description":"Schema defines rich text field","type":"object","properties":{"type":{"type":"string","enum":["rich-text"]},"label":{"$ref":"field-base.json#label"},"name":{"$ref":"field-base.json#name"},"toolbar":{"id":"#toolbar","type":["array","string","object"],"uniqueItems":true,"items":{"type":"string"}},"value":{"$ref":"field-base.json#value"}},"required":["type"]}
 
 /***/ }),
 /* 128 */
