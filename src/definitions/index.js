@@ -1,6 +1,7 @@
 import _ from 'lodash';
 import app from './app.json';
 import accordion from './container-accordion.json';
+import accordionItem from './container-accordion-item.json';
 import base from './field-base.json';
 import calculation from './field-calculation.json';
 import check from './field-check.json';
@@ -57,6 +58,7 @@ const widgets = {
 
 const containers = {
   accordion,
+  accordionItem,
   hlist,
   panel,
   vlist,
@@ -67,6 +69,7 @@ const items = _.merge({ app, base, page }, fields, widgets, containers);
 export default {
   mapper: {
     accordion: 'http://chameleon-notation/container-accordion.json#',
+    'accordion-item': 'http://chameleon-notation/container-accordion-item.json#',
     app: 'http://chameleon-notation/app.json#',
     calculation: 'http://chameleon-notation/field-calculation.json#',
     check: 'http://chameleon-notation/field-check.json#',

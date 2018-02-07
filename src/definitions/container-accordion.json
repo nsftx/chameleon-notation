@@ -1,7 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-06/schema#",
   "$id": "http://chameleon-notation/container-accordion.json#",
-  "title": "Accordion container container",
+  "title": "Accordion container",
   "description": "Schema defines accordion container",
   "type": "object",
   "properties": {
@@ -24,55 +24,8 @@
     },
     "elements": {
       "type": "array",
-      "anyOf": [
-        {
-          "items": {
-            "oneOf": [
-              { "$ref": "container-hlist.json#" },
-              { "$ref": "container-panel.json#" },
-              { "$ref": "container-vlist.json#" },
-              { "$ref": "widget-form.json#" },
-              { "$ref": "widget-html.json#" },
-              { "$ref": "widget-list.json#" },
-              { "$ref": "widget-video.json#" },
-              { "$ref": "widget-youtube.json#" },
-              { "$ref": "field-text.json#" },
-              { "$ref": "field-calculation.json#" },
-              { "$ref": "field-number.json#" },
-              { "$ref": "field-money.json#" },
-              { "$ref": "field-richText.json#" },
-              { "$ref": "field-date.json#" },
-              { "$ref": "field-dateRange.json#" },
-              { "$ref": "field-tags.json#" },
-              { "$ref": "field-check.json#" },
-              { "$ref": "field-checkList.json#" },
-              { "$ref": "field-radioList.json#" },
-              { "$ref": "field-select.json#" },
-              { "$ref": "field-selectList.json#" },
-              { "$ref": "field-slider.json#" },
-              { "$ref": "field-switch.json#" },
-              { "$ref": "field-rating.json#" },
-              {
-                "properties": {
-                  "type": {
-                    "enum": ["luckysix"]
-                  }
-                }
-              }
-            ]
-          }
-        },
-        {
-          "maxItems": 0
-        }
-      ]
-    },
-    "hideItemActions": {
-      "type": "boolean"
-    },
-    "itemsCount": {
-      "type": "number"
-    }
+      "items": { "$ref": "container-accordion-item.json#" }
+      }
   },
   "required": ["type"]
 }
