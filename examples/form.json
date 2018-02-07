@@ -85,7 +85,7 @@
     },
     {
       "name": "company",
-      "type": "selectList",
+      "type": "select-list",
       "label": "Company",
       "prependIcon": "business",
       "appendIcon": null,
@@ -330,7 +330,7 @@
     },
     {
       "name": "about",
-      "type": "richText",
+      "type": "rich-text",
       "label": "About",
       "validation": {
         "required": true
@@ -344,7 +344,7 @@
     },
     {
       "name": "description",
-      "type": "richText",
+      "type": "rich-text",
       "label": "Description",
       "placeholder": "Enter description",
       "validation": {
@@ -401,7 +401,7 @@
     },
     {
       "name": "reportRange",
-      "type": "dateRange",
+      "type": "date-range",
       "label": "Report Range",
       "prependIcon": null,
       "appendIcon": null,
@@ -497,7 +497,7 @@
     },
     {
       "name": "gender",
-      "type": "radioList",
+      "type": "radio-list",
       "prependIcon": null,
       "appendIcon": null,
       "hint": null,

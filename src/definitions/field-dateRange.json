@@ -7,7 +7,7 @@
   "properties": {
     "type": {
       "type": "string",
-      "enum": ["dateRange"]
+      "enum": ["date-range"]
     },
     "appendIcon": {
       "$ref": "field-base.json#appendIcon"

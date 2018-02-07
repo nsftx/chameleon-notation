@@ -7,7 +7,7 @@
   "properties": {
     "type": {
       "type": "string",
-      "enum": ["richText"]
+      "enum": ["rich-text"]
     },
     "label": {
       "$ref": "field-base.json#label"

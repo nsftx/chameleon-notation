@@ -757,18 +757,18 @@ exports.f = {}.propertyIsEnumerable;
 var fields = {
   calculation: __WEBPACK_IMPORTED_MODULE_3__field_calculation_json___default.a,
   check: __WEBPACK_IMPORTED_MODULE_4__field_check_json___default.a,
-  checkList: __WEBPACK_IMPORTED_MODULE_5__field_checkList_json___default.a,
+  'check-list': __WEBPACK_IMPORTED_MODULE_5__field_checkList_json___default.a,
   date: __WEBPACK_IMPORTED_MODULE_6__field_date_json___default.a,
-  dateRange: __WEBPACK_IMPORTED_MODULE_7__field_dateRange_json___default.a,
+  'date-range': __WEBPACK_IMPORTED_MODULE_7__field_dateRange_json___default.a,
   html: __WEBPACK_IMPORTED_MODULE_10__widget_html_json___default.a,
   list: __WEBPACK_IMPORTED_MODULE_11__widget_list_json___default.a,
   money: __WEBPACK_IMPORTED_MODULE_12__field_money_json___default.a,
   number: __WEBPACK_IMPORTED_MODULE_13__field_number_json___default.a,
-  radioList: __WEBPACK_IMPORTED_MODULE_16__field_radioList_json___default.a,
+  'radio-list': __WEBPACK_IMPORTED_MODULE_16__field_radioList_json___default.a,
   rating: __WEBPACK_IMPORTED_MODULE_17__field_rating_json___default.a,
-  richText: __WEBPACK_IMPORTED_MODULE_18__field_richText_json___default.a,
+  'rich-text': __WEBPACK_IMPORTED_MODULE_18__field_richText_json___default.a,
   select: __WEBPACK_IMPORTED_MODULE_19__field_select_json___default.a,
-  selectList: __WEBPACK_IMPORTED_MODULE_20__field_selectList_json___default.a,
+  'select-list': __WEBPACK_IMPORTED_MODULE_20__field_selectList_json___default.a,
   slider: __WEBPACK_IMPORTED_MODULE_21__field_slider_json___default.a,
   switch: __WEBPACK_IMPORTED_MODULE_22__field_switch_json___default.a,
   tags: __WEBPACK_IMPORTED_MODULE_23__field_tags_json___default.a,
@@ -794,9 +794,9 @@ var items = __WEBPACK_IMPORTED_MODULE_0_lodash_merge___default()({ app: __WEBPAC
     app: 'http://chameleon-notation/app.json#',
     calculation: 'http://chameleon-notation/field-calculation.json#',
     check: 'http://chameleon-notation/field-check.json#',
-    checkList: 'http://chameleon-notation/field-checkList.json#',
+    'check-list': 'http://chameleon-notation/field-checkList.json#',
     date: 'http://chameleon-notation/field-date.json#',
-    dateRange: 'http://chameleon-notation/field-dateRange.json#',
+    'date-range': 'http://chameleon-notation/field-dateRange.json#',
     form: 'http://chameleon-notation/widget-form.json#',
     hlist: 'http://chameleon-notation/container-hlist.json#',
     html: 'http://chameleon-notation/widget-html.json#',
@@ -805,14 +805,14 @@ var items = __WEBPACK_IMPORTED_MODULE_0_lodash_merge___default()({ app: __WEBPAC
     number: 'http://chameleon-notation/field-number.json#',
     page: 'http://chameleon-notation/page.json#',
     panel: 'http://chameleon-notation/container-panel.json#',
-    radioList: 'http://chameleon-notation/field-radioList.json#',
+    'radio-list': 'http://chameleon-notation/field-radioList.json#',
     rating: 'http://chameleon-notation/field-rating.json#',
-    richText: 'http://chameleon-notation/field-richText.json#',
+    'rich-text': 'http://chameleon-notation/field-richText.json#',
     select: 'http://chameleon-notation/field-select.json#',
-    selectList: 'http://chameleon-notation/field-selectList.json#',
+    'select-list': 'http://chameleon-notation/field-selectList.json#',
     slider: 'http://chameleon-notation/field-slider.json#',
     switch: 'http://chameleon-notation/field-switch.json#',
-    tags: 'http://chameleon-notation/field-select.json#',
+    tags: 'http://chameleon-notation/field-tags.json#',
     text: 'http://chameleon-notation/field-text.json#',
     video: 'http://chameleon-notation/widget-video.json#',
     vlist: 'http://chameleon-notation/container-vlist.json#',
@@ -4645,7 +4645,7 @@ module.exports = {"$schema":"http://json-schema.org/draft-06/schema#","$id":"htt
 /* 111 */
 /***/ (function(module, exports) {
 
-module.exports = {"$schema":"http://json-schema.org/draft-06/schema#","$id":"http://chameleon-notation/field-base.json#","title":"Base field","description":"Schema defines base field definition","type":"object","definitions":{"name":{"id":"#name","type":"string"},"label":{"id":"#label","type":["string","null"]},"prependIcon":{"id":"#prependIcon","type":["string","null","boolean"],"cn-allowedBooleanType":false},"appendIcon":{"id":"#appendIcon","type":["string","null","boolean"],"cn-allowedBooleanType":false},"prefix":{"id":"#prefix","type":["string","null","boolean"],"cn-allowedBooleanType":false,"maxLength":3},"suffix":{"id":"#suffix","type":["string","null","boolean"],"cn-allowedBooleanType":false,"maxLength":6},"placeholder":{"id":"#placeholder","type":["string","null","boolean"],"cn-allowedBooleanType":false},"hint":{"id":"#hint","type":["string","null","boolean"],"cn-allowedBooleanType":false},"persistentHint":{"id":"#persistentHint","type":"boolean"},"color":{"id":"#color","type":["string","null"]},"disabled":{"id":"#disabled","type":["boolean","null"]},"tooltip":{"id":"#tooltip","type":["string","null"]},"multiLine":{"id":"#multiLine","type":"boolean"},"clearable":{"id":"#clearable","type":"boolean"},"validateOn":{"id":"#validateOn","type":["string","null"]},"pagination":{"id":"#pagination","type":"object","properties":{"rowsPerPage":{"type":"number"}}},"mask":{"id":"#mask","type":"object","properties":{"predefined":{"type":["boolean","string"]},"value":{"type":["string","null"]}}},"validation":{"id":"#validation","type":["null","object"],"properties":{"required":{"type":"boolean"},"minLength":{"type":["null","number"],"multipleOf":1,"maximum":{"$data":"1/maxLength"}},"maxLength":{"type":["null","number"],"multipleOf":1},"max":{"type":"number"},"min":{"type":"number"},"minCount":{"type":["number","null"]},"maxCount":{"type":["number","null"]},"pattern":{"type":"object","properties":{"predefined":{"type":["null","string"]},"value":{"type":["string","null"]}}},"custom":{"type":["string","null"]}},"anyOf":[{"required":["required"]},{"required":["minLength"]},{"required":["maxLength"]},{"required":["max"]},{"required":["min"]},{"required":["minCount"]},{"required":["maxCount"]},{"required":["pattern"]},{"required":["custom"]}]},"value":{"id":"#value","type":["string","null"]}},"required":["type"]}
+module.exports = {"$schema":"http://json-schema.org/draft-06/schema#","$id":"http://chameleon-notation/field-base.json#","title":"Base field","description":"Schema defines base field definition","type":"object","definitions":{"name":{"id":"#name","type":"string"},"label":{"id":"#label","type":["string","null"]},"prependIcon":{"id":"#prependIcon","type":["string","null","boolean"],"cn-allowedBooleanType":false},"appendIcon":{"id":"#appendIcon","type":["string","null","boolean"],"cn-allowedBooleanType":false},"prefix":{"id":"#prefix","type":["string","null","boolean"],"cn-allowedBooleanType":false,"maxLength":3},"suffix":{"id":"#suffix","type":["string","null","boolean"],"cn-allowedBooleanType":false,"maxLength":6},"placeholder":{"id":"#placeholder","type":["string","null","boolean"],"cn-allowedBooleanType":false},"hint":{"id":"#hint","type":["string","null","boolean"],"cn-allowedBooleanType":false},"persistentHint":{"id":"#persistentHint","type":"boolean"},"color":{"id":"#color","type":["string","null"]},"disabled":{"id":"#disabled","type":["boolean","null"]},"tooltip":{"id":"#tooltip","type":["string","null"]},"multiLine":{"id":"#multiLine","type":"boolean"},"clearable":{"id":"#clearable","type":"boolean"},"validateOn":{"id":"#validateOn","type":["string","null"]},"pagination":{"id":"#pagination","type":"object","properties":{"rowsPerPage":{"type":"number"}}},"mask":{"id":"#mask","type":"object","properties":{"predefined":{"type":["boolean","null","string"]},"value":{"type":["string","null"]}}},"validation":{"id":"#validation","type":["null","object"],"properties":{"required":{"type":"boolean"},"minLength":{"type":["null","number"],"multipleOf":1,"maximum":{"$data":"1/maxLength"}},"maxLength":{"type":["null","number"],"multipleOf":1},"max":{"type":["number","null"]},"min":{"type":["number","null"]},"minCount":{"type":["number","null"]},"maxCount":{"type":["number","null"]},"pattern":{"type":"object","properties":{"predefined":{"type":["null","string"]},"value":{"type":["string","null"]}}},"custom":{"type":["string","null"]}},"anyOf":[{"required":["required"]},{"required":["minLength"]},{"required":["maxLength"]},{"required":["max"]},{"required":["min"]},{"required":["minCount"]},{"required":["maxCount"]},{"required":["pattern"]},{"required":["custom"]}]},"value":{"id":"#value","type":["string","null"]}},"required":["type"]}
 
 /***/ }),
 /* 112 */
@@ -4675,7 +4675,7 @@ module.exports = {"$schema":"http://json-schema.org/draft-06/schema#","$id":"htt
 /* 116 */
 /***/ (function(module, exports) {
 
-module.exports = {"$schema":"http://json-schema.org/draft-06/schema#","$id":"http://chameleon-notation/field-dateRange.json#","title":"Date range field","description":"Schema defines date field","type":"object","properties":{"type":{"type":"string","enum":["dateRange"]},"appendIcon":{"$ref":"field-base.json#appendIcon"},"clearable":{"$ref":"field-base.json#clearable"},"format":{"type":"string"},"hint":{"$ref":"field-base.json#hint"},"label":{"$ref":"field-base.json#label"},"name":{"$ref":"field-base.json#name"},"placeholder":{"$ref":"field-base.json#placeholder"},"prependIcon":{"$ref":"field-base.json#prependIcon"},"time":{"id":"#time","type":"object","properties":{"enabled":{"type":"boolean"}}},"validation":{"id":"#validation","type":"object","properties":{"required":{"type":"boolean"}}},"value":{"id":"#value","type":["array","null"]}},"anyOf":[{"properties":{"time":{"properties":{"enabled":{"enum":[true]}}},"value":{"format":"date-time"}}},{"properties":{"time":{"properties":{"enabled":{"not":{"enum":[true]}}}},"value":{"format":"date"}}}],"required":["type"]}
+module.exports = {"$schema":"http://json-schema.org/draft-06/schema#","$id":"http://chameleon-notation/field-dateRange.json#","title":"Date range field","description":"Schema defines date field","type":"object","properties":{"type":{"type":"string","enum":["date-range"]},"appendIcon":{"$ref":"field-base.json#appendIcon"},"clearable":{"$ref":"field-base.json#clearable"},"format":{"type":"string"},"hint":{"$ref":"field-base.json#hint"},"label":{"$ref":"field-base.json#label"},"name":{"$ref":"field-base.json#name"},"placeholder":{"$ref":"field-base.json#placeholder"},"prependIcon":{"$ref":"field-base.json#prependIcon"},"time":{"id":"#time","type":"object","properties":{"enabled":{"type":"boolean"}}},"validation":{"id":"#validation","type":"object","properties":{"required":{"type":"boolean"}}},"value":{"id":"#value","type":["array","null"]}},"anyOf":[{"properties":{"time":{"properties":{"enabled":{"enum":[true]}}},"value":{"format":"date-time"}}},{"properties":{"time":{"properties":{"enabled":{"not":{"enum":[true]}}}},"value":{"format":"date"}}}],"required":["type"]}
 
 /***/ }),
 /* 117 */
@@ -4729,7 +4729,7 @@ module.exports = {"$schema":"http://json-schema.org/draft-06/schema#","$id":"htt
 /* 125 */
 /***/ (function(module, exports) {
 
-module.exports = {"$schema":"http://json-schema.org/draft-06/schema#","$id":"http://chameleon-notation/field-radioList.json#","title":"Radio list field","description":"Schema defines radio list field","type":"object","properties":{"name":{"$ref":"field-base.json#name"},"type":{"type":"string","enum":["radioList"]},"appendIcon":{"$ref":"field-base.json#appendIcon"},"prependIcon":{"$ref":"field-base.json#prependIcon"},"hint":{"$ref":"field-base.json#hint"},"persistentHint":{"$ref":"field-base.json#persistentHint"},"value":{"id":"#inputValue","type":["string","null"]},"validation":{"$ref":"field-base.json#validation"},"dataSource":{"id":"#dataSource","type":"object","properties":{"items":{"type":"array","items":{"type":"object","properties":{"value":{"$ref":"field-base.json#value"},"label":{"$ref":"field-base.json#label"},"color":{"$ref":"field-base.json#color"},"disabled":{"$ref":"field-base.json#disabled"}},"required":["value"]}}}}},"required":["type"]}
+module.exports = {"$schema":"http://json-schema.org/draft-06/schema#","$id":"http://chameleon-notation/field-radioList.json#","title":"Radio list field","description":"Schema defines radio list field","type":"object","properties":{"name":{"$ref":"field-base.json#name"},"type":{"type":"string","enum":["radio-list"]},"appendIcon":{"$ref":"field-base.json#appendIcon"},"prependIcon":{"$ref":"field-base.json#prependIcon"},"hint":{"$ref":"field-base.json#hint"},"persistentHint":{"$ref":"field-base.json#persistentHint"},"value":{"id":"#inputValue","type":["string","null"]},"validation":{"$ref":"field-base.json#validation"},"dataSource":{"id":"#dataSource","type":"object","properties":{"items":{"type":"array","items":{"type":"object","properties":{"value":{"$ref":"field-base.json#value"},"label":{"$ref":"field-base.json#label"},"color":{"$ref":"field-base.json#color"},"disabled":{"$ref":"field-base.json#disabled"}},"required":["value"]}}}}},"required":["type"]}
 
 /***/ }),
 /* 126 */
@@ -4741,7 +4741,7 @@ module.exports = {"$schema":"http://json-schema.org/draft-06/schema#","$id":"htt
 /* 127 */
 /***/ (function(module, exports) {
 
-module.exports = {"$schema":"http://json-schema.org/draft-06/schema#","$id":"http://chameleon-notation/field-richText.json#","title":"Rich text field","description":"Schema defines rich text field","type":"object","properties":{"type":{"type":"string","enum":["richText"]},"label":{"$ref":"field-base.json#label"},"name":{"$ref":"field-base.json#name"},"toolbar":{"id":"#toolbar","type":["array","string"],"uniqueItems":true,"items":{"type":"string"}},"value":{"$ref":"field-base.json#value"}},"required":["type"]}
+module.exports = {"$schema":"http://json-schema.org/draft-06/schema#","$id":"http://chameleon-notation/field-richText.json#","title":"Rich text field","description":"Schema defines rich text field","type":"object","properties":{"type":{"type":"string","enum":["rich-text"]},"label":{"$ref":"field-base.json#label"},"name":{"$ref":"field-base.json#name"},"toolbar":{"id":"#toolbar","type":["array","string"],"uniqueItems":true,"items":{"type":"string"}},"value":{"$ref":"field-base.json#value"}},"required":["type"]}
 
 /***/ }),
 /* 128 */
@@ -4753,7 +4753,7 @@ module.exports = {"$schema":"http://json-schema.org/draft-06/schema#","$id":"htt
 /* 129 */
 /***/ (function(module, exports) {
 
-module.exports = {"$schema":"http://json-schema.org/draft-06/schema#","$id":"http://chameleon-notation/field-selectList.json#","title":"Select List","description":"Schema defines select list field","type":"object","properties":{"type":{"type":"string","enum":["selectList"]},"appendIcon":{"$ref":"field-base.json#appendIcon"},"clearable":{"$ref":"field-base.json#clearable"},"dataSource":{"$ref":"field-select.json#dataSource"},"hint":{"$ref":"field-base.json#hint"},"label":{"$ref":"field-base.json#label"},"multiple":{"$ref":"field-select.json#multiple"},"name":{"$ref":"field-base.json#name"},"persistentHint":{"$ref":"field-base.json#persistentHint"},"placeholder":{"$ref":"field-base.json#placeholder"},"prependIcon":{"$ref":"field-base.json#prependIcon"},"readonly":{"$ref":"field-select.json#readonly"},"tooltip":{"$ref":"field-base.json#tooltip"},"validateOn":{"$ref":"field-base.json#validateOn"},"validation":{"$ref":"field-base.json#validation"},"value":{"$ref":"field-select.json#value"}},"required":["type"]}
+module.exports = {"$schema":"http://json-schema.org/draft-06/schema#","$id":"http://chameleon-notation/field-selectList.json#","title":"Select List","description":"Schema defines select list field","type":"object","properties":{"type":{"type":"string","enum":["select-list"]},"appendIcon":{"$ref":"field-base.json#appendIcon"},"clearable":{"$ref":"field-base.json#clearable"},"dataSource":{"$ref":"field-select.json#dataSource"},"hint":{"$ref":"field-base.json#hint"},"label":{"$ref":"field-base.json#label"},"multiple":{"$ref":"field-select.json#multiple"},"name":{"$ref":"field-base.json#name"},"persistentHint":{"$ref":"field-base.json#persistentHint"},"placeholder":{"$ref":"field-base.json#placeholder"},"prependIcon":{"$ref":"field-base.json#prependIcon"},"readonly":{"$ref":"field-select.json#readonly"},"tooltip":{"$ref":"field-base.json#tooltip"},"validateOn":{"$ref":"field-base.json#validateOn"},"validation":{"$ref":"field-base.json#validation"},"value":{"$ref":"field-select.json#value"}},"required":["type"]}
 
 /***/ }),
 /* 130 */

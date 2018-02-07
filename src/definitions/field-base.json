@@ -87,7 +87,7 @@
       "type": "object",
       "properties": {
         "predefined": {
-          "type": ["boolean", "string"]
+          "type": ["boolean", "null", "string"]
         },
         "value": {
           "type": ["string", "null"]
@@ -113,10 +113,10 @@
           "multipleOf": 1
         },
         "max": {
-          "type": "number"
+          "type": ["number", "null"]
         },
         "min": {
-          "type": "number"
+          "type": ["number", "null"]
         },
         "minCount": {
           "type": ["number", "null"]
