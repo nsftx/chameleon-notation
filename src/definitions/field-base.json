@@ -79,6 +79,12 @@
       "properties": {
         "rowsPerPage": {
           "type": "number"
+        },
+        "sortBy": {
+          "type": ["null", "string"]
+        },
+        "page": {
+          "type": "number"
         }
       }
     },

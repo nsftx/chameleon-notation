@@ -35,6 +35,10 @@
     "pagination": {
       "$ref": "field-base.json#pagination"
     },
+    "wrap": {
+      "id": "#wrap",
+      "type": "boolean"
+    },
     "dataSource": {
       "id": "#dataSource",
       "type": "object",
