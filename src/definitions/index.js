@@ -1,5 +1,7 @@
 import _ from 'lodash';
 import app from './app.json';
+import accordion from './container-accordion.json';
+import accordionItem from './container-accordion-item.json';
 import base from './field-base.json';
 import calculation from './field-calculation.json';
 import check from './field-check.json';
@@ -30,18 +32,18 @@ import youtube from './widget-youtube.json';
 const fields = {
   calculation,
   check,
-  checkList,
+  'check-list': checkList,
   date,
-  dateRange,
+  'date-range': dateRange,
   html,
   list,
   money,
   number,
-  radioList,
+  'radio-list': radioList,
   rating,
-  richText,
+  'rich-text': richText,
   select,
-  selectList,
+  'select-list': selectList,
   slider,
   switch: toggle,
   tags,
@@ -55,6 +57,8 @@ const widgets = {
 };
 
 const containers = {
+  accordion,
+  accordionItem,
   hlist,
   panel,
   vlist,
@@ -64,12 +68,14 @@ const items = _.merge({ app, base, page }, fields, widgets, containers);
 
 export default {
   mapper: {
+    accordion: 'http://chameleon-notation/container-accordion.json#',
+    'accordion-item': 'http://chameleon-notation/container-accordion-item.json#',
     app: 'http://chameleon-notation/app.json#',
     calculation: 'http://chameleon-notation/field-calculation.json#',
     check: 'http://chameleon-notation/field-check.json#',
-    checkList: 'http://chameleon-notation/field-checkList.json#',
+    'check-list': 'http://chameleon-notation/field-checkList.json#',
     date: 'http://chameleon-notation/field-date.json#',
-    dateRange: 'http://chameleon-notation/field-dateRange.json#',
+    'date-range': 'http://chameleon-notation/field-dateRange.json#',
     form: 'http://chameleon-notation/widget-form.json#',
     hlist: 'http://chameleon-notation/container-hlist.json#',
     html: 'http://chameleon-notation/widget-html.json#',
@@ -78,14 +84,14 @@ export default {
     number: 'http://chameleon-notation/field-number.json#',
     page: 'http://chameleon-notation/page.json#',
     panel: 'http://chameleon-notation/container-panel.json#',
-    radioList: 'http://chameleon-notation/field-radioList.json#',
+    'radio-list': 'http://chameleon-notation/field-radioList.json#',
     rating: 'http://chameleon-notation/field-rating.json#',
-    richText: 'http://chameleon-notation/field-richText.json#',
+    'rich-text': 'http://chameleon-notation/field-richText.json#',
     select: 'http://chameleon-notation/field-select.json#',
-    selectList: 'http://chameleon-notation/field-selectList.json#',
+    'select-list': 'http://chameleon-notation/field-selectList.json#',
     slider: 'http://chameleon-notation/field-slider.json#',
     switch: 'http://chameleon-notation/field-switch.json#',
-    tags: 'http://chameleon-notation/field-select.json#',
+    tags: 'http://chameleon-notation/field-tags.json#',
     text: 'http://chameleon-notation/field-text.json#',
     video: 'http://chameleon-notation/widget-video.json#',
     vlist: 'http://chameleon-notation/container-vlist.json#',

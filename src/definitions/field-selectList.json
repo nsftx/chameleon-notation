@@ -7,7 +7,7 @@
   "properties": {
     "type": {
       "type": "string",
-      "enum": ["selectList"]
+      "enum": ["select-list"]
     },
     "appendIcon": {
       "$ref": "field-base.json#appendIcon"

@@ -7,7 +7,7 @@
   "properties": {
     "type": {
       "type": "string",
-      "enum": ["richText"]
+      "enum": ["rich-text"]
     },
     "label": {
       "$ref": "field-base.json#label"
@@ -17,7 +17,7 @@
     },
     "toolbar": {
       "id": "#toolbar",
-      "type": ["array", "string"],
+      "type": ["array", "string", "object"],
       "uniqueItems": true,
       "items": {
         "type": "string"

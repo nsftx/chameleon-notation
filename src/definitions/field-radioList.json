@@ -10,7 +10,7 @@
     },
     "type": {
       "type": "string",
-      "enum": ["radioList"]
+      "enum": ["radio-list"]
     },
     "appendIcon": {
       "$ref": "field-base.json#appendIcon"

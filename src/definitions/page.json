@@ -46,6 +46,7 @@
       "type": "array",
       "items": {
         "anyOf": [
+          { "$ref": "container-accordion.json#" },
           { "$ref": "container-hlist.json#" },
           { "$ref": "container-panel.json#" },
           { "$ref": "container-vlist.json#" }
