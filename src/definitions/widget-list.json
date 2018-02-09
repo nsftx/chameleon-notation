@@ -32,8 +32,14 @@
       "id": "#rowsPerPageItems",
       "type": ["array", "string", "null"]
     },
-    "pagination": {
-      "$ref": "field-base.json#pagination"
+    "rowsPerPage": {
+      "type": "number"
+    },
+    "sortBy": {
+      "type": ["null", "string"]
+    },
+    "startPage": {
+      "type": "number"
     },
     "wrap": {
       "id": "#wrap",
