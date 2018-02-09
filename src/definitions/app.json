@@ -26,5 +26,5 @@
       "minLength": 3
     }
   },
-  "required": ["id", "name", "pages", "slug"]
+  "required": ["id", "name", "slug"]
 }
