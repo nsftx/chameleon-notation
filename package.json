@@ -3,7 +3,11 @@
   "version": "1.0.0",
   "description": "Chameleon notation validator",
   "author": "Lana Dzidic <dzidic.lana@nsoft.com>",
-  "private": true,
+  "contributors": [
+    "Snježana Drežnjak <dreznjak.snjezana@nsoft.com>",
+    "Jadranko Dragoje <dragoje.jadranko@nsoft.com>"
+  ],
+  "private": false,
   "scripts": {
     "start": "cross-env NODE_ENV=development webpack --config build/webpack.dev.config.js",
     "dev": "cross-env NODE_ENV=development webpack-dev-server --config build/webpack.dev.config.js --open --hot",
