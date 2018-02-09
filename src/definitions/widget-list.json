@@ -47,7 +47,7 @@
     },
     "dataSource": {
       "id": "#dataSource",
-      "type": "object",
+      "type": ["null", "object"],
       "properties": {
         "items": {
           "type": "array",
