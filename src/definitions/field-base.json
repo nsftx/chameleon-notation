@@ -73,21 +73,6 @@
       "id": "#validateOn",
       "type": ["string", "null"]
     },
-    "pagination": {
-      "id": "#pagination",
-      "type": "object",
-      "properties": {
-        "rowsPerPage": {
-          "type": "number"
-        },
-        "sortBy": {
-          "type": ["null", "string"]
-        },
-        "page": {
-          "type": "number"
-        }
-      }
-    },
     "mask": {
       "id": "#mask",
       "type": "object",

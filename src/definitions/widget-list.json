@@ -30,10 +30,16 @@
     },
     "rowsPerPageItems": {
       "id": "#rowsPerPageItems",
-      "type": ["array", "null"]
+      "type": ["array", "string", "null"]
     },
-    "pagination": {
-      "$ref": "field-base.json#pagination"
+    "rowsPerPage": {
+      "type": "number"
+    },
+    "sortBy": {
+      "type": ["null", "string"]
+    },
+    "startPage": {
+      "type": "number"
     },
     "wrap": {
       "id": "#wrap",
@@ -41,7 +47,7 @@
     },
     "dataSource": {
       "id": "#dataSource",
-      "type": "object",
+      "type": ["null", "object"],
       "properties": {
         "items": {
           "type": "array",
