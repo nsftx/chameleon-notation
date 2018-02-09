@@ -30,7 +30,7 @@
     },
     "rowsPerPageItems": {
       "id": "#rowsPerPageItems",
-      "type": ["array", "null"]
+      "type": ["array", "string", "null"]
     },
     "pagination": {
       "$ref": "field-base.json#pagination"
