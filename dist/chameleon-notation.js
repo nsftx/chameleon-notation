@@ -4649,7 +4649,7 @@ module.exports = stubFalse;
 /* 110 */
 /***/ (function(module, exports) {
 
-module.exports = {"$schema":"http://json-schema.org/draft-06/schema#","$id":"http://chameleon-notation/app.json#","title":"App","description":"Schema defines app","type":"object","properties":{"description":{"type":"string"},"id":{"type":"string","minLength":36},"name":{"type":"string"},"pages":{"type":"array","items":{"$ref":"page.json#"}},"slug":{"type":"string","minLength":3}},"required":["id","name","pages","slug"]}
+module.exports = {"$schema":"http://json-schema.org/draft-06/schema#","$id":"http://chameleon-notation/app.json#","title":"App","description":"Schema defines app","type":"object","properties":{"description":{"type":"string"},"id":{"type":"string","minLength":36},"name":{"type":"string"},"pages":{"type":"array","items":{"$ref":"page.json#"}},"slug":{"type":"string","minLength":3}},"required":["id","name","slug"]}
 
 /***/ }),
 /* 111 */
