@@ -626,6 +626,12 @@
       "gutter": false,
       "elements": [
         {
+          "type": "map",
+          "name": "Map widget",
+          "apiKey": "AIzaSyBEkdhFK-EsCkDyIjr3B3ZSyvlXcmIF4HI",
+          "libraries": "places"
+        },
+        {
           "type": "youtube",
           "name": "you tube",
           "autoplay": true,

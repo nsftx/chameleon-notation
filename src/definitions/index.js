@@ -12,6 +12,7 @@ import form from './widget-form.json';
 import hlist from './container-hlist.json';
 import html from './widget-html.json';
 import list from './widget-list.json';
+import map from './widget-map.json';
 import money from './field-money.json';
 import number from './field-number.json';
 import page from './page.json';
@@ -37,6 +38,7 @@ const fields = {
   'date-range': dateRange,
   html,
   list,
+  map,
   money,
   number,
   'radio-list': radioList,
@@ -52,6 +54,8 @@ const fields = {
 
 const widgets = {
   form,
+  list,
+  map,
   video,
   youtube,
 };
@@ -80,6 +84,7 @@ export default {
     hlist: 'http://chameleon-notation/container-hlist.json#',
     html: 'http://chameleon-notation/widget-html.json#',
     list: 'http://chameleon-notation/widget-list.json#',
+    map: 'http://chameleon-notation/widget-map.json#',
     money: 'http://chameleon-notation/field-money.json#',
     number: 'http://chameleon-notation/field-number.json#',
     page: 'http://chameleon-notation/page.json#',
