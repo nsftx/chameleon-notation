@@ -1,7 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-06/schema#",
   "$id": "http://chameleon-notation/container-placeholder.json#",
-  "title": "Panel container",
+  "title": "Placeholder container",
   "description": "Schema defines placeholder container",
   "type": "object",
   "properties": {
