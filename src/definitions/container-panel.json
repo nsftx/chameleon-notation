@@ -21,6 +21,7 @@
               { "$ref": "container-accordion.json#" },
               { "$ref": "container-hlist.json#" },
               { "$ref": "container-panel.json#" },
+              { "$ref": "container-placeholder.json#" },
               { "$ref": "container-vlist.json#" },
               { "$ref": "widget-form.json#" },
               { "$ref": "widget-html.json#" },
