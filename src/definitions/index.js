@@ -24,6 +24,7 @@ import richText from './field-richText.json';
 import select from './field-select.json';
 import selectList from './field-selectList.json';
 import slider from './field-slider.json';
+import table from './widget-table.json';
 import toggle from './field-switch.json';
 import tags from './field-tags.json';
 import text from './field-text.json';
@@ -57,6 +58,7 @@ const widgets = {
   form,
   list,
   map,
+  table,
   video,
   youtube,
 };
@@ -99,6 +101,7 @@ export default {
     'select-list': 'http://chameleon-notation/field-selectList.json#',
     slider: 'http://chameleon-notation/field-slider.json#',
     switch: 'http://chameleon-notation/field-switch.json#',
+    table: 'http://chameleon-notation/widget-table.json#',
     tags: 'http://chameleon-notation/field-tags.json#',
     text: 'http://chameleon-notation/field-text.json#',
     video: 'http://chameleon-notation/widget-video.json#',

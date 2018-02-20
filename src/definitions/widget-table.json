@@ -1,0 +1,54 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "http://chameleon-notation/widget-table.json#",
+  "title": "Table widget",
+  "description": "Schema defines table widget",
+  "type": "object",
+  "properties": {
+    "type": {
+      "type": "string",
+      "enum": ["table"]
+    },
+    "name": {
+      "$ref": "field-base.json#name"
+    },
+    "noDataText": {
+      "id": "#noDataText",
+      "type": ["string", "null"]
+    },
+    "rowsPerPageText": {
+      "id": "#rowsPerPageText",
+      "type": ["string", "null"]
+    },
+    "noResultsText": {
+      "id": "#noResultsText",
+      "type": ["string", "null"]
+    },
+    "rowsPerPageItems": {
+      "id": "#rowsPerPageItems",
+      "type": ["array", "string", "null"]
+    },
+    "rowsPerPage": {
+      "type": "number"
+    },
+    "sortBy": {
+      "type": ["null", "string"]
+    },
+    "startPage": {
+      "type": "number"
+    },
+    "dataSource": {
+      "id": "#dataSource",
+      "type": ["null", "object"],
+      "properties": {
+        "items": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        }
+      }
+    }
+  },
+  "required": ["type"]
+}
