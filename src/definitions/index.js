@@ -8,6 +8,8 @@ import check from './field-check.json';
 import checkList from './field-checkList.json';
 import date from './field-date.json';
 import dateRange from './field-dateRange.json';
+import flexgrid from './container-flexgrid.json';
+import flexgridItem from './container-flexgrid-item.json';
 import form from './widget-form.json';
 import hlist from './container-hlist.json';
 import html from './widget-html.json';
@@ -63,6 +65,8 @@ const widgets = {
 const containers = {
   accordion,
   accordionItem,
+  flexgrid,
+  flexgridItem,
   hlist,
   panel,
   vlist,
@@ -80,6 +84,8 @@ export default {
     'check-list': 'http://chameleon-notation/field-checkList.json#',
     date: 'http://chameleon-notation/field-date.json#',
     'date-range': 'http://chameleon-notation/field-dateRange.json#',
+    flexgrid: 'http://chameleon-notation/container-flexgrid.json#',
+    'flexgrid-item': 'http://chameleon-notation/container-flexgrid-item.json#',
     form: 'http://chameleon-notation/widget-form.json#',
     hlist: 'http://chameleon-notation/container-hlist.json#',
     html: 'http://chameleon-notation/widget-html.json#',

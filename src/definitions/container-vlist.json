@@ -19,6 +19,7 @@
           "items": {
             "oneOf": [
               { "$ref": "container-accordion.json#" },
+              { "$ref": "container-flexgrid.json#" },
               { "$ref": "container-hlist.json#" },
               { "$ref": "container-panel.json#" },
               { "$ref": "container-vlist.json#" },

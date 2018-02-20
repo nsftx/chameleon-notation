@@ -1,0 +1,29 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "http://chameleon-notation/container-flexgrid.json#",
+  "title": "Flexgrid container",
+  "description": "Schema defines flexgrid container",
+  "type": "object",
+  "properties": {
+    "type": {
+      "type": "string",
+      "enum": ["flexgrid"]
+    },
+    "fluid": {
+      "type": "boolean"
+    },
+    "spacing": {
+      "type": "string",
+      "enum": ["xs", "sm", "md", "lg", "xl"]
+    },
+    "direction": {
+      "type": "string",
+      "enum": ["row", "column"]
+    },
+    "elements": {
+      "type": "array",
+      "items": { "$ref": "container-flexgrid-item.json#" }
+      }
+  },
+  "required": ["type"]
+}

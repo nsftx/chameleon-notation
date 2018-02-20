@@ -1,13 +1,13 @@
 {
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "$id": "http://chameleon-notation/container-accordion-item.json#",
-  "title": "Accordion item container",
-  "description": "Schema defines accordion item container",
+  "$id": "http://chameleon-notation/container-flexgrid-item.json#",
+  "title": "Flexgrid item container",
+  "description": "Schema defines flexgrid item container",
   "type": "object",
   "properties": {
     "type": {
       "type": "string",
-      "enum": ["accordion-item"]
+      "enum": ["flexgrid-item"]
     },
     "elements": {
       "type": "array",
@@ -15,7 +15,7 @@
         {
           "items": {
             "oneOf": [
-              { "$ref": "container-flexgrid.json#" },
+              { "$ref": "container-accordion.json#" },
               { "$ref": "container-hlist.json#" },
               { "$ref": "container-panel.json#" },
               { "$ref": "container-vlist.json#" },

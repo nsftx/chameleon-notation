@@ -709,6 +709,20 @@
           "type": "html",
           "label": "Html Markup",
           "value": "<h1>This is heading 1</h1>"
+        },
+        {
+          "type": "flexgrid",
+          "name": "flexgrid",
+          "fluid": true,
+          "direction": "row",
+          "spacing": "md",
+          "elements": [
+            {
+              "type": "flexgrid-item",
+              "name": "flexgrid-item-1",
+              "width": "12"
+            }
+          ]
         }
       ]
     }
