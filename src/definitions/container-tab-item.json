@@ -1,15 +1,18 @@
 {
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "$id": "http://chameleon-notation/container-hlist.json#",
-  "title": "Horizontal list container",
-  "description": "Schema defines horizontal list container",
+  "$id": "http://chameleon-notation/container-tab-item.json#",
+  "title": "Tab item container",
+  "description": "Schema defines tab item container",
   "type": "object",
   "properties": {
     "type": {
       "type": "string",
-      "enum": ["hlist"]
+      "enum": ["tab-item"]
     },
-    "color": {
+    "icon": {
+      "type": "string"
+    },
+    "title": {
       "type": "string"
     },
     "elements": {
@@ -18,13 +21,12 @@
         {
           "items": {
             "oneOf": [
-              { "$ref": "container-accordion.json#" },
               { "$ref": "container-flexgrid.json#" },
               { "$ref": "container-hlist.json#" },
               { "$ref": "container-panel.json#" },
               { "$ref": "container-placeholder.json#" },
               { "$ref": "container-vlist.json#" },
-              { "$ref": "container-tabs.json#" },
+              { "$ref": "container-accordion.json#" },
               { "$ref": "widget-form.json#" },
               { "$ref": "widget-html.json#" },
               { "$ref": "widget-list.json#" },
@@ -32,6 +34,22 @@
               { "$ref": "widget-table.json#" },
               { "$ref": "widget-video.json#" },
               { "$ref": "widget-youtube.json#" },
+              { "$ref": "field-text.json#" },
+              { "$ref": "field-calculation.json#" },
+              { "$ref": "field-number.json#" },
+              { "$ref": "field-money.json#" },
+              { "$ref": "field-richText.json#" },
+              { "$ref": "field-date.json#" },
+              { "$ref": "field-dateRange.json#" },
+              { "$ref": "field-tags.json#" },
+              { "$ref": "field-check.json#" },
+              { "$ref": "field-checkList.json#" },
+              { "$ref": "field-radioList.json#" },
+              { "$ref": "field-select.json#" },
+              { "$ref": "field-selectList.json#" },
+              { "$ref": "field-slider.json#" },
+              { "$ref": "field-switch.json#" },
+              { "$ref": "field-rating.json#" },
               {
                 "properties": {
                   "type": {
@@ -46,15 +64,7 @@
           "maxItems": 0
         }
       ]
-    },
-    "flat": {
-      "type": "boolean"
-    },
-    "gutter": {
-      "type": "boolean"
-    },
-    "name": {
-      "$ref": "field-base.json#name"
+
     }
   },
   "required": ["type"]

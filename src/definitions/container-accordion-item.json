@@ -20,6 +20,7 @@
               { "$ref": "container-panel.json#" },
               { "$ref": "container-placeholder.json#" },
               { "$ref": "container-vlist.json#" },
+              { "$ref": "container-tabs.json#" },
               { "$ref": "widget-form.json#" },
               { "$ref": "widget-html.json#" },
               { "$ref": "widget-list.json#" },
