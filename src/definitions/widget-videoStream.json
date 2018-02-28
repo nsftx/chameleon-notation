@@ -1,0 +1,26 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "http://chameleon-notation/widget-videoStream.json#",
+  "title": "Video Stream widget",
+  "description": "Schema defines video stream widget",
+  "type": "object",
+  "properties": {
+    "type": {
+      "type": "string",
+      "enum": ["video-stream"]
+    },
+    "name": {
+      "$ref": "field-base.json#name"
+    },
+    "aspectRatio": {
+      "type": "string"
+    },
+    "streamType": {
+      "type": "string"
+    },
+    "value": {
+      "type": "string"
+    }
+  },
+  "required": ["type"]
+}

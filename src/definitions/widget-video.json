@@ -27,6 +27,9 @@
     "repeat": {
       "type": "boolean"
     },
+    "aspectRatio": {
+      "type": "string"
+    },
     "value": {
       "type": ["string", "array"],
       "items": {
