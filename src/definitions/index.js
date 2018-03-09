@@ -33,6 +33,7 @@ import tags from './field-tags.json';
 import toggle from './field-switch.json';
 import text from './field-text.json';
 import video from './widget-video.json';
+import videoStream from './widget-videoStream.json';
 import vlist from './container-vlist.json';
 import youtube from './widget-youtube.json';
 
@@ -64,6 +65,7 @@ const widgets = {
   map,
   table,
   video,
+  videoStream,
   youtube,
 };
 
@@ -117,6 +119,7 @@ export default {
     tags: 'http://chameleon-notation/field-tags.json#',
     text: 'http://chameleon-notation/field-text.json#',
     video: 'http://chameleon-notation/widget-video.json#',
+    'video-stream': 'http://chameleon-notation/widget-videoStream.json#',
     vlist: 'http://chameleon-notation/container-vlist.json#',
     youtube: 'http://chameleon-notation/widget-youtube.json#',
   },

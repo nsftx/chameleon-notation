@@ -25,6 +25,7 @@
               { "$ref": "widget-list.json#" },
               { "$ref": "widget-map.json#" },
               { "$ref": "widget-video.json#" },
+              { "$ref": "widget-videoStream.json#" },
               { "$ref": "widget-youtube.json#" },
               { "$ref": "field-text.json#" },
               { "$ref": "field-calculation.json#" },
