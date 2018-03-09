@@ -4,6 +4,7 @@ var webpackConfig = require('../../build/webpack.test.config');
 module.exports = function (config) {
   config.set({
     browsers: ['PhantomJS'],
+    port: 9876,
     frameworks: ['mocha', 'sinon-chai', 'phantomjs-shim'],
     reporters: ['spec', 'coverage'],
     files: ['./index.js'],
@@ -21,6 +22,6 @@ module.exports = function (config) {
         { type: 'text-summary' },
       ]
     },
-    failOnEmptyTestSuite: false
+    failOnEmptyTestSuite: false,
   });
 };

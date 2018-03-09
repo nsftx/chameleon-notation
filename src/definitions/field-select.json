@@ -4,19 +4,8 @@
   "title": "Select field",
   "description": "Schema defines select field",
   "type": "object",
-  "properties": {
-    "type": {
-      "type": "string",
-      "enum": ["select"]
-    },
-    "appendIcon": {
-      "$ref": "field-base.json#appendIcon"
-    },
-    "clearable": {
-      "$ref": "field-base.json#clearable"
-    },
+  "definitions": {
     "dataSource": {
-      "id": "#dataSource",
       "type": "object",
       "properties": {
         "items": {
@@ -31,53 +20,74 @@
         }
       }
     },
-    "hint": {
-      "$ref": "field-base.json#hint"
-    },
-    "label": {
-      "$ref": "field-base.json#label"
-    },
-    "mask": {
-      "$ref": "field-base.json#mask"
-    },
-    "multiLine": {
-      "$ref": "field-base.json#multiLine"
-    },
     "multiple": {
-      "id": "#multiple",
       "type": "boolean"
-    },
-    "name": {
-      "$ref": "field-base.json#name"
-    },
-    "persistentHint": {
-      "$ref": "field-base.json#persistentHint"
-    },
-    "placeholder": {
-      "$ref": "field-base.json#placeholder"
-    },
-    "prependIcon": {
-      "$ref": "field-base.json#prependIcon"
     },
     "readonly": {
-      "id": "#readonly",
       "type": "boolean"
     },
-    "tooltip": {
-      "$ref": "field-base.json#tooltip"
-    },
-    "validateOn": {
-      "$ref": "field-base.json#validateOn"
-    },
-    "validation": {
-      "$ref": "field-base.json#validation"
-    },
     "value": {
-      "id": "#value",
       "type": "array",
       "items": {
         "type": "object"
       }
+    }
+  },
+  "properties": {
+    "type": {
+      "type": "string",
+      "enum": ["select"]
+    },
+    "appendIcon": {
+      "$ref": "field-base.json#/definitions/appendIcon"
+    },
+    "clearable": {
+      "$ref": "field-base.json#/definitions/clearable"
+    },
+    "dataSource": {
+      "$ref": "#/definitions/dataSource"
+    },
+    "hint": {
+      "$ref": "field-base.json#/definitions/hint"
+    },
+    "label": {
+      "$ref": "field-base.json#/definitions/label"
+    },
+    "mask": {
+      "$ref": "field-base.json#/definitions/mask"
+    },
+    "multiLine": {
+      "$ref": "field-base.json#/definitions/multiLine"
+    },
+    "multiple": {
+      "$ref": "#/definitions/multiple"
+    },
+    "name": {
+      "$ref": "field-base.json#/definitions/name"
+    },
+    "persistentHint": {
+      "$ref": "field-base.json#/definitions/persistentHint"
+    },
+    "placeholder": {
+      "$ref": "field-base.json#/definitions/placeholder"
+    },
+    "prependIcon": {
+      "$ref": "field-base.json#/definitions/prependIcon"
+    },
+    "readonly": {
+      "$ref": "#/definitions/readonly"
+    },
+    "tooltip": {
+      "$ref": "field-base.json#/definitions/tooltip"
+    },
+    "validateOn": {
+      "$ref": "field-base.json#/definitions/validateOn"
+    },
+    "validation": {
+      "$ref": "field-base.json#/definitions/validation"
+    },
+    "value": {
+      "$ref": "#/definitions/value"
     }
   },
   "required": ["type"]

@@ -10,49 +10,49 @@
       "enum": ["select-list"]
     },
     "appendIcon": {
-      "$ref": "field-base.json#appendIcon"
+      "$ref": "field-base.json#/definitions/appendIcon"
     },
     "clearable": {
-      "$ref": "field-base.json#clearable"
+      "$ref": "field-base.json#/definitions/clearable"
     },
     "dataSource": {
-      "$ref": "field-select.json#dataSource"
+      "$ref": "field-select.json#/definitions/dataSource"
     },
     "hint": {
-      "$ref": "field-base.json#hint"
+      "$ref": "field-base.json#/definitions/hint"
     },
     "label": {
-      "$ref": "field-base.json#label"
+      "$ref": "field-base.json#/definitions/label"
     },
     "multiple": {
-      "$ref": "field-select.json#multiple"
+      "$ref": "field-select.json#/definitions/multiple"
     },
     "name": {
-      "$ref": "field-base.json#name"
+      "$ref": "field-base.json#/definitions/name"
     },
     "persistentHint": {
-      "$ref": "field-base.json#persistentHint"
+      "$ref": "field-base.json#/definitions/persistentHint"
     },
     "placeholder": {
-      "$ref": "field-base.json#placeholder"
+      "$ref": "field-base.json#/definitions/placeholder"
     },
     "prependIcon": {
-      "$ref": "field-base.json#prependIcon"
+      "$ref": "field-base.json#/definitions/prependIcon"
     },
     "readonly": {
-      "$ref": "field-select.json#readonly"
+      "$ref": "field-select.json#/definitions/readonly"
     },
     "tooltip": {
-      "$ref": "field-base.json#tooltip"
+      "$ref": "field-base.json#/definitions/tooltip"
     },
     "validateOn": {
-      "$ref": "field-base.json#validateOn"
+      "$ref": "field-base.json#/definitions/validateOn"
     },
     "validation": {
-      "$ref": "field-base.json#validation"
+      "$ref": "field-base.json#/definitions/validation"
     },
     "value": {
-      "$ref": "field-select.json#value"
+      "$ref": "field-select.json#/definitions/value"
     }
   },
   "required": ["type"]

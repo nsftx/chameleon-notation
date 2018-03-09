@@ -6,75 +6,59 @@
   "type": "object",
   "definitions": {
     "name": {
-      "id": "#name",
       "type": "string"
     },
     "label": {
-      "id": "#label",
       "type": ["string", "null"]
     },
     "prependIcon": {
-      "id": "#prependIcon",
       "type": ["string", "null", "boolean"],
       "cn-allowedBooleanType": false
     },
     "appendIcon": {
-      "id": "#appendIcon",
       "type": ["string", "null", "boolean"],
       "cn-allowedBooleanType": false
     },
     "prefix": {
-      "id": "#prefix",
       "type": ["string", "null", "boolean"],
       "cn-allowedBooleanType": false,
       "maxLength": 3
     },
     "suffix": {
-      "id": "#suffix",
       "type": ["string", "null", "boolean"],
       "cn-allowedBooleanType": false,
       "maxLength": 6
     },
     "placeholder": {
-      "id": "#placeholder",
       "type": ["string", "null", "boolean"],
       "cn-allowedBooleanType": false
     },
     "hint": {
-      "id": "#hint",
       "type": ["string", "null", "boolean"],
       "cn-allowedBooleanType": false
     },
     "persistentHint": {
-      "id": "#persistentHint",
       "type": "boolean"
     },
     "color": {
-      "id": "#color",
       "type": ["string", "null"]
     },
     "disabled": {
-      "id": "#disabled",
       "type": ["boolean", "null"]
     },
     "tooltip": {
-      "id": "#tooltip",
       "type": ["string", "null"]
     },
     "multiLine": {
-      "id": "#multiLine",
       "type": "boolean"
     },
     "clearable": {
-      "id": "#clearable",
       "type": "boolean"
     },
     "validateOn": {
-      "id": "#validateOn",
       "type": ["string", "null"]
     },
     "mask": {
-      "id": "#mask",
       "type": "object",
       "properties": {
         "predefined": {
@@ -86,7 +70,6 @@
       }
     },
     "validation": {
-      "id": "#validation",
       "type": ["null", "object"],
       "properties": {
         "required": {
@@ -94,10 +77,7 @@
         },
         "minLength": {
           "type": ["null", "number"],
-          "multipleOf": 1,
-          "maximum": {
-            "$data": "1/maxLength"
-          }
+          "multipleOf": 1
         },
         "maxLength": {
           "type": ["null", "number"],
@@ -143,7 +123,6 @@
       ]
     },
     "value": {
-      "id": "#value",
       "type": ["string", "null"]
     }
   },

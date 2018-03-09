@@ -10,26 +10,21 @@
       "enum": ["list"]
     },
     "name": {
-      "$ref": "field-base.json#name"
+      "$ref": "field-base.json#/definitions/name"
     },
     "noDataText": {
-      "id": "#noDataText",
       "type": ["string", "null"]
     },
     "hideActions": {
-      "id": "#hideActions",
       "type": "boolean"
     },
     "rowsPerPageText": {
-      "id": "#rowsPerPageText",
       "type": ["string", "null"]
     },
     "noResultsText": {
-      "id": "#noResultsText",
       "type": ["string", "null"]
     },
     "rowsPerPageItems": {
-      "id": "#rowsPerPageItems",
       "type": ["array", "string", "null"]
     },
     "rowsPerPage": {
@@ -42,11 +37,9 @@
       "type": "number"
     },
     "wrap": {
-      "id": "#wrap",
       "type": "boolean"
     },
     "dataSource": {
-      "id": "#dataSource",
       "type": ["null", "object"],
       "properties": {
         "items": {

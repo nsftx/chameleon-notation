@@ -16,13 +16,13 @@
       "type": "boolean"
     },
     "label": {
-      "$ref": "field-base.json#label"
+      "$ref": "field-base.json#/definitions/label"
     },
     "muted": {
       "type": "boolean"
     },
     "name": {
-      "$ref": "field-base.json#name"
+      "$ref": "field-base.json#/definitions/name"
     },
     "repeat": {
       "type": "boolean"

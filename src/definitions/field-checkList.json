@@ -6,43 +6,40 @@
   "type": "object",
   "properties": {
     "name": {
-      "$ref": "field-base.json#name"
+      "$ref": "field-base.json#/definitions/name"
     },
     "type": {
       "type": "string",
       "enum": ["check-list"]
     },
     "label": {
-      "$ref": "field-base.json#label"
+      "$ref": "field-base.json#/definitions/label"
     },
     "appendIcon": {
-      "$ref": "field-base.json#appendIcon"
+      "$ref": "field-base.json#/definitions/appendIcon"
     },
     "prependIcon": {
-      "$ref": "field-base.json#prependIcon"
+      "$ref": "field-base.json#/definitions/prependIcon"
     },
     "hint": {
-      "$ref": "field-base.json#hint"
+      "$ref": "field-base.json#/definitions/hint"
     },
     "persistentHint": {
-      "$ref": "field-base.json#persistentHint"
+      "$ref": "field-base.json#/definitions/persistentHint"
     },
     "hideDetails": {
-      "id": "#hideDetails",
       "type": ["boolean", "null"]
     },
     "value": {
-      "id": "#value",
       "type": ["array", "null"]
     },
     "validateOn": {
-      "$ref": "field-base.json#validateOn"
+      "$ref": "field-base.json#/definitions/validateOn"
     },
     "validation": {
-      "$ref": "field-base.json#validation"
+      "$ref": "field-base.json#/definitions/validation"
     },
     "dataSource": {
-      "id": "#dataSource",
       "type": "object",
       "properties": {
         "items": {
@@ -51,16 +48,16 @@
             "type": "object",
             "properties": {
               "value": {
-                "$ref": "field-base.json#value"
+                "$ref": "field-base.json#/definitions/value"
               },
               "label": {
-                "$ref": "field-base.json#label"
+                "$ref": "field-base.json#/definitions/label"
               },
               "color": {
-                "$ref": "field-base.json#color"
+                "$ref": "field-base.json#/definitions/color"
               },
               "disabled": {
-                "$ref": "field-base.json#disabled"
+                "$ref": "field-base.json#/definitions/disabled"
               }
             },
             "required": ["value"]

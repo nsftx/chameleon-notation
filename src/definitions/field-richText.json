@@ -10,13 +10,12 @@
       "enum": ["rich-text"]
     },
     "label": {
-      "$ref": "field-base.json#label"
+      "$ref": "field-base.json#/definitions/label"
     },
     "name": {
-      "$ref": "field-base.json#name"
+      "$ref": "field-base.json#/definitions/name"
     },
     "toolbar": {
-      "id": "#toolbar",
       "type": ["array", "string", "object"],
       "uniqueItems": true,
       "items": {
@@ -24,7 +23,7 @@
       }
     },
     "value": {
-      "$ref": "field-base.json#value"
+      "$ref": "field-base.json#/definitions/value"
     }
   },
   "required": ["type"]

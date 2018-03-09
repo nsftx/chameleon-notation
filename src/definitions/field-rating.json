@@ -13,23 +13,22 @@
       "type": "string"
     },
     "label": {
-      "$ref": "field-base.json#label"
+      "$ref": "field-base.json#/definitions/label"
     },
     "maxRating": {
       "type": "number",
       "maximum": 10
     },
     "name": {
-      "$ref": "field-base.json#name"
+      "$ref": "field-base.json#/definitions/name"
     },
     "ratingInfo": {
       "type": ["boolean", "null"]
     },
     "validation": {
-      "$ref": "field-base.json#validation"
+      "$ref": "field-base.json#/definitions/validation"
     },
     "value": {
-      "id": "#value",
       "type": ["number", "null"]
     }
   },

@@ -10,14 +10,12 @@
       "enum": ["map"]
     },
     "name": {
-      "$ref": "field-base.json#name"
+      "$ref": "field-base.json#/definitions/name"
     },
     "apiKey": {
-      "id": "#apiKey",
       "type": ["string", "null"]
     },
     "libraries": {
-      "id": "#libraries",
       "type": "string"
     }
   },

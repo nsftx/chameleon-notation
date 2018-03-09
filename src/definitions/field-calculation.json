@@ -10,46 +10,46 @@
       "enum": ["calculation"]
     },
     "appendIcon": {
-      "$ref": "field-base.json#appendIcon"
+      "$ref": "field-base.json#/definitions/appendIcon"
     },
     "clearable": {
-      "$ref": "field-base.json#clearable"
+      "$ref": "field-base.json#/definitions/clearable"
     },
     "hint": {
-      "$ref": "field-base.json#hint"
+      "$ref": "field-base.json#/definitions/hint"
     },
     "label": {
-      "$ref": "field-base.json#label"
+      "$ref": "field-base.json#/definitions/label"
     },
     "mask": {
-      "$ref": "field-base.json#mask"
+      "$ref": "field-base.json#/definitions/mask"
     },
     "name": {
-      "$ref": "field-base.json#name"
+      "$ref": "field-base.json#/definitions/name"
     },
     "placeholder": {
-      "$ref": "field-base.json#placeholder"
+      "$ref": "field-base.json#/definitions/placeholder"
     },
     "prefix": {
-      "$ref": "field-base.json#prefix"
+      "$ref": "field-base.json#/definitions/prefix"
     },
     "prependIcon": {
-      "$ref": "field-base.json#prependIcon"
+      "$ref": "field-base.json#/definitions/prependIcon"
     },
     "suffix": {
-      "$ref": "field-base.json#suffix"
+      "$ref": "field-base.json#/definitions/suffix"
     },
     "tooltip": {
-      "$ref": "field-base.json#tooltip"
+      "$ref": "field-base.json#/definitions/tooltip"
     },
     "validateOn": {
-      "$ref": "field-base.json#validateOn"
+      "$ref": "field-base.json#/definitions/validateOn"
     },
     "validation": {
-      "$ref": "field-base.json#validation"
+      "$ref": "field-base.json#/definitions/validation"
     },
     "value": {
-      "$ref": "field-base.json#value"
+      "$ref": "field-base.json#/definitions/value"
     }
   },
   "anyOf": [

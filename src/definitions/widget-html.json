@@ -10,13 +10,13 @@
       "enum": ["html"]
     },
     "name": {
-      "$ref": "field-base.json#name"
+      "$ref": "field-base.json#/definitions/name"
     },
     "label": {
-      "$ref": "field-base.json#label"
+      "$ref": "field-base.json#/definitions/label"
     },
     "value": {
-      "$ref": "field-base.json#value"
+      "$ref": "field-base.json#/definitions/value"
     }
   },
   "required": ["type"]

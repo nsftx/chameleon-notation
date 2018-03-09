@@ -1,4 +1,5 @@
 import Ajv from 'ajv';
+import draftSchema from 'ajv/lib/refs/json-schema-draft-06.json';
 import definitions from '@definitions';
 import keywords from '@keywords';
 
@@ -14,6 +15,7 @@ const initialize = (type) => {
   ajv = new Ajv({
     allErrors: true,
     $data: true,
+    meta: draftSchema,
     schemas: Object.values(definitions.items),
   });
 

@@ -10,7 +10,7 @@
       "enum": ["placeholder"]
     },
     "name": {
-      "$ref": "field-base.json#name"
+      "$ref": "field-base.json#/definitions/name"
     }
   },
   "required": ["type"]

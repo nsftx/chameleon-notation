@@ -10,31 +10,30 @@
       "enum": ["date-range"]
     },
     "appendIcon": {
-      "$ref": "field-base.json#appendIcon"
+      "$ref": "field-base.json#/definitions/appendIcon"
     },
     "clearable": {
-      "$ref": "field-base.json#clearable"
+      "$ref": "field-base.json#/definitions/clearable"
     },
     "format": {
       "type": "string"
     },
     "hint": {
-      "$ref": "field-base.json#hint"
+      "$ref": "field-base.json#/definitions/hint"
     },
     "label": {
-      "$ref": "field-base.json#label"
+      "$ref": "field-base.json#/definitions/label"
     },
     "name": {
-      "$ref": "field-base.json#name"
+      "$ref": "field-base.json#/definitions/name"
     },
     "placeholder": {
-      "$ref": "field-base.json#placeholder"
+      "$ref": "field-base.json#/definitions/placeholder"
     },
     "prependIcon": {
-      "$ref": "field-base.json#prependIcon"
+      "$ref": "field-base.json#/definitions/prependIcon"
     },
     "time": {
-      "id": "#time",
       "type": "object",
       "properties": {
         "enabled": {
@@ -43,7 +42,6 @@
       }
     },
     "validation": {
-      "id": "#validation",
       "type": "object",
       "properties": {
         "required": {
@@ -52,7 +50,6 @@
       }
     },
     "value": {
-      "id": "#value",
       "type": ["array", "null"]
     }
   },

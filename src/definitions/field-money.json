@@ -10,13 +10,12 @@
       "enum": ["money"]
     },
     "appendIcon": {
-      "$ref": "field-base.json#appendIcon"
+      "$ref": "field-base.json#/definitions/appendIcon"
     },
     "clearable": {
-      "$ref": "field-base.json#clearable"
+      "$ref": "field-base.json#/definitions/clearable"
     },
     "currency": {
-      "id": "#currency",
       "type": "object",
       "properties": {
         "name": {
@@ -30,39 +29,36 @@
       }
     },
     "hint": {
-      "$ref": "field-base.json#hint"
+      "$ref": "field-base.json#/definitions/hint"
     },
     "label": {
-      "$ref": "field-base.json#label"
+      "$ref": "field-base.json#/definitions/label"
     },
     "name": {
-      "$ref": "field-base.json#name"
+      "$ref": "field-base.json#/definitions/name"
     },
     "persistentHint": {
-      "$ref": "field-base.json#persistentHint"
+      "$ref": "field-base.json#/definitions/persistentHint"
     },
     "placeholder": {
-      "$ref": "field-base.json#placeholder"
+      "$ref": "field-base.json#/definitions/placeholder"
     },
     "prefix": {
-      "id": "#prefix",
       "enum": ["name", "symbol", null, false]
     },
     "prependIcon": {
-      "$ref": "field-base.json#prependIcon"
+      "$ref": "field-base.json#/definitions/prependIcon"
     },
     "suffix": {
-      "id": "#prefix",
       "enum": ["name", "symbol", null, false]
     },
     "tooltip": {
-      "$ref": "field-base.json#tooltip"
+      "$ref": "field-base.json#/definitions/tooltip"
     },
     "validateOn": {
-      "$ref": "field-base.json#validateOn"
+      "$ref": "field-base.json#/definitions/validateOn"
     },
     "validation": {
-      "id": "#validation",
       "type": ["null", "object"],
       "properties": {
         "required": {
@@ -84,7 +80,7 @@
       ]
     },
     "value": {
-      "$ref": "field-base.json#value"
+      "$ref": "field-base.json#/definitions/value"
     }
   },
   "anyOf": [

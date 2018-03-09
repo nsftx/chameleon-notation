@@ -10,22 +10,18 @@
       "enum": ["table"]
     },
     "name": {
-      "$ref": "field-base.json#name"
+      "$ref": "field-base.json#/definitions/name"
     },
     "noDataText": {
-      "id": "#noDataText",
       "type": ["string", "null"]
     },
     "rowsPerPageText": {
-      "id": "#rowsPerPageText",
       "type": ["string", "null"]
     },
     "noResultsText": {
-      "id": "#noResultsText",
       "type": ["string", "null"]
     },
     "rowsPerPageItems": {
-      "id": "#rowsPerPageItems",
       "type": ["array", "string", "null"]
     },
     "rowsPerPage": {
@@ -38,7 +34,6 @@
       "type": "number"
     },
     "dataSource": {
-      "id": "#dataSource",
       "type": ["null", "object"],
       "properties": {
         "items": {

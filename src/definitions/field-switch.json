@@ -10,31 +10,30 @@
       "enum": ["switch"]
     },
     "label": {
-      "$ref": "field-base.json#label"
+      "$ref": "field-base.json#/definitions/label"
     },
     "name": {
-      "$ref": "field-base.json#name"
+      "$ref": "field-base.json#/definitions/name"
     },
     "appendIcon": {
-      "$ref": "field-base.json#appendIcon"
+      "$ref": "field-base.json#/definitions/appendIcon"
     },
     "prependIcon": {
-      "$ref": "field-base.json#prependIcon"
+      "$ref": "field-base.json#/definitions/prependIcon"
     },
     "hint": {
-      "$ref": "field-base.json#hint"
+      "$ref": "field-base.json#/definitions/hint"
     },
     "persistentHint": {
-      "$ref": "field-base.json#persistentHint"
+      "$ref": "field-base.json#/definitions/persistentHint"
     },
     "disabled": {
-      "$ref": "field-base.json#disabled"
+      "$ref": "field-base.json#/definitions/disabled"
     },
     "color": {
-      "$ref": "field-base.json#color"
+      "$ref": "field-base.json#/definitions/color"
     },
     "value": {
-      "id": "#value",
       "type": "boolean"
     }
   },

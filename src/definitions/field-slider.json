@@ -10,45 +10,42 @@
       "enum": ["slider"]
     },
     "name": {
-      "$ref": "field-base.json#name"
+      "$ref": "field-base.json#/definitions/name"
     },
     "appendIcon": {
-      "$ref": "field-base.json#appendIcon"
+      "$ref": "field-base.json#/definitions/appendIcon"
     },
     "color": {
-      "$ref": "field-base.json#color"
+      "$ref": "field-base.json#/definitions/color"
     },
     "hint": {
-      "$ref": "field-base.json#hint"
+      "$ref": "field-base.json#/definitions/hint"
     },
     "label": {
-      "$ref": "field-base.json#label"
+      "$ref": "field-base.json#/definitions/label"
     },
     "persistentHint": {
-      "$ref": "field-base.json#persistentHint"
+      "$ref": "field-base.json#/definitions/persistentHint"
     },
     "prependIcon": {
-      "$ref": "field-base.json#prependIcon"
+      "$ref": "field-base.json#/definitions/prependIcon"
     },
     "thumbColor": {
-      "id": "#color",
       "type": "string"
     },
     "thumbLabel": {
-      "id": "#thumbLabel",
       "type": "boolean"
     },
     "trackColor": {
-      "id": "#color",
       "type": "string"
     },
     "validateOn": {
-      "$ref": "field-base.json#validateOn"
+      "$ref": "field-base.json#/definitions/validateOn"
     },
     "validation": {
       "allOf": [
         {
-          "$ref": "field-base.json#validation"
+          "$ref": "field-base.json#/definitions/validation"
         },
         {
           "required": ["max", "min"]
@@ -56,7 +53,6 @@
       ]
     },
     "value": {
-      "id": "#value",
       "type": ["string", "null"]
     }
   },
