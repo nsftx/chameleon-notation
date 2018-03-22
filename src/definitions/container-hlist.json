@@ -18,21 +18,8 @@
         {
           "items": {
             "oneOf": [
-              { "$ref": "container-accordion.json#" },
-              { "$ref": "container-flexgrid.json#" },
-              { "$ref": "container-hlist.json#" },
-              { "$ref": "container-panel.json#" },
-              { "$ref": "container-placeholder.json#" },
-              { "$ref": "container-vlist.json#" },
-              { "$ref": "container-tabs.json#" },
-              { "$ref": "widget-form.json#" },
-              { "$ref": "widget-html.json#" },
-              { "$ref": "widget-list.json#" },
-              { "$ref": "widget-map.json#" },
-              { "$ref": "widget-table.json#" },
-              { "$ref": "widget-video.json#" },
-              { "$ref": "widget-videoStream.json#" },
-              { "$ref": "widget-youtube.json#" },
+              { "$ref": "containers.json#" },
+              { "$ref": "widgets.json#" },
               {
                 "properties": {
                   "type": {

@@ -1,0 +1,15 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "http://chameleon-notation/containers.json#",
+  "title": "Containers",
+  "description": "Schema defines available container elements",
+  "anyOf": [
+    { "$ref": "container-accordion.json#" },
+    { "$ref": "container-flexgrid.json#" },
+    { "$ref": "container-hlist.json#" },
+    { "$ref": "container-panel.json#" },
+    { "$ref": "container-placeholder.json#" },
+    { "$ref": "container-vlist.json#" },
+    { "$ref": "container-tabs.json#" }
+  ]
+}

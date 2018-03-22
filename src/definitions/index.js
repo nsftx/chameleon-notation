@@ -3,6 +3,7 @@ import app from './app.json';
 import accordion from './container-accordion.json';
 import accordionItem from './container-accordion-item.json';
 import base from './field-base.json';
+import containersAggr from './containers.json';
 import calculation from './field-calculation.json';
 import check from './field-check.json';
 import checkList from './field-checkList.json';
@@ -35,6 +36,7 @@ import text from './field-text.json';
 import video from './widget-video.json';
 import videoStream from './widget-videoStream.json';
 import vlist from './container-vlist.json';
+import widgetsAggr from './widgets.json';
 import youtube from './widget-youtube.json';
 
 const fields = {
@@ -82,13 +84,20 @@ const containers = {
   vlist,
 };
 
-const items = _.merge({ app, base, page }, fields, widgets, containers);
+const items = _.merge({
+  app,
+  base,
+  containersAggr,
+  page,
+  widgetsAggr,
+}, fields, widgets, containers);
 
 export default {
   mapper: {
     accordion: 'http://chameleon-notation/container-accordion.json#',
     'accordion-item': 'http://chameleon-notation/container-accordion-item.json#',
     app: 'http://chameleon-notation/app.json#',
+    containersAggr: 'http://chameleon-notation/containers.json#',
     calculation: 'http://chameleon-notation/field-calculation.json#',
     check: 'http://chameleon-notation/field-check.json#',
     'check-list': 'http://chameleon-notation/field-checkList.json#',
@@ -121,6 +130,7 @@ export default {
     video: 'http://chameleon-notation/widget-video.json#',
     'video-stream': 'http://chameleon-notation/widget-videoStream.json#',
     vlist: 'http://chameleon-notation/container-vlist.json#',
+    widgetsAggr: 'http://chameleon-notation/widgets.json#',
     youtube: 'http://chameleon-notation/widget-youtube.json#',
   },
   items,
