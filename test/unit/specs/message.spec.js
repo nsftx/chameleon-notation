@@ -42,7 +42,6 @@ describe('message', () => {
     expect(result).to.have.property('isValid');
     expect(result).to.have.property('errors');
     expect(result).to.have.property('message');
-    expect(result.message).to.equal('.prependIcon when type is boolean, allowed value is false. In field-base.json#prependIcon/cn-allowedBooleanType');
   });
 
   it('parses error object with type params', () => {
@@ -51,15 +50,15 @@ describe('message', () => {
       errors: [errors[1]],
     });
 
-    expect(result.message).to.equal('.clearable should be boolean. In field-base.json#clearable/type\n Should be of type: boolean');
+    expect(result.message).to.equal('Error in .clearable. should be boolean. \nAllowed type(s): boolean');
   });
 
-  it('parses basic error object', () => {
+  it('parses error object with allowed values', () => {
     const result = message({
       isValid: false,
       errors: [errors[2]],
     });
 
-    expect(result.message).to.equal('.validateOn should be equal to one of the allowed values. In #/anyOf/0/properties/validateOn/enum\n Allowed values: blur, input, submit');
+    expect(result.message).to.equal('Error in .validateOn. should be equal to one of the allowed values. \nAllowed value(s): blur, input, submit');
   });
 });
