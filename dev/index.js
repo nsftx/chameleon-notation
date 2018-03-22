@@ -1,6 +1,6 @@
 import ChameleonNotation from 'chameleon-notation';
 import _ from 'lodash';
-import page from '../examples/app.json';
+import page from '../examples/page.json';
 
 let editor = null;
 let messageContainer = null;

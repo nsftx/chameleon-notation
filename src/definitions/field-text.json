@@ -80,5 +80,10 @@
       }
     }
   ],
+  "errorMessage": {
+    "properties": {
+      "label": "Yo, type is wrong for text field"
+    }
+  },
   "required": ["type"]
 }
