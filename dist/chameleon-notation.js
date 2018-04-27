@@ -681,7 +681,7 @@ var lint = function lint(item, type) {
 /* 16 */
 /***/ (function(module, exports) {
 
-var core = module.exports = { version: '2.5.3' };
+var core = module.exports = { version: '2.5.5' };
 if (typeof __e == 'number') __e = core; // eslint-disable-line no-undef
 
 
@@ -1229,6 +1229,7 @@ var global = __webpack_require__(1);
 var core = __webpack_require__(16);
 var ctx = __webpack_require__(205);
 var hide = __webpack_require__(5);
+var has = __webpack_require__(2);
 var PROTOTYPE = 'prototype';
 
 var $export = function (type, name, source) {
@@ -1246,7 +1247,7 @@ var $export = function (type, name, source) {
   for (key in source) {
     // contains in native
     own = !IS_FORCED && target && target[key] !== undefined;
-    if (own && key in exports) continue;
+    if (own && has(exports, key)) continue;
     // export native or passed
     out = own ? target[key] : source[key];
     // prevent global pollution for namespaces
@@ -3382,7 +3383,6 @@ var LIBRARY = __webpack_require__(42);
 var $export = __webpack_require__(32);
 var redefine = __webpack_require__(79);
 var hide = __webpack_require__(5);
-var has = __webpack_require__(2);
 var Iterators = __webpack_require__(43);
 var $iterCreate = __webpack_require__(259);
 var setToStringTag = __webpack_require__(44);
@@ -3409,7 +3409,7 @@ module.exports = function (Base, NAME, Constructor, next, DEFAULT, IS_SET, FORCE
   var VALUES_BUG = false;
   var proto = Base.prototype;
   var $native = proto[ITERATOR] || proto[FF_ITERATOR] || DEFAULT && proto[DEFAULT];
-  var $default = (!BUGGY && $native) || getMethod(DEFAULT);
+  var $default = $native || getMethod(DEFAULT);
   var $entries = DEFAULT ? !DEF_VALUES ? $default : getMethod('entries') : undefined;
   var $anyNative = NAME == 'Array' ? proto.entries || $native : $native;
   var methods, key, IteratorPrototype;
@@ -3420,7 +3420,7 @@ module.exports = function (Base, NAME, Constructor, next, DEFAULT, IS_SET, FORCE
       // Set @@toStringTag to native iterators
       setToStringTag(IteratorPrototype, TAG, true);
       // fix for some old engines
-      if (!LIBRARY && !has(IteratorPrototype, ITERATOR)) hide(IteratorPrototype, ITERATOR, returnThis);
+      if (!LIBRARY && typeof IteratorPrototype[ITERATOR] != 'function') hide(IteratorPrototype, ITERATOR, returnThis);
     }
   }
   // fix Array#{values, @@iterator}.name in V8 / FF
@@ -13192,7 +13192,7 @@ var lint = function lint(item, type) {
 /* 283 */
 /***/ (function(module, exports) {
 
-module.exports = {"name":"chameleon-notation","version":"1.0.13","description":"Chameleon notation validator","author":"Lana Dzidic <dzidic.lana@nsoft.com>","contributors":["Snježana Drežnjak <dreznjak.snjezana@nsoft.com>","Jadranko Dragoje <dragoje.jadranko@nsoft.com>"],"private":false,"scripts":{"start":"cross-env NODE_ENV=development webpack --config build/webpack.dev.config.js","dev":"cross-env NODE_ENV=development webpack-dev-server --config build/webpack.dev.config.js --open --hot","unit":"cross-env BABEL_ENV=test karma start test/unit/karma.conf.js --single-run","test":"npm run unit","lint":"eslint --ext .js src test/unit/specs","build":"rimraf dist && cross-env NODE_ENV=production webpack --config build/config.js --progress --hide-modules"},"main":"dist/chameleon-notation.js","dependencies":{"ajv":"^6.3.0","ajv-errors":"^1.0.0","lodash":"^4.17.5"},"bin":{"clint":"cli/index.js"},"devDependencies":{"babel-core":"^6.26.0","babel-eslint":"^7.2.3","babel-loader":"^7.1.2","babel-plugin-istanbul":"^4.1.6","babel-plugin-lodash":"^3.3.2","babel-plugin-transform-runtime":"^6.23.0","babel-polyfill":"^6.26.0","babel-preset-env":"^1.6.1","babel-preset-stage-2":"^6.24.1","babel-register":"^6.26.0","chai":"^4.1.2","codecov":"^3.0.0","copy-webpack-plugin":"^4.5.1","cross-env":"^5.1.4","dotenv":"^4.0.0","eslint":"^4.19.0","eslint-config-airbnb-base":"^12.1.0","eslint-friendly-formatter":"^3.0.0","eslint-import-resolver-webpack":"^0.8.3","eslint-loader":"^1.9.0","eslint-plugin-import":"^2.8.0","eventsource-polyfill":"^0.9.6","express":"^4.16.3","file-loader":"^1.1.6","friendly-errors-webpack-plugin":"^1.6.1","html-webpack-plugin":"^2.30.1","inject-loader":"^3.0.0","karma":"^1.7.1","karma-coverage":"^1.1.1","karma-mocha":"^1.3.0","karma-phantomjs-launcher":"^1.0.4","karma-phantomjs-shim":"^1.5.0","karma-sinon-chai":"^1.3.3","karma-sourcemap-loader":"^0.3.7","karma-spec-reporter":"0.0.31","karma-webpack":"^2.0.13","lodash-webpack-plugin":"^0.11.4","mocha":"^4.1.0","optimize-js-plugin":"0.0.4","phantomjs-prebuilt":"^2.1.16","rimraf":"^2.6.2","sinon":"^4.4.6","sinon-chai":"^2.14.0","url-loader":"^0.5.8","webpack":"^3.11.0","webpack-bundle-analyzer":"^2.11.1","webpack-dev-server":"^2.11.2","webpack-merge":"^4.1.2"}}
+module.exports = {"name":"@nsoft/chameleon-notation","version":"1.0.15","description":"Chameleon notation validator","author":"Lana Dzidic <dzidic.lana@nsoft.com>","contributors":["Snježana Drežnjak <dreznjak.snjezana@nsoft.com>","Jadranko Dragoje <dragoje.jadranko@nsoft.com>"],"private":false,"scripts":{"start":"cross-env NODE_ENV=development webpack --config build/webpack.dev.config.js","dev":"cross-env NODE_ENV=development webpack-dev-server --config build/webpack.dev.config.js --open --hot","unit":"cross-env BABEL_ENV=test karma start test/unit/karma.conf.js --single-run","test":"npm run unit","lint":"eslint --ext .js src test/unit/specs","build":"rimraf dist && cross-env NODE_ENV=production webpack --config build/config.js --progress --hide-modules"},"main":"dist/chameleon-notation.js","dependencies":{"ajv":"6.3.0","ajv-errors":"^1.0.0","lodash":"^4.17.5"},"bin":{"clint":"cli/index.js"},"devDependencies":{"babel-core":"^6.26.0","babel-eslint":"^7.2.3","babel-loader":"^7.1.2","babel-plugin-istanbul":"^4.1.6","babel-plugin-lodash":"^3.3.2","babel-plugin-transform-runtime":"^6.23.0","babel-polyfill":"^6.26.0","babel-preset-env":"^1.6.1","babel-preset-stage-2":"^6.24.1","babel-register":"^6.26.0","chai":"^4.1.2","codecov":"^3.0.0","copy-webpack-plugin":"^4.5.1","cross-env":"^5.1.4","dotenv":"^4.0.0","eslint":"^4.19.0","eslint-config-airbnb-base":"^12.1.0","eslint-friendly-formatter":"^3.0.0","eslint-import-resolver-webpack":"^0.8.3","eslint-loader":"^1.9.0","eslint-plugin-import":"^2.8.0","eventsource-polyfill":"^0.9.6","express":"^4.16.3","file-loader":"^1.1.6","friendly-errors-webpack-plugin":"^1.6.1","html-webpack-plugin":"^2.30.1","inject-loader":"^3.0.0","karma":"^1.7.1","karma-coverage":"^1.1.1","karma-mocha":"^1.3.0","karma-phantomjs-launcher":"^1.0.4","karma-phantomjs-shim":"^1.5.0","karma-sinon-chai":"^1.3.3","karma-sourcemap-loader":"^0.3.7","karma-spec-reporter":"0.0.31","karma-webpack":"^2.0.13","lodash-webpack-plugin":"^0.11.4","mocha":"^4.1.0","optimize-js-plugin":"0.0.4","phantomjs-prebuilt":"^2.1.16","rimraf":"^2.6.2","sinon":"^4.4.6","sinon-chai":"^2.14.0","url-loader":"^0.5.8","webpack":"^3.11.0","webpack-bundle-analyzer":"^2.11.1","webpack-dev-server":"^2.11.2","webpack-merge":"^4.1.2"}}
 
 /***/ })
 /******/ ])["default"];
